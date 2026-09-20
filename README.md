@@ -10,7 +10,7 @@
 - robots.txt / sitemap.xml
 
 ## 公開前に変更するもの
-1. `YOUR-DOMAIN.example` を実ドメインへ変更
+1. `sono-shigoto-ai.com` を実ドメインへ変更
 2. 問い合わせフォームを実サービスへ接続
 3. プライバシーポリシーを実際の利用サービスに合わせて確定
 4. Search Console / Analytics を設定

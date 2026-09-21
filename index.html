@@ -3,165 +3,205 @@
 <head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-58NKR47NW8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-58NKR47NW8');
-</script>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>その仕事、AIにできる？｜個人事業主・小さな会社のAI仕事効率化</title>
-  <meta name="description" content="個人事業主・フリーランス・小さな会社向けのAI仕事効率化メディア。メール、会議、営業、資料、経理、SNSなど、仕事から逆算してAIの使い方・ツール選び・人が確認すべき点を解説します。">
-  <link rel="canonical" href="https://sono-shigoto-ai.com/">
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    .home{max-width:1120px;margin:auto;padding:0 20px 80px}
-    .hero{padding:72px 0 48px;text-align:center}
-    .hero h1{font-size:clamp(2.25rem,6vw,4.5rem);line-height:1.08;margin:.2em 0}
-    .hero p{font-size:1.12rem;line-height:1.8;max-width:760px;margin:20px auto}
-    .eyebrow{font-weight:700;color:#2563eb}
-    .btn{display:inline-block;padding:13px 20px;border-radius:10px;background:#111827;color:#fff;text-decoration:none;font-weight:700;margin:6px}
-    .btn.secondary{background:#eef2f7;color:#111827}
-    section{margin-top:62px}
-    section h2{font-size:clamp(1.65rem,4vw,2.3rem);margin-bottom:10px}
-    .section-lead{color:#475569;line-height:1.8;margin-bottom:24px}
-    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
-    .card{display:block;border:1px solid #e2e8f0;border-radius:16px;padding:22px;text-decoration:none;color:inherit;background:#fff}
-    .card:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(15,23,42,.08)}
-    .card h3{margin:0 0 9px;font-size:1.1rem;line-height:1.45}
-    .card p{margin:0;color:#64748b;line-height:1.65;font-size:.94rem}
-    .tag{display:inline-block;font-size:.78rem;font-weight:700;color:#2563eb;background:#eff6ff;padding:4px 8px;border-radius:999px;margin-bottom:10px}
-    .category{padding:24px;border-radius:16px;background:#f8fafc}
-    .category h3{margin-top:0}
-    .category ul{padding-left:1.2em;margin-bottom:0}
-    .category li{margin:.65em 0;line-height:1.45}
-    .category a{color:#0f172a}
-    .diagnosis{padding:34px;border-radius:20px;background:#111827;color:#fff}
-    .diagnosis p{color:#dbe4f0;line-height:1.8}
-    .diagnosis .btn{background:#fff;color:#111827;margin-left:0}
-    .principles{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .principle{padding:22px;border-left:4px solid #2563eb;background:#f8fafc;border-radius:10px}
-    .principle strong{display:block;margin-bottom:8px}
-    footer{border-top:1px solid #e2e8f0;margin-top:70px;padding-top:28px}
-    .footer-links{display:flex;gap:18px;flex-wrap:wrap}
-    @media(max-width:800px){.grid,.principles{grid-template-columns:1fr}.hero{padding-top:48px}.category{padding:20px}}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>その仕事、AIにできる？｜仕事から選ぶAI効率化メディア</title>
+<meta name="description" content="営業メール、会議、資料、経理、SNS。減らしたい仕事からAIの使い方を探せる、個人事業主・フリーランス・小さな会社向けのAI仕事効率化メディア。">
+<link rel="canonical" href="https://sono-shigoto-ai.com/">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="site-header">
-  <div class="container">
-    <a class="logo" href="index.html">その仕事、AIにできる？</a>
+  <div class="container nav">
+    <a class="logo" href="index.html">その仕事、<span>AIにできる？</span></a>
+    <nav>
+      <a href="#work">仕事から探す</a>
+      <a href="ai-tools-sole-proprietor.html">AIツール比較</a>
+      <a class="nav-cta" href="diagnosis.html">AI仕事診断</a>
+    </nav>
   </div>
 </header>
 
-<main class="home">
+<main>
   <section class="hero">
-    <div class="eyebrow">AIツールを探す前に、まず「その仕事」を見直す。</div>
-    <h1>その仕事、<br>AIにできる？</h1>
-    <p>個人事業主・フリーランス・小さな会社のためのAI仕事効率化メディア。仕事を分解して、AIに任せる部分と人が確認する部分を整理します。</p>
-    <a class="btn" href="diagnosis.html">AI化できる仕事を診断する</a>
-    <a class="btn secondary" href="#work">仕事から記事を探す</a>
-  </section>
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">AIツールを探す前に、まず「仕事」を選ぶ。</p>
+        <h1>その仕事、<br><span>AIにできる？</span></h1>
+        <p class="lead">営業メール、議事録、資料作成、経理、SNS。<br class="pc">減らしたい仕事を選ぶと、<strong>AIに任せる部分</strong>と<strong>人が確認する部分</strong>が分かります。</p>
+        <div class="hero-actions">
+          <a class="button primary" href="diagnosis.html">5問でAI仕事診断 <span>→</span></a>
+          <a class="button ghost" href="#work">仕事から探す</a>
+        </div>
+        <p class="microcopy">ツールの知識がなくてもOK。まず1つの業務から。</p>
+      </div>
 
-  <section>
-    <h2>まず読む3記事</h2>
-    <p class="section-lead">AI導入をこれから始めるなら、まずこの3本から。全体像 → ツール選び → 実際の業務、の順に進められます。</p>
-    <div class="grid">
-      <a class="card" href="article-ai-efficiency.html"><span class="tag">入門</span><h3>個人事業主の仕事をAIで効率化する方法</h3><p>最初にAI化したい7つの業務と、導入の考え方を整理。</p></a>
-      <a class="card" href="ai-tools-sole-proprietor.html"><span class="tag">比較</span><h3>個人事業主向けAIツール比較</h3><p>仕事別に候補を絞り、ツールを増やしすぎない選び方を解説。</p></a>
-      <a class="card" href="ai-sales-email.html"><span class="tag">実践</span><h3>AIで営業メールを作る方法</h3><p>新規営業・フォロー・商談後メールのプロンプトと確認ポイント。</p></a>
+      <div class="hero-visual" aria-label="AI化の考え方">
+        <div class="visual-label">たとえば「営業メール」</div>
+        <div class="flow-card">
+          <div class="flow-step">
+            <span class="flow-icon">01</span>
+            <div><small>人が決める</small><b>相手・目的・伝える価値</b></div>
+          </div>
+          <div class="flow-arrow">↓</div>
+          <div class="flow-step ai">
+            <span class="flow-icon">02</span>
+            <div><small>AIに任せる</small><b>構成・初稿・言い換え</b></div>
+          </div>
+          <div class="flow-arrow">↓</div>
+          <div class="flow-step">
+            <span class="flow-icon">03</span>
+            <div><small>人が確認する</small><b>事実・価格・送信判断</b></div>
+          </div>
+        </div>
+        <p class="visual-note">全部をAIに任せるのではなく、<br>仕事を分けるところから始めます。</p>
+      </div>
     </div>
   </section>
 
-  <section id="work">
-    <h2>仕事から探す</h2>
-    <p class="section-lead">「どのAIが人気か」ではなく、いま減らしたい仕事から選んでください。</p>
-    <div class="grid">
-      <div class="category"><h3>メール・文章</h3><ul>
-        <li><a href="ai-sales-email.html">AIで営業メールを作る方法</a></li>
-        <li><a href="ai-email-reply.html">AIでメール返信を効率化する方法</a></li>
-        <li><a href="ai-email-tools.html">AIメール作成ツール比較</a></li>
-        <li><a href="ai-writing-tools.html">AI文章作成ツール比較</a></li>
-      </ul></div>
-      <div class="category"><h3>会議</h3><ul>
-        <li><a href="ai-meeting-tools.html">AI議事録ツール比較</a></li>
-        <li><a href="zoom-ai-meeting.html">Zoom会議をAIで効率化</a></li>
-        <li><a href="teams-ai-meeting.html">Teams会議をAIで効率化</a></li>
-        <li><a href="google-meet-ai.html">Google MeetをAIで効率化</a></li>
-      </ul></div>
-      <div class="category"><h3>営業・提案</h3><ul>
-        <li><a href="ai-tools-sales.html">営業職向けAIツール比較</a></li>
-        <li><a href="ai-sales-materials.html">AIで営業資料を作る方法</a></li>
-        <li><a href="ai-proposal.html">AIで提案書を作る方法</a></li>
-        <li><a href="ai-estimate.html">AIで見積書を作る方法</a></li>
-      </ul></div>
-      <div class="category"><h3>資料・コンテンツ</h3><ul>
-        <li><a href="ai-presentation-tools.html">AI資料作成ツール比較</a></li>
-        <li><a href="ai-video-editing-tools.html">AI動画編集ツール比較</a></li>
-        <li><a href="ai-sns-posts.html">AIでSNS投稿を作る方法</a></li>
-      </ul></div>
-      <div class="category"><h3>経理・事務</h3><ul>
-        <li><a href="ai-accounting-invoice.html">AIで請求書・経理を効率化</a></li>
-        <li><a href="ai-estimate.html">AIで見積書を作る方法</a></li>
-        <li><a href="ai-inquiry-automation.html">AIで問い合わせ対応を自動化</a></li>
-      </ul></div>
-      <div class="category"><h3>顧客対応・採用</h3><ul>
-        <li><a href="ai-customer-support.html">AIで顧客対応を効率化</a></li>
-        <li><a href="ai-inquiry-automation.html">AIで問い合わせ対応を自動化</a></li>
-        <li><a href="ai-recruiting.html">AIで求人・採用業務を効率化</a></li>
-      </ul></div>
+  <section class="quick-strip">
+    <div class="container quick-inner">
+      <span>いま減らしたい仕事は？</span>
+      <a href="ai-sales-email.html">✉ 営業メール</a>
+      <a href="ai-meeting-tools.html">◉ 会議・議事録</a>
+      <a href="ai-presentation-tools.html">▤ 資料作成</a>
+      <a href="ai-accounting-invoice.html">¥ 経理・請求</a>
+      <a href="ai-sns-posts.html"># SNS</a>
     </div>
   </section>
 
-  <section>
-    <h2>立場・予算から探す</h2>
-    <div class="grid">
-      <a class="card" href="ai-tools-freelance.html"><span class="tag">フリーランス</span><h3>フリーランス向けAIツール比較</h3><p>営業・制作・事務を1人で回す人向け。</p></a>
-      <a class="card" href="one-person-company-ai.html"><span class="tag">1人会社</span><h3>1人会社で使えるAIツール</h3><p>売上に近い仕事を残し、反復作業を減らす。</p></a>
-      <a class="card" href="small-company-ai-tools.html"><span class="tag">小さな会社</span><h3>小さな会社で使えるAIツール比較</h3><p>既存のメール・会議・文書環境との相性で選ぶ。</p></a>
-      <a class="card" href="free-ai-tools.html"><span class="tag">無料</span><h3>無料で使える仕事効率化AI</h3><p>費用をかける前に、まず1業務で検証。</p></a>
-      <a class="card" href="ai-under-5000-yen.html"><span class="tag">月5,000円以内</span><h3>月5,000円以内で使える仕事効率化AI</h3><p>重複契約を避けながら必要な機能を選ぶ。</p></a>
-      <a class="card" href="ai-tools-10.html"><span class="tag">一覧</span><h3>個人事業主の仕事を効率化するAIツール10選</h3><p>文章・調査・会議・資料・経理・SNSから候補を整理。</p></a>
+  <section class="section work-section" id="work">
+    <div class="container">
+      <div class="section-heading split-heading">
+        <div>
+          <p class="eyebrow">CHOOSE YOUR WORK</p>
+          <h2>AIツールではなく、<br>減らしたい仕事から選ぶ。</h2>
+        </div>
+        <p>「何のAIを使えばいい？」より先に、<br>「何を減らしたい？」を決めます。</p>
+      </div>
+
+      <div class="work-grid">
+        <a class="work-tile featured" href="ai-sales-email.html">
+          <div class="tile-icon">✉</div>
+          <div class="tile-copy"><span>SALES / MAIL</span><h3>営業メール</h3><p>新規営業・フォロー・商談後メールの初稿を短くする。</p></div>
+          <b class="tile-arrow">→</b>
+        </a>
+        <a class="work-tile" href="ai-meeting-tools.html">
+          <div class="tile-icon">◉</div>
+          <div class="tile-copy"><span>MEETING</span><h3>会議・議事録</h3><p>文字起こし、要約、ToDo整理まで。</p></div>
+          <b class="tile-arrow">→</b>
+        </a>
+        <a class="work-tile" href="ai-presentation-tools.html">
+          <div class="tile-icon">▤</div>
+          <div class="tile-copy"><span>DOCUMENT</span><h3>資料・提案書</h3><p>構成案からスライド初稿まで。</p></div>
+          <b class="tile-arrow">→</b>
+        </a>
+        <a class="work-tile" href="ai-email-reply.html">
+          <div class="tile-icon">↩</div>
+          <div class="tile-copy"><span>REPLY</span><h3>メール返信</h3><p>要点整理と返信文の下書きを速くする。</p></div>
+          <b class="tile-arrow">→</b>
+        </a>
+        <a class="work-tile" href="ai-accounting-invoice.html">
+          <div class="tile-icon">¥</div>
+          <div class="tile-copy"><span>BACK OFFICE</span><h3>経理・請求</h3><p>入力・整理・確認の手間を減らす。</p></div>
+          <b class="tile-arrow">→</b>
+        </a>
+        <a class="work-tile" href="ai-sns-posts.html">
+          <div class="tile-icon">#</div>
+          <div class="tile-copy"><span>CONTENT</span><h3>SNS投稿</h3><p>ネタ出し、構成、投稿文の初稿まで。</p></div>
+          <b class="tile-arrow">→</b>
+        </a>
+      </div>
     </div>
   </section>
 
-  <section>
-    <h2>AI導入を失敗しないために</h2>
-    <div class="grid">
-      <a class="card" href="how-to-choose-ai-tools.html"><h3>AIツールを導入するときの選び方</h3><p>対象業務・費用・安全性・連携・確認工数で比較。</p></a>
-      <a class="card" href="sme-ai-first-step.html"><h3>中小企業のAI導入で最初にやること</h3><p>業務棚卸しから小規模テスト、ルール化まで。</p></a>
-      <a class="card" href="ai-implementation-checklist.html"><h3>AI導入で失敗しないためのチェックリスト</h3><p>責任者・入力データ・確認方法・効果指標を確認。</p></a>
-      <a class="card" href="ai-priority.html"><h3>会社の業務をAI化する優先順位の決め方</h3><p>頻度・時間・標準化・リスクから順番を決める。</p></a>
+  <section class="section process-section">
+    <div class="container">
+      <div class="section-heading center">
+        <p class="eyebrow">HOW WE THINK</p>
+        <h2>AI化は、3つに分けると分かりやすい。</h2>
+        <p>このサイトでは、どの記事も同じ考え方で仕事を分解します。</p>
+      </div>
+      <div class="process-grid">
+        <div class="process-card"><span>1</span><small>INPUT</small><h3>人が決める</h3><p>目的、相手、条件、守るべきルールを決める。</p></div>
+        <div class="process-connector">→</div>
+        <div class="process-card accent-card"><span>2</span><small>AI WORK</small><h3>AIに任せる</h3><p>調査補助、整理、要約、構成、初稿を作らせる。</p></div>
+        <div class="process-connector">→</div>
+        <div class="process-card"><span>3</span><small>REVIEW</small><h3>人が確認する</h3><p>事実、数字、顧客情報、公開・送信判断を確認する。</p></div>
+      </div>
     </div>
   </section>
 
-  <section>
-    <div class="diagnosis">
-      <h2>何からAI化すればいいか分からない？</h2>
-      <p>5つの質問から、まず見直したい業務を整理します。AIツールを契約する前の棚卸しに使ってください。</p>
-      <a class="btn" href="diagnosis.html">無料でAI仕事診断をする</a>
+  <section class="section picks-section">
+    <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow">START HERE</p>
+        <h2>最初の3本だけ読む。</h2>
+        <p>記事を大量に読む必要はありません。目的に合わせて1本選んでください。</p>
+      </div>
+      <div class="pick-grid">
+        <a class="pick-card dark" href="article-ai-efficiency.html">
+          <span class="pick-no">01</span><div><small>まず全体像を知る</small><h3>個人事業主の仕事を<br>AIで効率化する方法</h3><p>最初にAI化したい7つの業務を整理。</p></div><b>読む →</b>
+        </a>
+        <a class="pick-card" href="ai-tools-sole-proprietor.html">
+          <span class="pick-no">02</span><div><small>ツールを絞る</small><h3>個人事業主向け<br>AIツール比較</h3><p>仕事別に候補を比較して選ぶ。</p></div><b>比較する →</b>
+        </a>
+        <a class="pick-card" href="ai-sales-email.html">
+          <span class="pick-no">03</span><div><small>今日から試す</small><h3>AIで営業メールを<br>作る方法</h3><p>そのまま試せる手順とプロンプト。</p></div><b>実践する →</b>
+        </a>
+      </div>
     </div>
   </section>
 
-  <section>
-    <h2>このサイトの基準</h2>
-    <div class="principles">
-      <div class="principle"><strong>仕事から考える</strong>有名なAIから選ぶのではなく、減らしたい作業から逆算します。</div>
-      <div class="principle"><strong>人の確認を残す</strong>数字、契約、顧客情報、公開情報など重要部分は人が確認します。</div>
-      <div class="principle"><strong>小さく試す</strong>最初から全自動化せず、1業務で時間と修正量を測ります。</div>
+  <section class="section audience-section">
+    <div class="container audience-inner">
+      <div>
+        <p class="eyebrow">BY YOUR SITUATION</p>
+        <h2>あなたの状況から選ぶ。</h2>
+      </div>
+      <div class="audience-links">
+        <a href="ai-tools-freelance.html"><span>フリーランス</span><b>→</b></a>
+        <a href="one-person-company-ai.html"><span>1人会社</span><b>→</b></a>
+        <a href="small-company-ai-tools.html"><span>小さな会社</span><b>→</b></a>
+        <a href="free-ai-tools.html"><span>まず無料で試す</span><b>→</b></a>
+        <a href="ai-under-5000-yen.html"><span>月5,000円以内</span><b>→</b></a>
+        <a href="ai-tools-10.html"><span>AIツール10選</span><b>→</b></a>
+      </div>
     </div>
   </section>
 
-  <footer>
-    <div class="footer-links">
-      <a href="about.html">このサイトについて</a>
-      <a href="privacy.html">プライバシーポリシー</a>
-      <a href="contact.html">お問い合わせ</a>
+  <section class="diagnosis-banner">
+    <div class="container diagnosis-inner">
+      <div>
+        <p class="eyebrow">5 QUESTIONS / FREE</p>
+        <h2>何からAI化するか、<br>5問で整理する。</h2>
+        <p>ツールを契約する前に、まず自分の仕事を棚卸し。最初に見直す業務を絞ります。</p>
+      </div>
+      <a class="button light" href="diagnosis.html">AIにできる仕事を診断する <span>→</span></a>
     </div>
-    <p>© 2026 その仕事、AIにできる？</p>
-  </footer>
+  </section>
+
+  <section class="section standard-section">
+    <div class="container">
+      <div class="section-heading center">
+        <p class="eyebrow">OUR STANDARD</p>
+        <h2>このサイトが大事にする3つ。</h2>
+      </div>
+      <div class="standard-grid">
+        <div><span>01</span><h3>仕事から考える</h3><p>有名なAIではなく、減らしたい作業から逆算します。</p></div>
+        <div><span>02</span><h3>人の確認を残す</h3><p>数字、契約、顧客情報、公開判断は人が確認します。</p></div>
+        <div><span>03</span><h3>小さく試す</h3><p>最初から全自動化せず、1業務で効果と修正量を測ります。</p></div>
+      </div>
+    </div>
+  </section>
 </main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div><a class="logo" href="index.html">その仕事、<span>AIにできる？</span></a><p>個人事業主・フリーランス・小さな会社のための<br>AI仕事効率化メディア。</p></div>
+    <div><a href="about.html">このサイトについて</a><a href="privacy.html">プライバシーポリシー</a><a href="contact.html">お問い合わせ</a></div>
+  </div>
+  <div class="container copyright">© 2026 その仕事、AIにできる？</div>
+</footer>
 </body>
 </html>

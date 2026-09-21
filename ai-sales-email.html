@@ -77,6 +77,90 @@
 @media(max-width:560px){
 .sales-guide{padding:38px 18px 72px}.sales-guide h1{font-size:40px}.quick-facts,.workflow,.input-grid,.before-after,.check-grid,.template-grid{grid-template-columns:1fr}
 .workflow-card{min-height:0}.workflow-card .num{margin-bottom:14px}}
+
+/* AI実測検証 */
+.ai-test{
+  margin:64px 0;
+  padding:30px;
+  border:1px solid var(--line);
+  border-radius:24px;
+  background:#f7f9fb;
+}
+.ai-test__badge{
+  display:inline-block;
+  margin-bottom:10px;
+  padding:6px 10px;
+  border-radius:999px;
+  background:#e7f2ff;
+  color:var(--accent);
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:.08em;
+}
+.ai-test__lead{font-size:16px;line-height:1.9}
+.ai-test__conditions{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+  margin:20px 0 28px;
+}
+.ai-test__condition{
+  padding:14px;
+  border:1px solid var(--line);
+  border-radius:14px;
+  background:#fff;
+}
+.ai-test__condition small{display:block;color:var(--muted);font-size:10px;font-weight:800}
+.ai-test__condition strong{display:block;margin-top:4px;font-size:13px}
+.ai-test__prompt{
+  margin:22px 0 32px;
+  padding:20px;
+  border-radius:16px;
+  background:var(--navy);
+  color:#edf3f8;
+  white-space:pre-wrap;
+  font-size:13px;
+  line-height:1.8;
+}
+.ai-test__models{display:grid;gap:14px}
+.ai-result{
+  padding:22px;
+  border:1px solid var(--line);
+  border-radius:18px;
+  background:#fff;
+}
+.ai-result__name{display:flex;align-items:center;gap:9px;margin-bottom:12px}
+.ai-result__name b{font-size:18px}
+.ai-result__raw{
+  margin:12px 0;
+  padding:16px;
+  border-radius:12px;
+  background:#f4f6f8;
+  font-size:13px;
+  line-height:1.8;
+  white-space:pre-wrap;
+}
+.ai-result__note{
+  margin:12px 0 0!important;
+  padding:12px 14px;
+  border-left:3px solid var(--accent);
+  background:#f8fbff;
+  font-size:13px!important;
+}
+.ai-test__table{margin-top:28px}
+.ai-test__table td,.ai-test__table th{vertical-align:top}
+.ai-test__conclusion{
+  margin-top:26px;
+  padding:20px;
+  border-radius:16px;
+  background:#fff;
+  border:1px solid var(--line);
+}
+.ai-test__conclusion strong{display:block;margin-bottom:7px;font-size:17px}
+@media(max-width:760px){
+  .ai-test{padding:20px}
+  .ai-test__conditions{grid-template-columns:1fr}
+}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Article","headline":"AIで営業メールを作る方法｜入力例→AI初稿→人の修正まで実演【2026年版】","dateModified":"2026-09-21","mainEntityOfPage":"https://sono-shigoto-ai.com/ai-sales-email.html","publisher":{"@type":"Organization","name":"その仕事、AIにできる？"}}
@@ -248,7 +332,122 @@
 <a href="ai-tools-sales.html">営業職向けAIツール比較 →</a>
 </div>
 </div>
-<section class="related-nav"><div class="related-nav__head"><div><p class="related-nav__eyebrow">NEXT STEP</p><h2>次に見る</h2></div><span>カード全体をクリックできます</span></div><div class="related-nav__grid"><a class="related-card" href="ai-email-reply.html"><small>関連記事</small><strong>AIでメール返信を効率化する方法</strong><span>記事を読む</span></a><a class="related-card" href="ai-email-tools.html"><small>関連記事</small><strong>AIメール作成ツール比較｜営業・返信・要約に使える3候補【2026年版】</strong><span>記事を読む</span></a><a class="related-card" href="ai-writing-tools.html"><small>関連記事</small><strong>AI文章作成ツール比較｜ChatGPT・Claude・Geminiを仕事で比較【2026年版】</strong><span>記事を読む</span></a></div></section></main>
+<section class="ai-test" id="ai-real-test">
+<span class="ai-test__badge">実測検証 #01</span>
+<h2>実験：同じ営業メールを3つのAIに作らせてみた</h2>
+<p class="ai-test__lead">「AIなら営業メールを書ける」で終わらせず、ChatGPT・Claude・Geminiに同じ条件を与え、初回出力を比較しました。ここでは順位を付けるのではなく、<strong>指示を守れたか、事実を勝手に足していないか、人間がどこを直す必要があったか</strong>を記録します。</p>
+<div class="ai-test__conditions">
+<div class="ai-test__condition"><small>仕事</small><strong>新規BtoB営業メール</strong></div>
+<div class="ai-test__condition"><small>相手</small><strong>従業員約20名のWeb制作会社</strong></div>
+<div class="ai-test__condition"><small>ゴール</small><strong>15分のオンライン相談</strong></div>
+</div>
+<h3>3つのAIに入れた共通プロンプト</h3>
+<div class="ai-test__prompt">あなたはBtoB営業メールの編集者です。
+以下の情報だけを使って、新規営業メールを作成してください。
+
+相手：従業員約20名のWeb制作会社の代表者
+確認できた情報：採用ページで制作スタッフを募集している
+自社サービス：小規模企業向けの生成AI業務効率化支援
+提供できること：営業メールの下書き、資料整理など反復業務へのAI活用支援
+目的：15分のオンライン相談につなげる
+
+条件：
+・件名を3案
+・本文300文字以内
+・売り込みすぎない
+・CTAは1つ
+・相手の課題を推測しない
+・確認できていない実績や数字を追加しない
+・不明な情報を勝手に補完しない</div>
+<div class="ai-test__models">
+<article class="ai-result">
+<div class="ai-result__name"><b>ChatGPT</b><span>初回出力</span></div>
+<div class="ai-result__raw">件名案
+1. 営業メールや資料整理へのAI活用について
+2. 反復業務への生成AI活用のご相談
+3. 15分でご紹介｜小規模企業向けAI業務効率化支援
+
+本文
+〇〇株式会社
+代表 〇〇様
+
+突然のご連絡失礼いたします。〇〇の〇〇と申します。
+
+貴社の採用ページで制作スタッフを募集されているのを拝見し、ご連絡いたしました。
+
+弊社では、小規模企業向けに生成AIを活用した業務効率化をご支援しています。営業メールの下書きや資料整理など、日々の反復業務にAIを取り入れるための支援です。
+
+ご関心がございましたら、15分ほどオンラインでご説明する機会をいただけないでしょうか。
+
+どうぞよろしくお願いいたします。</div>
+<p class="ai-result__note"><strong>観測：</strong>指定された事実の範囲に収まり、未確認の実績や相手企業の課題は追加していません。件名3案、CTA1つも確認できました。一方、件名3は「15分でご紹介」と本文の「15分ほどオンラインでご説明」がやや営業色の強い表現です。</p>
+</article>
+<article class="ai-result">
+<div class="ai-result__name"><b>Claude</b><span>初回出力</span></div>
+<div class="ai-result__raw">件名案（3案）
+1. 採用ページ拝見し、ご連絡いたしました
+2. 制作スタッフ採用に関するご相談ではございません（AI活用支援のご案内）
+3. 貴社の反復業務、AIで巻き取れるかもしれません
+
+本文（300字以内）
+株式会社〇〇
+代表 〇〇様
+
+突然のご連絡失礼いたします。〇〇（自社名）の〇〇と申します。
+
+貴社採用ページで制作スタッフを募集されているのを拝見し、ご連絡いたしました。
+
+私たちは小規模企業向けに、生成AIを活用した業務効率化のご支援をしております。具体的には、営業メールの下書き作成や資料整理など、日々の反復業務にAIを取り入れるお手伝いが可能です。
+
+もしご関心をお持ちいただけましたら、15分程度オンラインでお話しさせていただけますと幸いです。ご都合の良い日時をいくつかいただけますでしょうか。
+
+何卒よろしくお願いいたします。</div>
+<p class="ai-result__note"><strong>観測：</strong>未確認の実績や数字、相手企業の課題は追加していません。件名2は「採用に関する相談ではない」と入力情報から一歩踏み込んだ表現です。またCTAは相談依頼に加えて日時候補の提示まで求めており、人間がハードル感を確認したい部分です。</p>
+</article>
+<article class="ai-result">
+<div class="ai-result__name"><b>Gemini</b><span>初回出力</span></div>
+<div class="ai-result__raw">件名案
+1. 制作業務の効率化に関する15分のご相談（オンライン）
+2. 【制作スタッフ採用中の企業様へ】業務効率化に関するご提案
+3. 営業メール・資料整理などの反復業務効率化について
+
+本文
+〇〇株式会社
+代表取締役 [お名前]様
+
+突然のご連絡にて失礼いたします。
+[貴社名]の[氏名]と申します。
+
+貴社の採用ページにて、制作スタッフを募集されている拝見しご連絡いたしました。
+
+弊社では、小規模企業様向けに生成AIを活用した業務効率化支援を行っております。営業メールの下書き作成や資料整理といった反復業務へAIを導入するお手伝いが可能です。
+
+まずは15分ほど、オンラインにて弊社の支援内容についてお話しさせていただけないでしょうか。
+
+ご検討のほど、よろしくお願い申し上げます。
+
+[署名]</div>
+<p class="ai-result__note"><strong>観測：</strong>未確認の実績や数字、相手企業の課題は追加していません。一方で「募集されている拝見し」は文法上の修正が必要です。件名2は採用活動への提案と受け取られる可能性があるため、送信前に人が意図を確認したい表現です。</p>
+</article>
+</div>
+<div class="ai-test__table">
+<h3>初回出力で確認できたこと</h3>
+<table>
+<thead><tr><th>確認項目</th><th>ChatGPT</th><th>Claude</th><th>Gemini</th></tr></thead>
+<tbody>
+<tr><td>件名3案</td><td>確認できた</td><td>確認できた</td><td>確認できた</td></tr>
+<tr><td>未確認の実績・数字の追加</td><td>確認できず</td><td>確認できず</td><td>確認できず</td></tr>
+<tr><td>相手の課題の推測</td><td>確認できず</td><td>確認できず</td><td>確認できず</td></tr>
+<tr><td>人が確認したい点</td><td>営業色・件名表現</td><td>件名表現・CTAのハードル</td><td>文法・件名の意図</td></tr>
+</tbody>
+</table>
+</div>
+<div class="ai-test__conclusion">
+<strong>今回の検証で分かったこと</strong>
+    3つとも営業メールの「初稿」は作れました。ただし、そのまま送信する前に人が確認したい箇所は残りました。今回の条件では、AIの役割を<strong>完成品の自動送信ではなく、初稿作成まで</strong>と考えるのが安全です。特に件名、事実との距離、CTAのハードル、文法は人が最後に確認する必要があります。
+  </div>
+<p style="margin-top:14px;font-size:12px;color:var(--muted)">検証方法：3サービスに同一条件を入力し、最初に返された文章を記録。追加プロンプトによる修正は行わず比較しました。サービスの出力は時期・モデル・設定によって変わる可能性があります。</p>
+</section><section class="related-nav"><div class="related-nav__head"><div><p class="related-nav__eyebrow">NEXT STEP</p><h2>次に見る</h2></div><span>カード全体をクリックできます</span></div><div class="related-nav__grid"><a class="related-card" href="ai-email-reply.html"><small>関連記事</small><strong>AIでメール返信を効率化する方法</strong><span>記事を読む</span></a><a class="related-card" href="ai-email-tools.html"><small>関連記事</small><strong>AIメール作成ツール比較｜営業・返信・要約に使える3候補【2026年版】</strong><span>記事を読む</span></a><a class="related-card" href="ai-writing-tools.html"><small>関連記事</small><strong>AI文章作成ツール比較｜ChatGPT・Claude・Geminiを仕事で比較【2026年版】</strong><span>記事を読む</span></a></div></section></main>
 <footer class="site-footer">
 <div class="container">
 <div class="site-footer__inner">

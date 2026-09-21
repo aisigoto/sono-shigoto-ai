@@ -1,28 +1,131 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AIメール作成ツール比較｜営業・返信・要約で選ぶ | その仕事、AIにできる？</title><meta name="description" content="メールAIは、ゼロから文章を書く用途と、既存メール環境内で返信を補助する用途で選び方が違います。">
-<link rel="canonical" href="https://sono-shigoto-ai.com/ai-email-tools.html"><link rel="stylesheet" href="styles.css">
-<style>.article{max-width:860px;margin:auto;padding:44px 20px 80px}.article h1{font-size:clamp(2rem,5vw,3.1rem);line-height:1.25}.article h2{margin-top:2.2em;border-bottom:2px solid #e5e7eb;padding-bottom:.35em}.box,.prompt{padding:18px 20px;border-radius:12px;margin:20px 0;background:#f5f7fa}.prompt{white-space:pre-wrap;border-left:4px solid #2563eb}.meta{color:#64748b;font-size:.92rem}</style></head>
-<body><header class="site-header"><div class="container"><a class="logo" href="index.html">その仕事、AIにできる？</a></div></header>
-<main class="article"><p class="meta">メール｜更新日：2026年9月21日</p><h1>AIメール作成ツール比較｜営業・返信・要約で選ぶ</h1>
-<p>メールAIは、ゼロから文章を書く用途と、既存メール環境内で返信を補助する用途で選び方が違います。</p><div class="box"><strong>このページの考え方：</strong>AIに仕事を丸投げするのではなく、「AIに任せる工程」と「人が確認する工程」を分けて導入します。</div>
-<h2>最初に仕事を分解する</h2><p>ChatGPT等の汎用AIと、Gmail・Outlookに統合されたAIを業務フローで比較します。</p>
-<ol><li>今の作業手順を書き出す</li><li>繰り返し発生する工程を見つける</li><li>AIに渡す入力情報を決める</li><li>AIの出力を人が確認する基準を決める</li><li>削減できた時間と修正時間を記録する</li></ol>
-<h2>AIに任せやすいこと</h2><p>下書き、要約、分類、構成案、言い換え、チェック候補の作成など、「正解を人が確認できる作業」はAI化の候補です。最終判断や対外的な約束は、人が確認してから確定します。</p>
-<h2>人が確認すべきこと</h2><p>自動送信より、まず下書き作成と人の承認から始めます。</p><p>さらに、固有名詞、金額、日付、引用、契約条件、個人情報・機密情報の扱いは公開・送信前に確認します。</p>
-<h2>そのまま使える基本プロンプト</h2>
-<div class="prompt">次の業務を効率化したいです。
-業務：［対象業務］
-目的：［何を短縮・改善したいか］
-入力情報：［AIに渡せる情報］
-出力形式：［箇条書き／表／メールなど］
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AIメール作成ツール比較｜営業・返信・要約に使える3候補【2026年版】 | その仕事、AIにできる？</title>
+<meta name="description" content="AIメール作成をChatGPT、Gmail + Gemini、Outlook + Microsoft 365 Copilotで比較。営業メール、返信、要約を効率化したい個人事業主・小さな会社向けに選び方と注意点を整理します。">
+<link rel="canonical" href="https://sono-shigoto-ai.com/ai-email-tools.html">
+<link rel="stylesheet" href="styles.css">
+<style>
+.article{max-width:940px;margin:auto;padding:44px 20px 80px}.article h1{font-size:clamp(2rem,5vw,3.1rem);line-height:1.25}.article h2{margin-top:2.2em;border-bottom:2px solid #e5e7eb;padding-bottom:.35em}.lead{font-size:1.08rem;line-height:1.9}.box,.note,.prompt{padding:18px 20px;border-radius:12px;margin:20px 0;background:#f5f7fa}.note,.prompt{border-left:4px solid #2563eb}.prompt{white-space:pre-wrap}.meta,.small{color:#64748b;font-size:.9rem}table{width:100%;border-collapse:collapse;margin:20px 0;font-size:.94rem}th,td{border:1px solid #dbe2ea;padding:12px;vertical-align:top;text-align:left}th{background:#f1f5f9}.cta{display:inline-block;background:#111827;color:#fff;padding:12px 18px;border-radius:9px;text-decoration:none;font-weight:700;margin:6px 8px 6px 0}@media(max-width:720px){table{display:block;overflow-x:auto}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"AIメール作成ツール比較｜営業・返信・要約に使える3候補【2026年版】","dateModified":"2026-09-21","mainEntityOfPage":"https://sono-shigoto-ai.com/ai-email-tools.html","publisher":{"@type":"Organization","name":"その仕事、AIにできる？"}}
+</script>
+</head>
+<body>
+<header class="site-header"><div class="container"><a class="logo" href="index.html">その仕事、AIにできる？</a></div></header>
+<main class="article">
+<p class="meta">メール｜更新日：2026年9月21日</p>
+<h1>AIメール作成ツール比較｜営業・返信・要約に使える3候補【2026年版】</h1>
+<p class="lead">AIでメールを効率化する方法は大きく2つあります。ChatGPTのような汎用AIで文章を作る方法と、Gmail・Outlookの中でAIに返信や要約を任せる方法です。毎日のメール環境を変えたくないなら、機能数より「どこでメールを処理しているか」で選ぶ方が分かりやすくなります。</p>
 
-まず作業を工程に分解し、
-1. AIに任せられる工程
-2. 人が確認すべき工程
-3. 不足している情報
-を示してください。
-事実・数字・固有名詞を推測で補わないでください。</div>
-<h2>導入手順</h2><p>最初の1週間は1つの業務だけで試します。AIを使う前後の所要時間、修正回数、ミスの種類を記録し、実際に負担が減ったかを判断します。効果が確認できてから対象業務を増やします。</p>
-<h2>まとめ</h2><p>AIメール作成ツール比較｜営業・返信・要約で選ぶで重要なのは、ツールを増やすことではなく、仕事のどこをAIに渡すかを明確にすることです。小さく試し、人の確認を残したまま改善していきましょう。</p>
-<div class="box"><strong>関連記事</strong><p><a href="article-ai-efficiency.html">個人事業主の仕事をAIで効率化する方法</a></p><p><a href="ai-tools-sole-proprietor.html">個人事業主向けAIツール比較</a></p><p><a href="ai-sales-email.html">AIで営業メールを作る方法</a></p></div>
-<p class="meta">※サービスの料金・機能・利用条件は変更される場合があります。契約・導入前に各社公式情報を確認してください。</p></main></body></html>
+<div class="note"><strong>先に結論：</strong>営業メールなど文章をゼロから作る用途が多いならChatGPT、Gmail中心ならGemini、Outlook中心ならMicrosoft 365 Copilotから試すと比較しやすくなります。最初から自動送信にはせず、AIは下書きまで、人が確認して送信する運用がおすすめです。</div>
+
+<h2>AIメール作成ツール3候補を比較</h2>
+<table>
+<thead><tr><th>候補</th><th>向いている人</th><th>料金・条件の目安</th><th>メール業務での使い方</th></tr></thead>
+<tbody>
+<tr><td><strong>ChatGPT</strong></td><td>営業メール、案内文、催促など様々な文章を作る人</td><td>無料版あり。組織向けChatGPT Business Standardは年払い$20/人/月、月払い$25/人/月。最低2席</td><td>目的・相手・条件を渡して下書き、言い換え、要約、返信案を作る</td></tr>
+<tr><td><strong>Gmail + Gemini</strong></td><td>Gmail・Google Workspace中心</td><td>GeminiはGoogle Workspaceプランに統合。プランにより利用できるAI機能・上限が異なる</td><td>Gmail内でメール作成、返信、長いスレッドの要約、Drive情報を参照した下書き</td></tr>
+<tr><td><strong>Outlook + Microsoft 365 Copilot</strong></td><td>Outlook・Microsoft 365中心</td><td>Business Standard + Copilot Businessは年払い月額換算3,523円/人（税別）。対象契約へのCopilot追加も可能</td><td>Outlookを含むMicrosoft 365アプリ内で業務データを踏まえたAI支援</td></tr>
+</tbody>
+</table>
+<p class="small">※料金・機能は2026年9月21日に各社公式情報を確認。地域、税、契約期間、席数、キャンペーン、AI利用上限などで変わります。契約前に公式ページで再確認してください。</p>
+
+<h2>1. ChatGPT｜営業メールなどをゼロから作りたい</h2>
+<p>ChatGPTはメール専用ツールではありませんが、「相手・目的・伝える内容・希望する行動」を渡して文章を作る用途に向いています。新規営業、既存顧客への案内、催促、日程調整、謝罪文など、種類の違うメールを扱う個人事業主に使いやすい方法です。</p>
+<p>無料版から試せます。チームで管理するChatGPT Businessでは、Standard席が年払いで1ユーザー月20ドル、月払いで25ドルで、ワークスペースには最低2つの有料席が必要です。</p>
+<div class="box"><strong>向いている仕事：</strong>新規営業メール、提案後のフォロー、問い合わせ返信の下書き、長文メールの要約、文章の丁寧さ調整。</div>
+<a class="cta" href="https://chatgpt.com/business/" rel="nofollow noopener">ChatGPT Businessを確認</a>
+
+<h2>2. Gmail + Gemini｜Gmailの中で返信まで進めたい</h2>
+<p>GmailのGeminiでは、長いメールスレッドの要約、「Help me write」によるメール作成・返信、文章の調整、文脈に応じた返信候補などを利用できます。Google Driveの特定ファイルを参照して返信文を作る使い方も可能です。</p>
+<p>Google WorkspaceではGeminiのAI機能がサブスクリプションに組み込まれており、日本語でもGmailの「Help me write」、メールスレッド要約、Gmailサイドパネルなどが利用可能と案内されています。プランによってAI機能や利用量が異なるため、現在契約しているWorkspaceエディションを確認してください。</p>
+<div class="box"><strong>向いている仕事：</strong>受信メールを読みながらその場で返信する業務、長いスレッドの把握、Driveの資料を参照する顧客対応。</div>
+<a class="cta" href="https://workspace.google.com/products/gmail/ai/" rel="nofollow noopener">GmailのGemini公式情報を確認</a>
+
+<h2>3. Outlook + Microsoft 365 Copilot｜Microsoft環境を変えたくない</h2>
+<p>Outlookを日常的に使っている会社なら、別のAIへメール本文をコピーするより、Microsoft 365 Copilotを既存環境に組み込む方が作業の往復を減らせる場合があります。MicrosoftはCopilot BusinessをOutlook、Word、Excel、PowerPointなどのアプリ内で利用できる法人向けAIとして提供しています。</p>
+<p>Teamsを含む「Microsoft 365 Business Standard と Microsoft 365 Copilot Business」は、2026年9月時点で年払い月額換算3,523円/ユーザー（税別）です。Copilot Business単体のアドオンもありますが、対象となるMicrosoft 365契約が必要です。</p>
+<div class="box"><strong>向いている仕事：</strong>Outlook中心の顧客対応、社内メール、Word・Excel・TeamsなどMicrosoft 365全体もAI化したい会社。</div>
+<a class="cta" href="https://www.microsoft.com/ja-jp/microsoft-365/outlook/outlook-business-email-plans-and-pricing" rel="nofollow noopener">Outlook法人向け料金を確認</a>
+
+<h2>結局どれから試す？</h2>
+<table>
+<thead><tr><th>今の状況</th><th>最初の候補</th><th>見るポイント</th></tr></thead>
+<tbody>
+<tr><td>営業メールを毎回ゼロから書いている</td><td>ChatGPT</td><td>同じ型を再利用して下書き時間を減らせるか</td></tr>
+<tr><td>Gmailの受信・返信が仕事の中心</td><td>Gmail + Gemini</td><td>コピー＆ペーストせず受信箱内で完結できるか</td></tr>
+<tr><td>Outlook・Office・Teams中心</td><td>Microsoft 365 Copilot</td><td>現在の契約に追加した場合の総コストと作業削減量</td></tr>
+</tbody>
+</table>
+
+<h2>同じメールで比較する</h2>
+<p>AIツールを比較するときは、同じ条件で返信文を作らせます。「文章が自然か」だけでなく、完成までの修正時間を測ってください。</p>
+<div class="prompt">次の条件で、取引先への返信メールの下書きを作ってください。
+
+相手：既存取引先
+目的：打ち合わせ日程の再調整
+伝える内容：
+・先方から提示された10月3日は参加できない
+・10月4日午後または10月6日午前を提案したい
+・オンライン会議を希望
+
+トーン：丁寧だが堅すぎない
+長さ：200文字程度
+
+ルール：
+・書かれていない事情を推測しない
+・日付、金額、固有名詞を勝手に追加しない
+・件名案も1つ出す</div>
+
+<h2>AIに任せる工程、人が確認する工程</h2>
+<table>
+<thead><tr><th>工程</th><th>AIに任せやすい</th><th>人が確認</th></tr></thead>
+<tbody>
+<tr><td>受信内容の整理</td><td>要約、質問事項、タスク候補</td><td>相手の意図を取り違えていないか</td></tr>
+<tr><td>返信下書き</td><td>構成、文章化、敬語調整</td><td>回答内容・約束・ニュアンス</td></tr>
+<tr><td>営業メール</td><td>件名案、本文初稿、短文化</td><td>顧客ごとの事実、誇大表現、送付対象</td></tr>
+<tr><td>送信</td><td>原則として最初は自動化しない</td><td>宛先、CC/BCC、添付、日付、金額、契約条件</td></tr>
+</tbody>
+</table>
+
+<h2>メールAIで特に危ない5つのミス</h2>
+<ol>
+<li><strong>宛先違い：</strong>AIが文章を正しく作っても、送信相手の確認は別問題です。</li>
+<li><strong>存在しない約束：</strong>納期、値引き、対応範囲などをAIに推測させない。</li>
+<li><strong>日付・金額の誤り：</strong>重要な数字は元メールや契約情報と照合する。</li>
+<li><strong>機密情報：</strong>顧客情報を入力できる契約・設定・社内ルールか確認する。</li>
+<li><strong>自動送信：</strong>導入初期は「AIが下書き→人が確認→送信」の3段階を残す。</li>
+</ol>
+
+<h2>営業メールならツールより「入力情報」を揃える</h2>
+<p>営業メールは、AIサービスを変えるだけでは品質が安定しません。相手の業種、現在の課題、提案できる価値、次に取ってほしい行動を先に整理すると、下書きの修正量を減らせます。</p>
+<p>具体的な作り方とコピペ用プロンプトは、<a href="ai-sales-email.html">AIで営業メールを作る方法</a>で詳しくまとめています。</p>
+
+<h2>まとめ</h2>
+<p>AIメール作成ツールは、文章生成能力だけでなく「普段どのメール環境で働いているか」で選ぶのが実務的です。様々な文章を作るならChatGPT、Gmail中心ならGemini、Outlook中心ならMicrosoft 365 Copilotが比較の起点になります。</p>
+<p>最初の1週間は自動送信をせず、10〜20通程度の下書きで<strong>1通あたりの作成時間・修正時間・ミスの種類</strong>を記録してください。AIを使う前より総作業時間が減っているかで導入を判断します。</p>
+
+<div class="box"><strong>関連記事</strong>
+<p><a href="ai-sales-email.html">AIで営業メールを作る方法｜プロンプトと例文</a></p>
+<p><a href="ai-email-reply.html">AIでメール返信を効率化する方法</a></p>
+<p><a href="ai-tools-sole-proprietor.html">個人事業主向けAIツール比較</a></p>
+<p><a href="how-to-choose-ai-tools.html">AIツールを導入するときの選び方</a></p>
+<p><a href="ai-implementation-checklist.html">AI導入で失敗しないためのチェックリスト</a></p>
+</div>
+
+<h2>確認した公式情報</h2>
+<ul>
+<li><a href="https://help.openai.com/en/articles/8542115" rel="nofollow noopener">OpenAI：ChatGPT Business FAQ</a></li>
+<li><a href="https://workspace.google.com/products/gmail/ai/" rel="nofollow noopener">Google Workspace：Gemini in Gmail</a></li>
+<li><a href="https://knowledge.workspace.google.com/admin/generative-ai/google-workspace-with-gemini/google-workspace-with-gemini" rel="nofollow noopener">Google Workspace with Gemini</a></li>
+<li><a href="https://www.microsoft.com/ja-jp/microsoft-365/outlook/outlook-business-email-plans-and-pricing" rel="nofollow noopener">Microsoft：Outlook for Business料金</a></li>
+<li><a href="https://www.microsoft.com/ja-jp/microsoft-365/business/microsoft-365-plans-and-pricing" rel="nofollow noopener">Microsoft 365 法人向け料金</a></li>
+</ul>
+<p class="meta">※サービスの料金・機能・利用条件は変更される場合があります。契約・導入前に各社公式情報を確認してください。</p>
+</main>
+</body>
+</html>

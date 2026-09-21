@@ -1,92 +1,273 @@
 <!doctype html>
-<html lang="ja"><head>
+<html lang="ja">
+<head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-58NKR47NW8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-58NKR47NW8');
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AIで営業メールを作る方法｜入力例→AI初稿→人の修正まで実演【2026年版】 | その仕事、AIにできる？</title>
+<meta name="description" content="AIで営業メールを作る方法を実演。入力情報の整理、コピペ用プロンプト、AI初稿、弱い部分、人が直した完成例、送信前チェックまで1ページで分かります。">
+<link rel="canonical" href="https://sono-shigoto-ai.com/ai-sales-email.html">
+<link rel="stylesheet" href="styles.css">
+<style>
+.sales-guide{max-width:1040px;margin:auto;padding:56px 24px 96px}
+.breadcrumb{font-size:12px;color:#788592;margin-bottom:28px}
+.article-kicker{display:inline-flex;align-items:center;gap:8px;padding:7px 11px;border-radius:999px;background:#edf5ff;color:#1468e8;font-size:11px;font-weight:900;letter-spacing:.08em}
+.sales-guide h1{font-size:clamp(38px,6vw,66px);line-height:1.12;letter-spacing:-.06em;margin:18px 0 22px;max-width:900px}
+.sales-guide .intro{font-size:18px;line-height:1.95;color:#4c5965;max-width:820px}
+.answer-card{margin:36px 0 24px;padding:28px;border-radius:24px;background:#101d2d;color:#fff;display:grid;grid-template-columns:180px 1fr;gap:28px;align-items:center}
+.answer-score{text-align:center;border-right:1px solid rgba(255,255,255,.14);padding-right:28px}
+.answer-score small{display:block;color:#8fbaff;font-size:11px;font-weight:900;letter-spacing:.12em}
+.answer-score strong{display:block;font-size:54px;line-height:1.1;margin:5px 0;color:#fff}
+.answer-score span{font-size:12px;color:#b9c5d1}
+.answer-card h2{font-size:23px;margin:0 0 8px;border:0;padding:0;color:white}
+.answer-card p{margin:0;color:#c7d1dc;line-height:1.8;font-size:14px}
+.quick-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0 48px}
+.quick-facts div{padding:18px;border:1px solid #dfe5ea;border-radius:16px;background:#fff}
+.quick-facts small{display:block;color:#84909b;font-size:10px;font-weight:900;letter-spacing:.1em}
+.quick-facts b{display:block;margin-top:5px;font-size:15px}
+.sales-guide h2{font-size:clamp(28px,4vw,38px);line-height:1.35;letter-spacing:-.04em;margin:70px 0 18px;padding-bottom:13px;border-bottom:1px solid #dfe5ea}
+.sales-guide h3{font-size:21px;margin:34px 0 12px}
+.sales-guide p,.sales-guide li{font-size:16px;line-height:1.95}
+.section-lead{color:#65727e;max-width:800px}
+.workflow{display:grid;grid-template-columns:repeat(5,1fr);gap:9px;margin:28px 0}
+.workflow-card{min-height:180px;padding:18px;border-radius:17px;background:#f3f6f8;border:1px solid #e2e7eb}
+.workflow-card.ai{background:#edf5ff;border-color:#cfe1ff}
+.workflow-card small{font-size:10px;font-weight:900;color:#7e8a95;letter-spacing:.1em}
+.workflow-card .num{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:white;margin-bottom:28px;font-size:11px;font-weight:900;color:#1468e8}
+.workflow-card b{display:block;font-size:15px;margin-bottom:6px}
+.workflow-card span{display:block;font-size:12px;color:#6a7782;line-height:1.65}
+.demo{margin:30px 0;border:1px solid #dfe5ea;border-radius:24px;overflow:hidden;background:#fff}
+.demo-head{padding:18px 22px;background:#f3f6f8;display:flex;justify-content:space-between;gap:20px;align-items:center}
+.demo-head b{font-size:16px}.demo-head span{font-size:11px;color:#788592}
+.demo-body{padding:24px}
+.input-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.input-item{padding:15px;border-radius:13px;background:#f7f9fb}
+.input-item small{display:block;font-size:10px;color:#7d8994;font-weight:900;letter-spacing:.08em}
+.input-item b{display:block;font-size:14px;margin-top:3px}
+.prompt-box{position:relative;background:#101d2d;color:#e9f0f7;border-radius:18px;padding:24px;margin:20px 0;white-space:pre-wrap;font-family:"Noto Sans JP","Yu Gothic",sans-serif;font-size:14px;line-height:1.85}
+.prompt-label{display:block;color:#78aaff;font-size:10px;font-weight:900;letter-spacing:.14em;margin-bottom:12px}
+.output-card{padding:22px;border:1px solid #dfe5ea;border-radius:18px;background:white}
+.output-card.bad{border-left:5px solid #f0a23a}.output-card.good{border-left:5px solid #20a67a;background:#f6fcfa}
+.output-card .label{font-size:10px;font-weight:900;letter-spacing:.12em;color:#7d8994}
+.output-card h3{margin:7px 0 12px;font-size:18px}
+.output-card p{font-size:14px;margin:0;line-height:1.9}
+.problem-list{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0 28px}
+.problem-list div{padding:15px;border-radius:13px;background:#fff7ec;border:1px solid #f5dfbf;font-size:13px;line-height:1.65}
+.problem-list b{display:block;color:#a45d00;margin-bottom:4px}
+.before-after{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.mini-tag{display:inline-block;padding:4px 8px;border-radius:999px;background:#edf5ff;color:#1468e8;font-size:10px;font-weight:900}
+.check-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:22px}
+.check-item{display:flex;gap:12px;padding:16px;border:1px solid #dfe5ea;border-radius:14px;align-items:flex-start}
+.check{display:grid;place-items:center;flex:0 0 26px;height:26px;border-radius:50%;background:#eaf8f3;color:#14845f;font-weight:900}
+.check-item b{display:block;font-size:14px}.check-item span{display:block;color:#74808b;font-size:12px;line-height:1.6;margin-top:2px}
+.template-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.template-card{padding:20px;border:1px solid #dfe5ea;border-radius:17px;background:#fff}
+.template-card small{color:#1468e8;font-weight:900;font-size:10px}.template-card h3{font-size:17px;margin:6px 0 8px}.template-card p{font-size:13px;color:#65727e;margin:0}
+.tool-box{padding:25px;border-radius:20px;background:#f3f6f8;margin-top:22px}
+.tool-box p{font-size:14px;margin:0}
+.next-box{margin-top:64px;padding:28px;border-radius:22px;background:#101d2d;color:white}
+.next-box h2{border:0;margin:0 0 14px;padding:0;color:white;font-size:27px}.next-links{display:flex;gap:10px;flex-wrap:wrap}
+.next-links a{padding:11px 14px;border-radius:10px;background:white;color:#101d2d;font-size:12px;font-weight:900}
+.source-note{font-size:12px!important;color:#7b8792;margin-top:24px}
+@media(max-width:800px){
+.answer-card{grid-template-columns:1fr}.answer-score{border-right:0;border-bottom:1px solid rgba(255,255,255,.14);padding:0 0 20px;text-align:left}
+.quick-facts,.workflow,.template-grid{grid-template-columns:1fr 1fr}.problem-list{grid-template-columns:1fr}}
+@media(max-width:560px){
+.sales-guide{padding:38px 18px 72px}.sales-guide h1{font-size:40px}.quick-facts,.workflow,.input-grid,.before-after,.check-grid,.template-grid{grid-template-columns:1fr}
+.workflow-card{min-height:0}.workflow-card .num{margin-bottom:14px}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"AIで営業メールを作る方法｜入力例→AI初稿→人の修正まで実演【2026年版】","dateModified":"2026-09-21","mainEntityOfPage":"https://sono-shigoto-ai.com/ai-sales-email.html","publisher":{"@type":"Organization","name":"その仕事、AIにできる？"}}
 </script>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AIで営業メールを作る方法｜コピペで使えるプロンプトと例文【2026年版】 | その仕事、AIにできる？</title>
-<meta name="description" content="AIで営業メールを作る方法を個人事業主・フリーランス・小さな会社向けに解説。新規営業、問い合わせ後、商談後フォローのプロンプトと、人が確認すべきポイントを紹介。">
-<link rel="canonical" href="https://sono-shigoto-ai.com/ai-sales-email.html"><link rel="stylesheet" href="styles.css">
-<style>.article{max-width:860px;margin:auto;padding:44px 20px 80px}.article h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.25}.article h2{margin-top:2.2em;border-bottom:2px solid #e5e7eb;padding-bottom:.35em}.lead{font-size:1.08rem;line-height:1.9}.box,.prompt{padding:18px 20px;border-radius:12px;margin:20px 0;background:#f5f7fa}.prompt{white-space:pre-wrap;border-left:4px solid #2563eb}table{width:100%;border-collapse:collapse}th,td{border:1px solid #ddd;padding:12px;text-align:left;vertical-align:top}th{background:#f5f7fa}.meta{color:#64748b;font-size:.92rem}</style></head>
-<body><header class="site-header"><div class="container"><a class="logo" href="index.html">その仕事、AIにできる？</a></div></header>
-<main class="article"><p class="meta">営業・メール｜更新日：2026年9月21日</p>
-<h1>AIで営業メールを作る方法｜コピペで使えるプロンプトと例文【2026年版】</h1>
-<p class="lead">営業メールはAIと相性がいい業務のひとつです。ただし「営業メールを書いて」だけでは、誰にでも送れる無難な文章になりがちです。ポイントは、<strong>相手・目的・提供価値・次に取ってほしい行動</strong>を先に整理することです。</p>
-<div class="box"><strong>結論：</strong>AIに任せやすいのは件名案、本文の初稿、言い換え、短文化、フォロー文面。相手企業の事実、価格・実績・契約条件、送信先、最終的な表現は人が確認します。</div>
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="logo" href="index.html">その仕事、<span>AIにできる？</span></a>
+    <nav><a href="index.html#work">仕事から探す</a><a href="ai-tools-sole-proprietor.html">AIツール比較</a><a class="nav-cta" href="diagnosis.html">AI仕事診断</a></nav>
+  </div>
+</header>
 
-<h2>AIで営業メールを作る基本5ステップ</h2>
-<table><tr><th>手順</th><th>やること</th><th>担当</th></tr><tr><td>1</td><td>メールの目的を決める</td><td>人</td></tr><tr><td>2</td><td>相手の情報と課題仮説を整理</td><td>人＋AI</td></tr><tr><td>3</td><td>件名と本文の初稿を作る</td><td>AI</td></tr><tr><td>4</td><td>短く具体的に修正する</td><td>AI＋人</td></tr><tr><td>5</td><td>事実・表現・宛先を確認して送る</td><td>人</td></tr></table>
+<main class="sales-guide">
+  <div class="breadcrumb"><a href="index.html">ホーム</a> / 営業 / 営業メール</div>
+  <span class="article-kicker">営業メール × 生成AI｜実践ガイド</span>
+  <h1>営業メール、<br>AIにできる？</h1>
+  <p class="intro">できます。ただし、<strong>「誰に・何を・なぜ伝えるか」までAIに丸投げしない</strong>のがポイントです。このページでは、入力情報の整理からAI初稿、人が直した完成版まで、1本の営業メールができる過程をそのまま見せます。</p>
 
-<h2>まずAIに渡す情報は4つ</h2>
-<ul><li><strong>相手：</strong>誰に送るか</li><li><strong>目的：</strong>初回商談、資料請求後、再提案など</li><li><strong>提供価値：</strong>相手にどんなメリットがあるか</li><li><strong>CTA：</strong>返信、15分の打ち合わせなど、次に何をしてほしいか</li></ul>
+  <div class="answer-card">
+    <div class="answer-score"><small>AIに任せやすさ</small><strong>高</strong><span>初稿・短文化・言い換え</span></div>
+    <div><h2>AIは「書く」。人は「決める・確かめる」。</h2><p>AIに向いているのは件名案、構成、本文初稿、言い換え。人が持つべきなのは営業対象、提供価値、事実確認、価格・条件、そして送信するかどうかの判断です。</p></div>
+  </div>
 
-<h2>コピペで使える営業メール用プロンプト</h2>
-<div class="prompt">あなたはBtoB営業のメール作成を支援する編集者です。
-以下の条件で営業メールの初稿を作ってください。
+  <div class="quick-facts">
+    <div><small>AIに任せる</small><b>件名・構成・本文初稿</b></div>
+    <div><small>人が確認する</small><b>事実・価格・宛先・送信</b></div>
+    <div><small>最初に必要</small><b>相手・目的・価値・CTA</b></div>
+  </div>
+
+  <h2>営業メールを5工程に分ける</h2>
+  <p class="section-lead">「営業メールを書く」という1つの仕事に見えても、中身を分けるとAIに渡しやすい部分と、人が持つべき判断がはっきりします。</p>
+  <div class="workflow">
+    <div class="workflow-card"><div class="num">01</div><small>HUMAN</small><b>目的を決める</b><span>誰に、何のために送るか。</span></div>
+    <div class="workflow-card"><div class="num">02</div><small>HUMAN + AI</small><b>材料を整理</b><span>相手、価値、根拠、CTAを整理。</span></div>
+    <div class="workflow-card ai"><div class="num">03</div><small>AI</small><b>初稿を作る</b><span>件名・構成・本文を生成。</span></div>
+    <div class="workflow-card ai"><div class="num">04</div><small>AI + HUMAN</small><b>削って直す</b><span>抽象表現や長文を修正。</span></div>
+    <div class="workflow-card"><div class="num">05</div><small>HUMAN</small><b>確認して送る</b><span>事実、宛先、条件を最終確認。</span></div>
+  </div>
+
+  <h2>実演：新規営業メールを1本作る</h2>
+  <p class="section-lead">架空のケースで、AIに何を渡し、どこを人が直すかを見ていきます。会社名や実績は例示用の架空情報です。</p>
+
+  <div class="demo">
+    <div class="demo-head"><b>STEP 1｜AIに渡す前の材料</b><span>ここは人が決める</span></div>
+    <div class="demo-body">
+      <div class="input-grid">
+        <div class="input-item"><small>相手</small><b>従業員20名ほどの制作会社・代表者</b></div>
+        <div class="input-item"><small>目的</small><b>15分のオンライン打ち合わせ</b></div>
+        <div class="input-item"><small>提供価値</small><b>定型メールや資料整理の時間削減を支援</b></div>
+        <div class="input-item"><small>根拠</small><b>相手の採用ページで業務拡大を確認した想定</b></div>
+        <div class="input-item"><small>CTA</small><b>興味があれば15分話す</b></div>
+        <div class="input-item"><small>禁止</small><b>未確認の実績・数字・相手事情を作らない</b></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="demo">
+    <div class="demo-head"><b>STEP 2｜そのまま使えるプロンプト</b><span>コピペして［ ］を変更</span></div>
+    <div class="demo-body">
+      <div class="prompt-box"><span class="prompt-label">COPY PROMPT</span>あなたはBtoB営業メールの編集者です。
+次の情報だけを使って、新規営業メールの初稿を作ってください。
 
 【相手】［業種・役職・会社の特徴］
-【目的】［例：初回商談の打診］
-【サービス】［概要］
-【相手にとってのメリット】［時間削減、売上向上など］
-【次に取ってほしい行動】［例：15分のオンライン打ち合わせ］
+【目的】［例：15分のオンライン打ち合わせ］
+【サービス】［何を提供しているか］
+【相手にとっての価値】［具体的に］
+【確認できた事実】［相手の公式サイト等で確認した内容］
+【次に取ってほしい行動】［CTAを1つ］
 
 条件：
 ・件名を3案
-・本文は300文字程度
-・冒頭で売り込みすぎない
-・抽象的な美辞麗句を避ける
-・実績や数字を勝手に作らない
+・本文は300文字以内
+・冒頭から売り込みすぎない
+・抽象的な美辞麗句を減らす
+・実績、数字、相手の事情を推測で追加しない
+・確認できていない内容は書かない
 ・CTAは1つだけ
-・不明な情報は推測せず「要確認」と示す</div>
+・丁寧だが堅すぎない日本語</div>
+    </div>
+  </div>
 
-<h2>例1：新規営業メール</h2>
-<div class="prompt">件名：日々の定型業務について、15分だけ情報交換しませんか
+  <div class="demo">
+    <div class="demo-head"><b>STEP 3｜AI初稿の例</b><span>ここで完成ではない</span></div>
+    <div class="demo-body">
+      <div class="output-card bad">
+        <span class="label">AI DRAFT / 架空例</span>
+        <h3>件名：業務効率化について15分だけ情報交換しませんか</h3>
+        <p>株式会社〇〇　〇〇様<br><br>突然のご連絡失礼いたします。［自社名］の［氏名］と申します。貴社の採用ページを拝見し、事業拡大に伴い業務効率化の必要性が高まっているのではないかと考え、ご連絡しました。弊社では、定型メールや資料整理などの業務をAIで効率化する支援を行っています。ご関心がございましたら、15分ほどオンラインで情報交換のお時間をいただけないでしょうか。</p>
+      </div>
+      <h3>この初稿を、そのまま送らない理由</h3>
+      <div class="problem-list">
+        <div><b>推測が混じった</b>「必要性が高まっている」は、採用ページだけでは確認できない。</div>
+        <div><b>価値がまだ抽象的</b>「業務効率化」だけでは、相手が読む理由が弱い。</div>
+        <div><b>相手固有の接点が薄い</b>どこを見て連絡したのか、もう少し具体化できる。</div>
+      </div>
+    </div>
+  </div>
 
-株式会社〇〇
-〇〇様
+  <div class="demo">
+    <div class="demo-head"><b>STEP 4｜人が直した完成例</b><span>推測を削り、具体性を足す</span></div>
+    <div class="demo-body">
+      <div class="output-card good">
+        <span class="label">HUMAN REVIEWED / 架空例</span>
+        <h3>件名：定型メール・資料整理の効率化について</h3>
+        <p>株式会社〇〇　〇〇様<br><br>突然のご連絡失礼いたします。［自社名］の［氏名］と申します。<br><br>貴社の採用ページで制作体制を拡大されていることを拝見し、ご連絡しました。弊社では、小規模チーム向けに、営業メールの下書きや資料整理など反復業務への生成AI活用を支援しています。<br><br>もし定型業務の見直しをご検討中でしたら、現在の作業を伺いながら15分ほど情報交換できればと思います。ご関心があれば、ご返信いただけますと幸いです。</p>
+      </div>
+      <p class="source-note">※上記は説明用の架空例です。「採用ページで制作体制を拡大」など相手について書く内容は、実際の送信前に一次情報で確認してください。</p>
+    </div>
+  </div>
 
-突然のご連絡失礼いたします。［自社名］の［氏名］と申します。
+  <h2>AI初稿と人の修正版は、何が違う？</h2>
+  <div class="before-after">
+    <div class="output-card bad"><span class="mini-tag">AI初稿</span><h3>推測まで文章にしてしまう</h3><p>自然な文章でも、「相手はきっとこう困っている」という未確認情報が混ざることがあります。</p></div>
+    <div class="output-card good"><span class="mini-tag">人の修正</span><h3>確認できた事実だけ残す</h3><p>相手の公式情報と、自社が実際に提供できる価値に限定。送信判断は人が持ちます。</p></div>
+  </div>
 
-小規模なチームで発生しやすいメール作成や資料整理などの定型業務を、AIを使って効率化する支援を行っています。
+  <h2>用途別：保存しておく3つの型</h2>
+  <div class="template-grid">
+    <div class="template-card"><small>01 / NEW SALES</small><h3>新規営業</h3><p>相手・連絡理由・提供価値・CTAを渡して初稿を作る。相手事情を推測させない。</p></div>
+    <div class="template-card"><small>02 / INQUIRY</small><h3>問い合わせ後</h3><p>問い合わせ内容を先に回答し、検討状況を確認。CTAは相談や返信など1つにする。</p></div>
+    <div class="template-card"><small>03 / FOLLOW UP</small><h3>商談後</h3><p>商談メモだけを材料に、お礼・課題・約束事項・次回予定を整理する。</p></div>
+  </div>
 
-御社の［公開情報で確認した具体的な取り組み］を拝見し、業務効率化の面でお役に立てる可能性があると考え、ご連絡しました。
+  <h3>問い合わせ・資料請求後</h3>
+  <div class="prompt-box"><span class="prompt-label">COPY PROMPT</span>以下の問い合わせ内容だけを使ってフォローメールを作成してください。
+【問い合わせ内容】［ここに貼る］
+【こちらから回答する内容】［確認済みの回答］
+【次に取ってほしい行動】［返信／15分相談など］
 
-もしご関心があれば、15分ほどオンラインで現状を伺えればと思います。ご都合のよい日時を2〜3候補いただけますでしょうか。
+条件：
+・相手の質問への回答を先に書く
+・200〜300文字
+・CTAは1つ
+・書かれていない事情を推測しない
+・件名を3案</div>
 
-よろしくお願いいたします。</div>
-<p><strong>注意：</strong>［公開情報で確認した具体的な取り組み］をAIに想像させず、実際に確認できた事実だけを入れます。</p>
+  <h3>商談後のお礼</h3>
+  <div class="prompt-box"><span class="prompt-label">COPY PROMPT</span>以下の商談メモだけを使って、お礼メールを作成してください。
+【商談メモ】［箇条書きで貼る］
 
-<h2>例2：問い合わせ・資料請求後のフォロー</h2>
-<div class="prompt">以下の問い合わせ内容をもとにフォローメールを作成してください。
-問い合わせ内容：［ここに内容］
-目的：相手の検討状況を確認し、必要なら15分の相談を提案する
-条件：200〜300文字／相手の質問に先に答える／CTAは1つ／書かれていない事情を推測しない／件名を3案</div>
+含める内容：
+・お礼
+・相手が話した課題
+・こちらが約束したこと
+・相手にお願いすること
+・次回予定
 
-<h2>例3：商談後のお礼メール</h2>
-<div class="prompt">以下の商談メモからお礼メールを作ってください。
-商談メモ：［箇条書きで貼り付け］
-含める内容：お礼／相手の課題の要約／次にこちらが行うこと／相手にお願いすること／次回予定
-条件：商談メモの範囲だけを使う／未決事項を決定事項にしない／400文字以内</div>
+条件：
+・未決事項を決定事項にしない
+・メモにない数字や期限を作らない
+・400文字以内</div>
 
-<h2>AI営業メールのNG例</h2>
-<p><strong>「営業メールを書いて」だけ：</strong>相手も目的も不明なため、テンプレート感が強くなります。</p>
-<p><strong>実績や相手の事情を作らせる：</strong>数字、企業情報、導入実績は一次情報で確認します。</p>
-<p><strong>大量生成してそのまま送る：</strong>文章作成が速くなっても、送信先や提案内容が適切になるわけではありません。</p>
+  <h2>送信前は、この7項目だけ確認する</h2>
+  <p class="section-lead">AIが自然な文章を作れても、正しい営業メールになったとは限りません。最後は人が確認します。</p>
+  <div class="check-grid">
+    <div class="check-item"><div class="check">✓</div><div><b>会社名・氏名・役職</b><span>宛先と本文で食い違っていないか。</span></div></div>
+    <div class="check-item"><div class="check">✓</div><div><b>相手について書いた事実</b><span>公式サイトなど一次情報で確認したか。</span></div></div>
+    <div class="check-item"><div class="check">✓</div><div><b>実績・数字・料金</b><span>AIが数字を作っていないか。</span></div></div>
+    <div class="check-item"><div class="check">✓</div><div><b>相手にとっての価値</b><span>自社紹介だけで終わっていないか。</span></div></div>
+    <div class="check-item"><div class="check">✓</div><div><b>長さ</b><span>説明を詰め込みすぎていないか。</span></div></div>
+    <div class="check-item"><div class="check">✓</div><div><b>CTAは1つ</b><span>返信・予約・資料確認などを混ぜていないか。</span></div></div>
+    <div class="check-item"><div class="check">✓</div><div><b>AIへ入力した情報</b><span>顧客情報や機密情報を入力してよい環境か。</span></div></div>
+  </div>
 
-<h2>送信前に人が確認する7項目</h2>
-<div class="box"><ol><li>会社名・氏名・役職</li><li>相手について書いた内容の根拠</li><li>実績・数字・料金の正確性</li><li>相手にとってのメリット</li><li>本文が長すぎないか</li><li>CTAが1つか</li><li>AIへ入力して問題ない情報か</li></ol></div>
+  <h2>どのAIで試す？</h2>
+  <div class="tool-box">
+    <p><strong>最初は、普段使っている生成AIで十分です。</strong> ChatGPTには無料利用があります。チーム向けChatGPT BusinessのStandardシートは、2026年9月21日時点の公式案内で年払い月20ドル/人、月払い25ドル/人、最低2席です。Google WorkspaceではGmail内のGemini AIアシスタントが提供されており、Business Standardは日本向け公式ページで年契約時の月額換算1,600円/人と案内されています。料金・機能は変更されるため、契約前に公式ページを確認してください。</p>
+  </div>
+  <p class="source-note">公式確認：OpenAI ChatGPT Business FAQ / Google Workspace Gmail・Business料金（2026年9月21日確認）</p>
 
-<h2>どのAIを使えばいい？</h2>
-<p>まず試すなら、普段使っている生成AIで十分です。ChatGPTには無料プランがあります。業務でGmailを中心に使う場合は、Google Workspaceの一部プランでGmail内のGeminiも利用できます。料金・機能は変わるため、契約前に公式情報を確認してください。</p>
+  <h2>結論：営業メールは「AIに書かせる」より「分業する」</h2>
+  <p>営業対象と目的を人が決め、AIに初稿を作らせ、人が事実と提案内容を確認する。この分業なら、文章作成の時間を減らしながら、営業判断までAIに任せずに運用できます。</p>
+  <p>まずは過去に自分で送った営業メールを1通用意し、同じ条件でAIに初稿を作らせてください。生成速度ではなく、<strong>人の修正を含めて完成までの作業が減ったか</strong>で判断します。</p>
 
-<h2>まとめ：まずは「下書き＋人の確認」から</h2>
-<p>最初から完全自動化する必要はありません。営業対象と目的を人が決め、AIに初稿を作らせ、事実確認して送る流れから始めます。慣れたら「新規営業」「問い合わせ後」「商談後」の用途別プロンプトを保存すると、毎回ゼロから考える時間を減らせます。</p>
+  <div class="next-box">
+    <h2>次に、どの仕事をAI化する？</h2>
+    <div class="next-links">
+      <a href="ai-email-tools.html">AIメール作成ツールを比較 →</a>
+      <a href="ai-meeting-tools.html">商談・議事録をAI化 →</a>
+      <a href="ai-presentation-tools.html">提案資料をAI化 →</a>
+      <a href="ai-tools-sales.html">営業職向けAIツール比較 →</a>
+    </div>
+  </div>
+</main>
 
-<div class="box"><strong>次に読む</strong><p><a href="article-ai-efficiency.html">個人事業主の仕事をAIで効率化する方法</a></p><p><a href="ai-tools-sole-proprietor.html">個人事業主向けAIツール比較</a></p></div>
-<p class="meta">※料金・機能情報は2026年9月21日時点。サービス仕様は変更される場合があります。</p>
-</main><footer class="site-footer"><div class="container"><p>© 2026 その仕事、AIにできる？</p></div></footer></body></html>
+<footer class="footer">
+  <div class="container footer-grid">
+    <div><a class="logo" href="index.html">その仕事、<span>AIにできる？</span></a><p>個人事業主・フリーランス・小さな会社のためのAI仕事効率化メディア。</p></div>
+    <div><a href="about.html">このサイトについて</a><a href="privacy.html">プライバシーポリシー</a><a href="contact.html">お問い合わせ</a></div>
+  </div>
+  <div class="container copyright">© 2026 その仕事、AIにできる？</div>
+</footer>
+</body>
+</html>

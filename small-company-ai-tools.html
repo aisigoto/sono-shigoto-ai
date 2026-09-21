@@ -1,28 +1,127 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>小さな会社で使えるAIツール比較 | その仕事、AIにできる？</title><meta name="description" content="小さな会社では、AI単体の性能よりも既存のメール・文書・会議環境との相性が重要です。">
-<link rel="canonical" href="https://sono-shigoto-ai.com/small-company-ai-tools.html"><link rel="stylesheet" href="styles.css">
-<style>.article{max-width:860px;margin:auto;padding:44px 20px 80px}.article h1{font-size:clamp(2rem,5vw,3.1rem);line-height:1.25}.article h2{margin-top:2.2em;border-bottom:2px solid #e5e7eb;padding-bottom:.35em}.box,.prompt{padding:18px 20px;border-radius:12px;margin:20px 0;background:#f5f7fa}.prompt{white-space:pre-wrap;border-left:4px solid #2563eb}.meta{color:#64748b;font-size:.92rem}</style></head>
-<body><header class="site-header"><div class="container"><a class="logo" href="index.html">その仕事、AIにできる？</a></div></header>
-<main class="article"><p class="meta">ツール比較｜更新日：2026年9月21日</p><h1>小さな会社で使えるAIツール比較</h1>
-<p>小さな会社では、AI単体の性能よりも既存のメール・文書・会議環境との相性が重要です。</p><div class="box"><strong>このページの考え方：</strong>AIに仕事を丸投げするのではなく、「AIに任せる工程」と「人が確認する工程」を分けて導入します。</div>
-<h2>最初に仕事を分解する</h2><p>Google Workspace、Microsoft 365、ChatGPT、Notionなどを、連携・管理・費用の観点で比較します。</p>
-<ol><li>今の作業手順を書き出す</li><li>繰り返し発生する工程を見つける</li><li>AIに渡す入力情報を決める</li><li>AIの出力を人が確認する基準を決める</li><li>削減できた時間と修正時間を記録する</li></ol>
-<h2>AIに任せやすいこと</h2><p>下書き、要約、分類、構成案、言い換え、チェック候補の作成など、「正解を人が確認できる作業」はAI化の候補です。最終判断や対外的な約束は、人が確認してから確定します。</p>
-<h2>人が確認すべきこと</h2><p>全社導入の前に2〜3人の小さな範囲で試し、入力してよい情報のルールを決めます。</p><p>さらに、固有名詞、金額、日付、引用、契約条件、個人情報・機密情報の扱いは公開・送信前に確認します。</p>
-<h2>そのまま使える基本プロンプト</h2>
-<div class="prompt">次の業務を効率化したいです。
-業務：［対象業務］
-目的：［何を短縮・改善したいか］
-入力情報：［AIに渡せる情報］
-出力形式：［箇条書き／表／メールなど］
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>小さな会社で使えるAIツール比較｜4候補を業務環境で選ぶ【2026年版】 | その仕事、AIにできる？</title>
+<meta name="description" content="小さな会社向けにGoogle Workspace + Gemini、Microsoft 365 Copilot、ChatGPT Business、Notionを比較。料金、既存環境、複数人利用、管理、情報の置き場所から選び方を整理します。">
+<link rel="canonical" href="https://sono-shigoto-ai.com/small-company-ai-tools.html">
+<link rel="stylesheet" href="styles.css">
+<style>
+.article{max-width:960px;margin:auto;padding:44px 20px 80px}.article h1{font-size:clamp(2rem,5vw,3.1rem);line-height:1.25}.article h2{margin-top:2.2em;border-bottom:2px solid #e5e7eb;padding-bottom:.35em}.lead{font-size:1.08rem;line-height:1.9}.box,.note{padding:18px 20px;border-radius:12px;margin:20px 0;background:#f5f7fa}.note{border-left:4px solid #2563eb}.meta,.small{color:#64748b;font-size:.9rem}table{width:100%;border-collapse:collapse;margin:20px 0;font-size:.93rem}th,td{border:1px solid #dbe2ea;padding:12px;vertical-align:top;text-align:left}th{background:#f1f5f9}.cta{display:inline-block;background:#111827;color:#fff;padding:11px 17px;border-radius:9px;text-decoration:none;font-weight:700;margin:5px 7px 5px 0}@media(max-width:760px){table{display:block;overflow-x:auto}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"小さな会社で使えるAIツール比較｜4候補を業務環境で選ぶ【2026年版】","dateModified":"2026-09-21","mainEntityOfPage":"https://sono-shigoto-ai.com/small-company-ai-tools.html","publisher":{"@type":"Organization","name":"その仕事、AIにできる？"}}
+</script>
+</head>
+<body>
+<header class="site-header"><div class="container"><a class="logo" href="index.html">その仕事、AIにできる？</a></div></header>
+<main class="article">
+<p class="meta">ツール比較｜更新日：2026年9月21日</p>
+<h1>小さな会社で使えるAIツール比較｜4候補を業務環境で選ぶ【2026年版】</h1>
+<p class="lead">2〜20人程度の小さな会社でAIを導入するときは、「どのAIが一番賢いか」だけで選ぶと運用が複雑になりがちです。普段使っているメール、文書、会議、社内情報の置き場所と、メンバー管理・料金を一緒に見て候補を絞ります。</p>
 
-まず作業を工程に分解し、
-1. AIに任せられる工程
-2. 人が確認すべき工程
-3. 不足している情報
-を示してください。
-事実・数字・固有名詞を推測で補わないでください。</div>
-<h2>導入手順</h2><p>最初の1週間は1つの業務だけで試します。AIを使う前後の所要時間、修正回数、ミスの種類を記録し、実際に負担が減ったかを判断します。効果が確認できてから対象業務を増やします。</p>
-<h2>まとめ</h2><p>小さな会社で使えるAIツール比較で重要なのは、ツールを増やすことではなく、仕事のどこをAIに渡すかを明確にすることです。小さく試し、人の確認を残したまま改善していきましょう。</p>
-<div class="box"><strong>関連記事</strong><p><a href="article-ai-efficiency.html">個人事業主の仕事をAIで効率化する方法</a></p><p><a href="ai-tools-sole-proprietor.html">個人事業主向けAIツール比較</a></p><p><a href="ai-sales-email.html">AIで営業メールを作る方法</a></p></div>
-<p class="meta">※サービスの料金・機能・利用条件は変更される場合があります。契約・導入前に各社公式情報を確認してください。</p></main></body></html>
+<div class="note"><strong>先に考えること：</strong>Google Workspace中心ならGemini、Microsoft 365中心ならCopilot、既存環境を問わず幅広いAI業務を試したいならChatGPT Business、社内情報をNotionに集めているならNotionを比較の起点にします。全社導入の前に2〜3人・1業務で試してください。</div>
+
+<h2>小さな会社向けAI 4候補を比較</h2>
+<table>
+<thead><tr><th>候補</th><th>向いている会社</th><th>料金の目安</th><th>見るポイント</th></tr></thead>
+<tbody>
+<tr><td><strong>Google Workspace + Gemini</strong></td><td>Gmail、Drive、Meet、Docs中心</td><td>Business Standard：年契約で月額換算1,600円/ユーザー</td><td>既存Google環境の中でAIを使えるか</td></tr>
+<tr><td><strong>Microsoft 365 Copilot</strong></td><td>Outlook、Word、Excel、PowerPoint、Teams中心</td><td>Business Standard + Copilot Business：年払い月額換算3,523円/ユーザー（税別）</td><td>Office業務全体の往復を減らせるか</td></tr>
+<tr><td><strong>ChatGPT Business</strong></td><td>部署横断で文章、調査、分析などを試したい</td><td>Standard：年払い$20/人/月、月払い$25/人/月。最低2席</td><td>既存ツールに縛られず幅広い業務へ展開できるか</td></tr>
+<tr><td><strong>Notion</strong></td><td>社内メモ・ナレッジ・案件情報がNotion中心</td><td>Business：$20/メンバー/月（公式表示）</td><td>情報整理とAIを同じワークスペースで運用できるか</td></tr>
+</tbody>
+</table>
+<p class="small">※2026年9月21日時点で確認した公式情報。料金、税、契約期間、キャンペーン、AI利用上限は変更される場合があります。</p>
+
+<h2>1. Google Workspace + Gemini｜Gmail・Drive中心の会社</h2>
+<p>Google Workspaceをすでに使っている会社では、別のAIへ毎回メールや文書をコピーするより、既存環境に含まれるAI機能から検証する方が運用を単純化できる場合があります。</p>
+<p>Google公式ではBusiness Standardが年契約で月額換算1,600円/ユーザーと案内され、Geminiアプリ、GmailのGemini AIアシスタント、ビジネスメール、2TBのストレージなどが含まれます。</p>
+<div class="box"><strong>試す仕事：</strong>メール返信、文章作成、会議、Drive内の資料を使う業務。<br><strong>確認：</strong>現在のWorkspaceエディション、AI機能の利用条件、入力してよい社内情報のルール。</div>
+<a class="cta" href="ai-email-tools.html">AIメール作成を比較</a>
+<a class="cta" href="https://workspace.google.com/intl/ja/business/" rel="nofollow noopener">Google Workspace公式</a>
+
+<h2>2. Microsoft 365 Copilot｜Office・Outlook・Teams中心</h2>
+<p>Word、Excel、PowerPoint、Outlook、Teamsが会社の標準環境なら、Microsoft 365 Copilotを比較候補にします。Microsoft公式のBusiness Standard + Copilot Businessは、年払い月額換算3,523円/ユーザー（税別）で、最大300ユーザーのID・アクセス管理にも対応すると案内されています。</p>
+<p>単純なチャットAIとして比較するのではなく、メール→文書→表計算→資料→会議という既存のMicrosoft 365業務で、コピーや転記がどれだけ減るかを測ります。</p>
+<div class="box"><strong>試す仕事：</strong>Outlook返信、Word文書、PowerPoint資料、Teams会議。<br><strong>確認：</strong>現在契約しているMicrosoft 365プランと、Copilotを追加した場合の総額。</div>
+<a class="cta" href="ai-presentation-tools.html">AI資料作成を比較</a>
+<a class="cta" href="https://www.microsoft.com/ja-jp/microsoft-365/business/microsoft-365-plans-and-pricing" rel="nofollow noopener">Microsoft公式料金</a>
+
+<h2>3. ChatGPT Business｜会社全体で幅広い仕事を試す</h2>
+<p>ChatGPT Businessは、特定のメールやOffice環境だけに用途を限定せず、文章、調査、分析、ファイルを使った作業など複数業務をAI化したい会社の候補です。</p>
+<p>Standardシートは年払いで1人月20ドル、月払いで25ドル。BusinessワークスペースはStandardまたはPremiumを合計2席以上必要とします。まず2〜3人で同じ業務を試し、個人ごとにバラバラな使い方をするのではなく、会社として再利用できる業務パターンを見つけます。</p>
+<div class="box"><strong>試す仕事：</strong>営業メール、記事・文書、調査、顧客対応下書き、資料整理。<br><strong>確認：</strong>誰が管理するか、何を入力してよいか、会社で共有するプロンプトや手順。</div>
+<a class="cta" href="ai-writing-tools.html">文章AIを比較</a>
+<a class="cta" href="https://chatgpt.com/business/" rel="nofollow noopener">ChatGPT Business公式</a>
+
+<h2>4. Notion｜社内情報とAIを同じ場所で扱う</h2>
+<p>Notionに議事録、案件情報、マニュアル、社内ナレッジを集めている会社なら、Notion上のAI機能を比較します。公式料金ページではBusinessが20ドル/メンバー/月と表示され、Notionエージェント、AIミーティングノート、接続アプリの検索、SAML SSOなどが案内されています。</p>
+<p>Notionを使っていない会社がAIだけを目的に導入するのではなく、すでに情報の置き場所として使っているかどうかを判断材料にします。</p>
+<div class="box"><strong>試す仕事：</strong>会議メモ、社内情報検索、案件整理、文書下書き。<br><strong>確認：</strong>メンバー・ゲストの権限、どの情報をAIで扱うか。</div>
+<a class="cta" href="https://www.notion.com/ja/pricing" rel="nofollow noopener">Notion公式料金</a>
+
+<h2>会社の環境から選ぶ早見表</h2>
+<table>
+<thead><tr><th>今の会社</th><th>最初の候補</th><th>理由</th></tr></thead>
+<tbody>
+<tr><td>Gmail・Drive・Meet中心</td><td>Google Workspace + Gemini</td><td>既存Google環境内のAI機能から検証しやすい</td></tr>
+<tr><td>Outlook・Office・Teams中心</td><td>Microsoft 365 Copilot</td><td>日常のMicrosoft 365業務内で検証できる</td></tr>
+<tr><td>Google/Microsoftに限定せずAIを使いたい</td><td>ChatGPT Business</td><td>文章・調査など複数業務を横断して試しやすい</td></tr>
+<tr><td>社内情報がNotionに集まっている</td><td>Notion</td><td>ナレッジとAIを同じ環境で扱いやすい</td></tr>
+</tbody>
+</table>
+
+<h2>個人利用と会社導入で違う5つの確認</h2>
+<ol>
+<li><strong>アカウント：</strong>社員が個人アカウントを勝手に使うのではなく、会社として利用方法を決める。</li>
+<li><strong>入力情報：</strong>顧客情報、契約情報、未公開資料など、AIに入力してよい情報を決める。</li>
+<li><strong>権限：</strong>退職・異動時にアクセスを止められるか、管理者がメンバーを把握できるか確認する。</li>
+<li><strong>確認責任：</strong>AIが作ったメール、資料、数字を誰が確認して確定するか決める。</li>
+<li><strong>費用：</strong>1人あたり料金だけでなく、必要人数を掛けた月額・年額と削減時間を比較する。</li>
+</ol>
+
+<h2>3人の会社なら「月額」ではなく総額で見る</h2>
+<p>1ユーザーあたりの価格だけを見ると判断を誤りやすくなります。たとえば3人に導入する場合は、3席分の費用と、3人全体で毎月何時間削減できたかを比べます。</p>
+<p><strong>AI導入費 ÷ 会社全体で削減できた時間</strong>を簡易的に計算すると、「便利そう」ではなく業務投資として判断しやすくなります。料金が安くても誰も使わなければ意味がありません。</p>
+
+<h2>最初の2週間は2〜3人・1業務だけ</h2>
+<ol>
+<li>全員が毎週行う仕事を1つ選ぶ。</li>
+<li>担当者2〜3人だけで試す。</li>
+<li>入力してよい情報と禁止情報を決める。</li>
+<li>AI利用前後の所要時間と修正回数を記録する。</li>
+<li>ミスや困った点を共有する。</li>
+<li>効果が出たら対象人数か対象業務を1つだけ増やす。</li>
+</ol>
+
+<h2>人が確認すべきこと</h2>
+<p>AIが作った対外メール、提案資料、見積内容などは、送信・公開前に人が確認します。特に固有名詞、日付、金額、引用、納期、契約条件、顧客情報は元情報と照合します。</p>
+<p>また、会社導入では「AIが間違えるか」だけでなく、「誰がどのデータを入力できるか」「退職者のアクセスをどう止めるか」まで運用設計に含めます。</p>
+
+<h2>まとめ</h2>
+<p>小さな会社のAI選びでは、単体性能より現在の仕事環境との相性が重要です。Google中心ならGemini、Microsoft中心ならCopilot、横断的にAI業務を作りたいならChatGPT Business、Notion中心ならNotionを比較の起点にできます。</p>
+<p>いきなり全社導入せず、2〜3人・1業務で「削減時間」「修正時間」「ミス」「総費用」を測り、効果が確認できたものだけ広げてください。</p>
+
+<div class="box"><strong>関連記事</strong>
+<p><a href="ai-tools-10.html">個人事業主の仕事を効率化するAIツール10選</a></p>
+<p><a href="ai-tools-sole-proprietor.html">個人事業主向けAIツール比較</a></p>
+<p><a href="ai-email-tools.html">AIメール作成ツール比較</a></p>
+<p><a href="ai-meeting-tools.html">AI議事録ツール比較</a></p>
+<p><a href="ai-presentation-tools.html">AI資料作成ツール比較</a></p>
+<p><a href="sme-ai-first-step.html">中小企業のAI導入で最初にやること</a></p>
+<p><a href="ai-implementation-checklist.html">AI導入で失敗しないためのチェックリスト</a></p>
+</div>
+
+<h2>確認した公式情報</h2>
+<ul>
+<li><a href="https://workspace.google.com/intl/ja/business/" rel="nofollow noopener">Google Workspace：ビジネス向けプラン</a></li>
+<li><a href="https://www.microsoft.com/ja-jp/microsoft-365/business/microsoft-365-plans-and-pricing" rel="nofollow noopener">Microsoft 365：法人向け料金</a></li>
+<li><a href="https://help.openai.com/en/articles/8542115" rel="nofollow noopener">OpenAI：ChatGPT Business FAQ</a></li>
+<li><a href="https://www.notion.com/ja/pricing" rel="nofollow noopener">Notion：料金プラン</a></li>
+</ul>
+<p class="meta">※サービスの料金・機能・利用条件は変更される場合があります。契約・導入前に各社公式情報を確認してください。</p>
+</main>
+</body>
+</html>

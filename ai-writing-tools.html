@@ -1,28 +1,106 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AI文章作成ツール比較｜仕事の文章で選ぶポイント | その仕事、AIにできる？</title><meta name="description" content="文章AIは、ブログ、メール、要約、企画書で必要な品質が異なります。">
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI文章作成ツール比較｜ChatGPT・Claude・Geminiを仕事で比較【2026年版】 | その仕事、AIにできる？</title>
+<meta name="description" content="AI文章作成ツールをChatGPT、Claude、Geminiで比較。ブログ、要約、企画書、既存資料を使った文章作成など、仕事別の選び方と人が確認すべきポイントを整理します。">
 <link rel="canonical" href="https://sono-shigoto-ai.com/ai-writing-tools.html"><link rel="stylesheet" href="styles.css">
-<style>.article{max-width:860px;margin:auto;padding:44px 20px 80px}.article h1{font-size:clamp(2rem,5vw,3.1rem);line-height:1.25}.article h2{margin-top:2.2em;border-bottom:2px solid #e5e7eb;padding-bottom:.35em}.box,.prompt{padding:18px 20px;border-radius:12px;margin:20px 0;background:#f5f7fa}.prompt{white-space:pre-wrap;border-left:4px solid #2563eb}.meta{color:#64748b;font-size:.92rem}</style></head>
-<body><header class="site-header"><div class="container"><a class="logo" href="index.html">その仕事、AIにできる？</a></div></header>
-<main class="article"><p class="meta">文章｜更新日：2026年9月21日</p><h1>AI文章作成ツール比較｜仕事の文章で選ぶポイント</h1>
-<p>文章AIは、ブログ、メール、要約、企画書で必要な品質が異なります。</p><div class="box"><strong>このページの考え方：</strong>AIに仕事を丸投げするのではなく、「AIに任せる工程」と「人が確認する工程」を分けて導入します。</div>
-<h2>最初に仕事を分解する</h2><p>長文編集、調査、ファイル処理、共同作業、料金の観点で候補を比べます。</p>
-<ol><li>今の作業手順を書き出す</li><li>繰り返し発生する工程を見つける</li><li>AIに渡す入力情報を決める</li><li>AIの出力を人が確認する基準を決める</li><li>削減できた時間と修正時間を記録する</li></ol>
-<h2>AIに任せやすいこと</h2><p>下書き、要約、分類、構成案、言い換え、チェック候補の作成など、「正解を人が確認できる作業」はAI化の候補です。最終判断や対外的な約束は、人が確認してから確定します。</p>
-<h2>人が確認すべきこと</h2><p>公開前に事実・引用・固有名詞・著作権上の問題を確認します。</p><p>さらに、固有名詞、金額、日付、引用、契約条件、個人情報・機密情報の扱いは公開・送信前に確認します。</p>
-<h2>そのまま使える基本プロンプト</h2>
-<div class="prompt">次の業務を効率化したいです。
-業務：［対象業務］
-目的：［何を短縮・改善したいか］
-入力情報：［AIに渡せる情報］
-出力形式：［箇条書き／表／メールなど］
+<style>.article{max-width:940px;margin:auto;padding:44px 20px 80px}.article h1{font-size:clamp(2rem,5vw,3.1rem);line-height:1.25}.article h2{margin-top:2.2em;border-bottom:2px solid #e5e7eb;padding-bottom:.35em}.lead{font-size:1.08rem;line-height:1.9}.box,.note,.prompt{padding:18px 20px;border-radius:12px;margin:20px 0;background:#f5f7fa}.note,.prompt{border-left:4px solid #2563eb}.prompt{white-space:pre-wrap}.meta,.small{color:#64748b;font-size:.9rem}table{width:100%;border-collapse:collapse;margin:20px 0;font-size:.94rem}th,td{border:1px solid #dbe2ea;padding:12px;vertical-align:top;text-align:left}th{background:#f1f5f9}.cta{display:inline-block;background:#111827;color:#fff;padding:12px 18px;border-radius:9px;text-decoration:none;font-weight:700;margin:6px 8px 6px 0}@media(max-width:720px){table{display:block;overflow-x:auto}}</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"AI文章作成ツール比較｜ChatGPT・Claude・Geminiを仕事で比較【2026年版】","dateModified":"2026-09-21","mainEntityOfPage":"https://sono-shigoto-ai.com/ai-writing-tools.html","publisher":{"@type":"Organization","name":"その仕事、AIにできる？"}}</script>
+</head><body>
+<header class="site-header"><div class="container"><a class="logo" href="index.html">その仕事、AIにできる？</a></div></header>
+<main class="article">
+<p class="meta">文章｜更新日：2026年9月21日</p>
+<h1>AI文章作成ツール比較｜ChatGPT・Claude・Geminiを仕事で比較【2026年版】</h1>
+<p class="lead">AI文章作成ツールは、「文章が上手いか」だけで選ぶと実務では判断しにくくなります。ブログの下書き、長文要約、企画書、メール、手元の資料を使った文章作成など、減らしたい作業に合わせて比較するのが基本です。</p>
 
-まず作業を工程に分解し、
-1. AIに任せられる工程
-2. 人が確認すべき工程
-3. 不足している情報
-を示してください。
-事実・数字・固有名詞を推測で補わないでください。</div>
-<h2>導入手順</h2><p>最初の1週間は1つの業務だけで試します。AIを使う前後の所要時間、修正回数、ミスの種類を記録し、実際に負担が減ったかを判断します。効果が確認できてから対象業務を増やします。</p>
-<h2>まとめ</h2><p>AI文章作成ツール比較｜仕事の文章で選ぶポイントで重要なのは、ツールを増やすことではなく、仕事のどこをAIに渡すかを明確にすることです。小さく試し、人の確認を残したまま改善していきましょう。</p>
-<div class="box"><strong>関連記事</strong><p><a href="article-ai-efficiency.html">個人事業主の仕事をAIで効率化する方法</a></p><p><a href="ai-tools-sole-proprietor.html">個人事業主向けAIツール比較</a></p><p><a href="ai-sales-email.html">AIで営業メールを作る方法</a></p></div>
-<p class="meta">※サービスの料金・機能・利用条件は変更される場合があります。契約・導入前に各社公式情報を確認してください。</p></main></body></html>
+<div class="note"><strong>先に結論：</strong>文章以外も含めて幅広い仕事を1つのAIで処理したいならChatGPT、長い文章や資料を読みながら推敲したいならClaude、Googleのサービスや資料と組み合わせたいならGeminiを比較の起点にすると分かりやすくなります。最終的な事実確認と公開判断は人が行います。</div>
+
+<h2>AI文章作成ツール3候補を比較</h2>
+<table><thead><tr><th>候補</th><th>向いている使い方</th><th>無料・有料</th><th>選ぶポイント</th></tr></thead><tbody>
+<tr><td><strong>ChatGPT</strong></td><td>ブログ、メール、企画、要約など幅広い文章業務</td><td>無料プランあり。組織向けBusiness Standardは年払い$20/人/月、月払い$25/人/月。最低2席</td><td>文章だけに限定せず、調査・ファイル・その他の仕事へ広げやすい</td></tr>
+<tr><td><strong>Claude</strong></td><td>長文資料を読みながら要約・整理・推敲</td><td>無料版あり。有料プランも提供</td><td>長い原稿や資料を使った反復的な編集を試したい人の候補</td></tr>
+<tr><td><strong>Gemini</strong></td><td>Googleのサービスやファイルと組み合わせる文章業務</td><td>無料利用あり。個人向けGoogle AIプラン、法人向けWorkspaceプラン等あり</td><td>Google環境とのつながりを重視する場合に比較しやすい</td></tr>
+</tbody></table>
+<p class="small">※料金・機能は2026年9月21日時点の公式情報をもとに記載。地域、通貨、契約期間、利用上限などで変わるため契約前に公式ページで再確認してください。</p>
+
+<h2>1. ChatGPT｜文章以外の仕事にも広げたい</h2>
+<p>ChatGPTは文章作成専用ではなく、下書き、要約、構成案、言い換え、ファイルを使った作業などをまとめて扱えるため、「文章作成だけでAI契約を増やしたくない」場合に比較しやすい候補です。</p>
+<p>組織向けChatGPT BusinessのStandardシートは、年払いで1ユーザー月20ドル、月払いで25ドルです。ワークスペースには最低2つの有料シートが必要です。個人で試す段階では、まず無料プランなどで自分の文章業務との相性を確認してから、業務利用に必要なプランを検討します。</p>
+<div class="box"><strong>向いている仕事：</strong>ブログ構成、営業メール、FAQ、企画書のたたき台、文章の要約・短文化など、文章以外のAI業務もまとめたいケース。</div>
+<a class="cta" href="https://chatgpt.com/business/" rel="nofollow noopener">ChatGPT Businessを確認</a>
+
+<h2>2. Claude｜長い原稿や資料を読みながら編集したい</h2>
+<p>Claudeは、長い文章や資料を読み込ませて要点を整理し、その内容をもとに文章を作り直すような仕事の候補です。たとえば長いヒアリングメモから記事構成を作る、既存原稿を読みながら重複を削る、資料から説明文を作る、といった工程で比較できます。</p>
+<p>Claudeには無料利用と有料プランがあります。料金や利用量はプラン・地域・時期によって変わるため、契約時はAnthropicの公式プラン画面で現在の条件を確認してください。</p>
+<div class="box"><strong>向いている仕事：</strong>長文の要約、既存原稿の推敲、資料ベースの記事作成、複数回の書き直しが必要な文章。</div>
+<a class="cta" href="https://claude.ai/upgrade" rel="nofollow noopener">Claudeのプランを確認</a>
+
+<h2>3. Gemini｜Google環境と一緒に使いたい</h2>
+<p>Geminiは、Googleのサービスを日常的に使っている人が文章業務と組み合わせる場合に比較しやすい候補です。個人向けにはGoogle AIのプランがあり、法人ではGoogle Workspace側にもGemini機能が統合されています。</p>
+<p>GoogleのAIプランでは機能ごとに利用上限が設定されており、利用できる機能や上限はプランによって異なります。単純なチャット料金だけでなく、普段使っているGoogleサービスまで含めて判断するのがポイントです。</p>
+<div class="box"><strong>向いている仕事：</strong>Googleのファイルやサービスを中心に働いている人の文章作成、要約、整理、共同作業。</div>
+<a class="cta" href="https://one.google.com/about/google-ai-plans/" rel="nofollow noopener">Google AIプランを確認</a>
+
+<h2>仕事別ならどれから試す？</h2>
+<table><thead><tr><th>仕事</th><th>比較の起点</th><th>テストすること</th></tr></thead><tbody>
+<tr><td>ブログ・記事の下書き</td><td>ChatGPT / Claude</td><td>構成から完成までの修正時間</td></tr>
+<tr><td>長い資料の要約・再構成</td><td>Claude / ChatGPT</td><td>重要事項の抜け、引用・数字の正確さ</td></tr>
+<tr><td>メール・短文</td><td>ChatGPT / Gemini</td><td>トーン調整と事実確認にかかる時間</td></tr>
+<tr><td>Google中心の業務</td><td>Gemini</td><td>普段のファイル・サービスとの往復が減るか</td></tr>
+<tr><td>企画書・提案文</td><td>3候補を同じ条件で比較</td><td>論理構成と人による修正量</td></tr>
+</tbody></table>
+
+<h2>同じ原稿で3ツールを比較する</h2>
+<p>文章AIは、別々のテーマを生成させても比較できません。同じ入力情報、同じ条件、同じ文字数で出力させ、完成までの時間を測ります。</p>
+<div class="prompt">次の情報だけを使って、Webサイト掲載用の記事の下書きを作成してください。
+
+読者：AIを仕事に使い始めたい個人事業主
+テーマ：問い合わせ返信をAIで効率化する方法
+目的：AIに丸投げせず、返信下書きの時間を減らす方法を説明する
+文字数：1,200〜1,500文字
+構成：
+・導入
+・AIに任せやすい工程
+・人が確認する工程
+・導入手順
+・まとめ
+
+ルール：
+・提供されていない数字、事例、サービス仕様を作らない
+・断定できない内容は「要確認」とする
+・同じ説明を繰り返さない
+・日本語として不自然な直訳調を避ける</div>
+
+<h2>文章AIは「生成時間」ではなく「修正時間」で比べる</h2>
+<p>1,500文字を30秒で生成できても、事実誤認や不自然な文章の修正に20分かかれば効率化とは言えません。比較するときは、生成開始から公開・送信できる状態になるまでの総時間を測ります。</p>
+<table><thead><tr><th>確認項目</th><th>見るポイント</th></tr></thead><tbody>
+<tr><td>事実</td><td>数字、日付、固有名詞、サービス仕様が元情報と一致するか</td></tr>
+<tr><td>文章</td><td>不自然な日本語、重複、長すぎる説明がないか</td></tr>
+<tr><td>構成</td><td>読者の疑問に必要な順序で答えているか</td></tr>
+<tr><td>引用・出典</td><td>実在する情報か。原文と意味が変わっていないか</td></tr>
+<tr><td>機密情報</td><td>入力してよい顧客情報・社内情報か</td></tr>
+</tbody></table>
+
+<h2>AIに丸ごと記事を書かせない</h2>
+<p>業務記事では、AIに「2,000文字の記事を書いて」とだけ指示するより、先に人が読者、目的、事実として使える情報、禁止事項を決めた方が修正を減らせます。</p>
+<p>おすすめの分担は、<strong>人が事実と目的を用意 → AIが構成と初稿を作る → 人が事実確認 → AIで文章を整える → 人が公開判断</strong>です。検索流入を狙う記事でも、量産そのものを目的にせず、読者の仕事上の疑問に具体的に答えられる内容を残します。</p>
+
+<h2>まとめ</h2>
+<p>ChatGPT、Claude、Geminiのどれかを名前だけで選ぶ必要はありません。文章業務を「情報整理」「構成」「初稿」「推敲」「事実確認」に分解し、自分が最も時間を使っている工程を同じ原稿で比較してください。</p>
+<p>判断基準はAIが何秒で書いたかではなく、<strong>人が確認・修正して仕事で使える状態になるまで何分かかったか</strong>です。</p>
+
+<div class="box"><strong>関連記事</strong>
+<p><a href="ai-email-tools.html">AIメール作成ツール比較</a></p>
+<p><a href="ai-sales-email.html">AIで営業メールを作る方法</a></p>
+<p><a href="ai-tools-sole-proprietor.html">個人事業主向けAIツール比較</a></p>
+<p><a href="how-to-choose-ai-tools.html">AIツールを導入するときの選び方</a></p>
+<p><a href="ai-implementation-checklist.html">AI導入で失敗しないためのチェックリスト</a></p>
+</div>
+
+<h2>確認した公式情報</h2>
+<ul>
+<li><a href="https://help.openai.com/ja-jp/articles/8542115" rel="nofollow noopener">OpenAI：ChatGPT Business 一般FAQ</a></li>
+<li><a href="https://claude.ai/upgrade" rel="nofollow noopener">Claude：プラン</a></li>
+<li><a href="https://support.google.com/googleone/answer/14534406?hl=ja" rel="nofollow noopener">Google：Google AI Proの特典</a></li>
+</ul>
+<p class="meta">※サービスの料金・機能・利用条件は変更される場合があります。契約・導入前に各社公式情報を確認してください。</p>
+</main></body></html>

@@ -1,14 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="ja">
 <head>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-58NKR47NW8"></script>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-58NKR47NW8"></script>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
 <title>AIで営業メールを作る方法｜入力例→AI初稿→人の修正まで実演【2026年版】 | その仕事、AIにできる？</title>
-<meta name="description" content="AIで営業メールを作る方法を実演。入力情報の整理、コピペ用プロンプト、AI初稿、弱い部分、人が直した完成例、送信前チェックまで1ページで分かります。">
-<link rel="canonical" href="https://sono-shigoto-ai.com/ai-sales-email.html">
-<link rel="stylesheet" href="styles.css">
+<meta content="AIで営業メールを作る方法を実演。入力情報の整理、コピペ用プロンプト、AI初稿、弱い部分、人が直した完成例、送信前チェックまで1ページで分かります。" name="description"/>
+<link href="https://sono-shigoto-ai.com/ai-sales-email.html" rel="canonical"/>
+<link href="styles.css" rel="stylesheet"/>
 <style>
 .sales-guide{max-width:1040px;margin:auto;padding:56px 24px 96px}
 .breadcrumb{font-size:12px;color:#788592;margin-bottom:28px}
@@ -83,60 +84,57 @@
 </head>
 <body>
 <header class="site-header">
-  <div class="container nav">
-    <a class="logo" href="index.html">その仕事、<span>AIにできる？</span></a>
-    <nav><a href="index.html#work">仕事から探す</a><a href="ai-tools-sole-proprietor.html">AIツール比較</a><a class="nav-cta" href="diagnosis.html">AI仕事診断</a></nav>
-  </div>
+<div class="container nav">
+<a class="logo" href="index.html">その仕事、<span>AIにできる？</span></a>
+<nav>
+<a href="index.html#work">仕事から探す</a>
+<a href="ai-tools-sole-proprietor.html">AIツール比較</a>
+<a class="nav-cta" href="diagnosis.html">AI仕事診断</a>
+</nav>
+</div>
 </header>
-
 <main class="sales-guide">
-  <div class="breadcrumb"><a href="index.html">ホーム</a> / 営業 / 営業メール</div>
-  <span class="article-kicker">営業メール × 生成AI｜実践ガイド</span>
-  <h1>営業メール、<br>AIにできる？</h1>
-  <p class="intro">できます。ただし、<strong>「誰に・何を・なぜ伝えるか」までAIに丸投げしない</strong>のがポイントです。このページでは、入力情報の整理からAI初稿、人が直した完成版まで、1本の営業メールができる過程をそのまま見せます。</p>
-
-  <div class="answer-card">
-    <div class="answer-score"><small>AIに任せやすさ</small><strong>高</strong><span>初稿・短文化・言い換え</span></div>
-    <div><h2>AIは「書く」。人は「決める・確かめる」。</h2><p>AIに向いているのは件名案、構成、本文初稿、言い換え。人が持つべきなのは営業対象、提供価値、事実確認、価格・条件、そして送信するかどうかの判断です。</p></div>
-  </div>
-
-  <div class="quick-facts">
-    <div><small>AIに任せる</small><b>件名・構成・本文初稿</b></div>
-    <div><small>人が確認する</small><b>事実・価格・宛先・送信</b></div>
-    <div><small>最初に必要</small><b>相手・目的・価値・CTA</b></div>
-  </div>
-
-  <h2>営業メールを5工程に分ける</h2>
-  <p class="section-lead">「営業メールを書く」という1つの仕事に見えても、中身を分けるとAIに渡しやすい部分と、人が持つべき判断がはっきりします。</p>
-  <div class="workflow">
-    <div class="workflow-card"><div class="num">01</div><small>HUMAN</small><b>目的を決める</b><span>誰に、何のために送るか。</span></div>
-    <div class="workflow-card"><div class="num">02</div><small>HUMAN + AI</small><b>材料を整理</b><span>相手、価値、根拠、CTAを整理。</span></div>
-    <div class="workflow-card ai"><div class="num">03</div><small>AI</small><b>初稿を作る</b><span>件名・構成・本文を生成。</span></div>
-    <div class="workflow-card ai"><div class="num">04</div><small>AI + HUMAN</small><b>削って直す</b><span>抽象表現や長文を修正。</span></div>
-    <div class="workflow-card"><div class="num">05</div><small>HUMAN</small><b>確認して送る</b><span>事実、宛先、条件を最終確認。</span></div>
-  </div>
-
-  <h2>実演：新規営業メールを1本作る</h2>
-  <p class="section-lead">架空のケースで、AIに何を渡し、どこを人が直すかを見ていきます。会社名や実績は例示用の架空情報です。</p>
-
-  <div class="demo">
-    <div class="demo-head"><b>STEP 1｜AIに渡す前の材料</b><span>ここは人が決める</span></div>
-    <div class="demo-body">
-      <div class="input-grid">
-        <div class="input-item"><small>相手</small><b>従業員20名ほどの制作会社・代表者</b></div>
-        <div class="input-item"><small>目的</small><b>15分のオンライン打ち合わせ</b></div>
-        <div class="input-item"><small>提供価値</small><b>定型メールや資料整理の時間削減を支援</b></div>
-        <div class="input-item"><small>根拠</small><b>相手の採用ページで業務拡大を確認した想定</b></div>
-        <div class="input-item"><small>CTA</small><b>興味があれば15分話す</b></div>
-        <div class="input-item"><small>禁止</small><b>未確認の実績・数字・相手事情を作らない</b></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="demo">
-    <div class="demo-head"><b>STEP 2｜そのまま使えるプロンプト</b><span>コピペして［ ］を変更</span></div>
-    <div class="demo-body">
-      <div class="prompt-box"><span class="prompt-label">COPY PROMPT</span>あなたはBtoB営業メールの編集者です。
+<div class="breadcrumb"><a href="index.html">ホーム</a> / 営業 / 営業メール</div>
+<span class="article-kicker">営業メール × 生成AI｜実践ガイド</span>
+<h1>営業メール、<br/>AIにできる？</h1>
+<p class="intro">できます。ただし、<strong>「誰に・何を・なぜ伝えるか」までAIに丸投げしない</strong>のがポイントです。このページでは、入力情報の整理からAI初稿、人が直した完成版まで、1本の営業メールができる過程をそのまま見せます。</p>
+<div class="answer-card">
+<div class="answer-score"><small>AIに任せやすさ</small><strong>高</strong><span>初稿・短文化・言い換え</span></div>
+<div><h2>AIは「書く」。人は「決める・確かめる」。</h2><p>AIに向いているのは件名案、構成、本文初稿、言い換え。人が持つべきなのは営業対象、提供価値、事実確認、価格・条件、そして送信するかどうかの判断です。</p></div>
+</div>
+<div class="quick-facts">
+<div><small>AIに任せる</small><b>件名・構成・本文初稿</b></div>
+<div><small>人が確認する</small><b>事実・価格・宛先・送信</b></div>
+<div><small>最初に必要</small><b>相手・目的・価値・CTA</b></div>
+</div>
+<h2>営業メールを5工程に分ける</h2>
+<p class="section-lead">「営業メールを書く」という1つの仕事に見えても、中身を分けるとAIに渡しやすい部分と、人が持つべき判断がはっきりします。</p>
+<div class="workflow">
+<div class="workflow-card"><div class="num">01</div><small>HUMAN</small><b>目的を決める</b><span>誰に、何のために送るか。</span></div>
+<div class="workflow-card"><div class="num">02</div><small>HUMAN + AI</small><b>材料を整理</b><span>相手、価値、根拠、CTAを整理。</span></div>
+<div class="workflow-card ai"><div class="num">03</div><small>AI</small><b>初稿を作る</b><span>件名・構成・本文を生成。</span></div>
+<div class="workflow-card ai"><div class="num">04</div><small>AI + HUMAN</small><b>削って直す</b><span>抽象表現や長文を修正。</span></div>
+<div class="workflow-card"><div class="num">05</div><small>HUMAN</small><b>確認して送る</b><span>事実、宛先、条件を最終確認。</span></div>
+</div>
+<h2>実演：新規営業メールを1本作る</h2>
+<p class="section-lead">架空のケースで、AIに何を渡し、どこを人が直すかを見ていきます。会社名や実績は例示用の架空情報です。</p>
+<div class="demo">
+<div class="demo-head"><b>STEP 1｜AIに渡す前の材料</b><span>ここは人が決める</span></div>
+<div class="demo-body">
+<div class="input-grid">
+<div class="input-item"><small>相手</small><b>従業員20名ほどの制作会社・代表者</b></div>
+<div class="input-item"><small>目的</small><b>15分のオンライン打ち合わせ</b></div>
+<div class="input-item"><small>提供価値</small><b>定型メールや資料整理の時間削減を支援</b></div>
+<div class="input-item"><small>根拠</small><b>相手の採用ページで業務拡大を確認した想定</b></div>
+<div class="input-item"><small>CTA</small><b>興味があれば15分話す</b></div>
+<div class="input-item"><small>禁止</small><b>未確認の実績・数字・相手事情を作らない</b></div>
+</div>
+</div>
+</div>
+<div class="demo">
+<div class="demo-head"><b>STEP 2｜そのまま使えるプロンプト</b><span>コピペして［ ］を変更</span></div>
+<div class="demo-body">
+<div class="prompt-box"><span class="prompt-label">COPY PROMPT</span>あなたはBtoB営業メールの編集者です。
 次の情報だけを使って、新規営業メールの初稿を作ってください。
 
 【相手】［業種・役職・会社の特徴］
@@ -155,53 +153,48 @@
 ・確認できていない内容は書かない
 ・CTAは1つだけ
 ・丁寧だが堅すぎない日本語</div>
-    </div>
-  </div>
-
-  <div class="demo">
-    <div class="demo-head"><b>STEP 3｜AI初稿の例</b><span>ここで完成ではない</span></div>
-    <div class="demo-body">
-      <div class="output-card bad">
-        <span class="label">AI DRAFT / 架空例</span>
-        <h3>件名：業務効率化について15分だけ情報交換しませんか</h3>
-        <p>株式会社〇〇　〇〇様<br><br>突然のご連絡失礼いたします。［自社名］の［氏名］と申します。貴社の採用ページを拝見し、事業拡大に伴い業務効率化の必要性が高まっているのではないかと考え、ご連絡しました。弊社では、定型メールや資料整理などの業務をAIで効率化する支援を行っています。ご関心がございましたら、15分ほどオンラインで情報交換のお時間をいただけないでしょうか。</p>
-      </div>
-      <h3>この初稿を、そのまま送らない理由</h3>
-      <div class="problem-list">
-        <div><b>推測が混じった</b>「必要性が高まっている」は、採用ページだけでは確認できない。</div>
-        <div><b>価値がまだ抽象的</b>「業務効率化」だけでは、相手が読む理由が弱い。</div>
-        <div><b>相手固有の接点が薄い</b>どこを見て連絡したのか、もう少し具体化できる。</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="demo">
-    <div class="demo-head"><b>STEP 4｜人が直した完成例</b><span>推測を削り、具体性を足す</span></div>
-    <div class="demo-body">
-      <div class="output-card good">
-        <span class="label">HUMAN REVIEWED / 架空例</span>
-        <h3>件名：定型メール・資料整理の効率化について</h3>
-        <p>株式会社〇〇　〇〇様<br><br>突然のご連絡失礼いたします。［自社名］の［氏名］と申します。<br><br>貴社の採用ページで制作体制を拡大されていることを拝見し、ご連絡しました。弊社では、小規模チーム向けに、営業メールの下書きや資料整理など反復業務への生成AI活用を支援しています。<br><br>もし定型業務の見直しをご検討中でしたら、現在の作業を伺いながら15分ほど情報交換できればと思います。ご関心があれば、ご返信いただけますと幸いです。</p>
-      </div>
-      <p class="source-note">※上記は説明用の架空例です。「採用ページで制作体制を拡大」など相手について書く内容は、実際の送信前に一次情報で確認してください。</p>
-    </div>
-  </div>
-
-  <h2>AI初稿と人の修正版は、何が違う？</h2>
-  <div class="before-after">
-    <div class="output-card bad"><span class="mini-tag">AI初稿</span><h3>推測まで文章にしてしまう</h3><p>自然な文章でも、「相手はきっとこう困っている」という未確認情報が混ざることがあります。</p></div>
-    <div class="output-card good"><span class="mini-tag">人の修正</span><h3>確認できた事実だけ残す</h3><p>相手の公式情報と、自社が実際に提供できる価値に限定。送信判断は人が持ちます。</p></div>
-  </div>
-
-  <h2>用途別：保存しておく3つの型</h2>
-  <div class="template-grid">
-    <div class="template-card"><small>01 / NEW SALES</small><h3>新規営業</h3><p>相手・連絡理由・提供価値・CTAを渡して初稿を作る。相手事情を推測させない。</p></div>
-    <div class="template-card"><small>02 / INQUIRY</small><h3>問い合わせ後</h3><p>問い合わせ内容を先に回答し、検討状況を確認。CTAは相談や返信など1つにする。</p></div>
-    <div class="template-card"><small>03 / FOLLOW UP</small><h3>商談後</h3><p>商談メモだけを材料に、お礼・課題・約束事項・次回予定を整理する。</p></div>
-  </div>
-
-  <h3>問い合わせ・資料請求後</h3>
-  <div class="prompt-box"><span class="prompt-label">COPY PROMPT</span>以下の問い合わせ内容だけを使ってフォローメールを作成してください。
+</div>
+</div>
+<div class="demo">
+<div class="demo-head"><b>STEP 3｜AI初稿の例</b><span>ここで完成ではない</span></div>
+<div class="demo-body">
+<div class="output-card bad">
+<span class="label">AI DRAFT / 架空例</span>
+<h3>件名：業務効率化について15分だけ情報交換しませんか</h3>
+<p>株式会社〇〇　〇〇様<br/><br/>突然のご連絡失礼いたします。［自社名］の［氏名］と申します。貴社の採用ページを拝見し、事業拡大に伴い業務効率化の必要性が高まっているのではないかと考え、ご連絡しました。弊社では、定型メールや資料整理などの業務をAIで効率化する支援を行っています。ご関心がございましたら、15分ほどオンラインで情報交換のお時間をいただけないでしょうか。</p>
+</div>
+<h3>この初稿を、そのまま送らない理由</h3>
+<div class="problem-list">
+<div><b>推測が混じった</b>「必要性が高まっている」は、採用ページだけでは確認できない。</div>
+<div><b>価値がまだ抽象的</b>「業務効率化」だけでは、相手が読む理由が弱い。</div>
+<div><b>相手固有の接点が薄い</b>どこを見て連絡したのか、もう少し具体化できる。</div>
+</div>
+</div>
+</div>
+<div class="demo">
+<div class="demo-head"><b>STEP 4｜人が直した完成例</b><span>推測を削り、具体性を足す</span></div>
+<div class="demo-body">
+<div class="output-card good">
+<span class="label">HUMAN REVIEWED / 架空例</span>
+<h3>件名：定型メール・資料整理の効率化について</h3>
+<p>株式会社〇〇　〇〇様<br/><br/>突然のご連絡失礼いたします。［自社名］の［氏名］と申します。<br/><br/>貴社の採用ページで制作体制を拡大されていることを拝見し、ご連絡しました。弊社では、小規模チーム向けに、営業メールの下書きや資料整理など反復業務への生成AI活用を支援しています。<br/><br/>もし定型業務の見直しをご検討中でしたら、現在の作業を伺いながら15分ほど情報交換できればと思います。ご関心があれば、ご返信いただけますと幸いです。</p>
+</div>
+<p class="source-note">※上記は説明用の架空例です。「採用ページで制作体制を拡大」など相手について書く内容は、実際の送信前に一次情報で確認してください。</p>
+</div>
+</div>
+<h2>AI初稿と人の修正版は、何が違う？</h2>
+<div class="before-after">
+<div class="output-card bad"><span class="mini-tag">AI初稿</span><h3>推測まで文章にしてしまう</h3><p>自然な文章でも、「相手はきっとこう困っている」という未確認情報が混ざることがあります。</p></div>
+<div class="output-card good"><span class="mini-tag">人の修正</span><h3>確認できた事実だけ残す</h3><p>相手の公式情報と、自社が実際に提供できる価値に限定。送信判断は人が持ちます。</p></div>
+</div>
+<h2>用途別：保存しておく3つの型</h2>
+<div class="template-grid">
+<div class="template-card"><small>01 / NEW SALES</small><h3>新規営業</h3><p>相手・連絡理由・提供価値・CTAを渡して初稿を作る。相手事情を推測させない。</p></div>
+<div class="template-card"><small>02 / INQUIRY</small><h3>問い合わせ後</h3><p>問い合わせ内容を先に回答し、検討状況を確認。CTAは相談や返信など1つにする。</p></div>
+<div class="template-card"><small>03 / FOLLOW UP</small><h3>商談後</h3><p>商談メモだけを材料に、お礼・課題・約束事項・次回予定を整理する。</p></div>
+</div>
+<h3>問い合わせ・資料請求後</h3>
+<div class="prompt-box"><span class="prompt-label">COPY PROMPT</span>以下の問い合わせ内容だけを使ってフォローメールを作成してください。
 【問い合わせ内容】［ここに貼る］
 【こちらから回答する内容】［確認済みの回答］
 【次に取ってほしい行動】［返信／15分相談など］
@@ -212,9 +205,8 @@
 ・CTAは1つ
 ・書かれていない事情を推測しない
 ・件名を3案</div>
-
-  <h3>商談後のお礼</h3>
-  <div class="prompt-box"><span class="prompt-label">COPY PROMPT</span>以下の商談メモだけを使って、お礼メールを作成してください。
+<h3>商談後のお礼</h3>
+<div class="prompt-box"><span class="prompt-label">COPY PROMPT</span>以下の商談メモだけを使って、お礼メールを作成してください。
 【商談メモ】［箇条書きで貼る］
 
 含める内容：
@@ -228,46 +220,47 @@
 ・未決事項を決定事項にしない
 ・メモにない数字や期限を作らない
 ・400文字以内</div>
-
-  <h2>送信前は、この7項目だけ確認する</h2>
-  <p class="section-lead">AIが自然な文章を作れても、正しい営業メールになったとは限りません。最後は人が確認します。</p>
-  <div class="check-grid">
-    <div class="check-item"><div class="check">✓</div><div><b>会社名・氏名・役職</b><span>宛先と本文で食い違っていないか。</span></div></div>
-    <div class="check-item"><div class="check">✓</div><div><b>相手について書いた事実</b><span>公式サイトなど一次情報で確認したか。</span></div></div>
-    <div class="check-item"><div class="check">✓</div><div><b>実績・数字・料金</b><span>AIが数字を作っていないか。</span></div></div>
-    <div class="check-item"><div class="check">✓</div><div><b>相手にとっての価値</b><span>自社紹介だけで終わっていないか。</span></div></div>
-    <div class="check-item"><div class="check">✓</div><div><b>長さ</b><span>説明を詰め込みすぎていないか。</span></div></div>
-    <div class="check-item"><div class="check">✓</div><div><b>CTAは1つ</b><span>返信・予約・資料確認などを混ぜていないか。</span></div></div>
-    <div class="check-item"><div class="check">✓</div><div><b>AIへ入力した情報</b><span>顧客情報や機密情報を入力してよい環境か。</span></div></div>
-  </div>
-
-  <h2>どのAIで試す？</h2>
-  <div class="tool-box">
-    <p><strong>最初は、普段使っている生成AIで十分です。</strong> ChatGPTには無料利用があります。チーム向けChatGPT BusinessのStandardシートは、2026年9月21日時点の公式案内で年払い月20ドル/人、月払い25ドル/人、最低2席です。Google WorkspaceではGmail内のGemini AIアシスタントが提供されており、Business Standardは日本向け公式ページで年契約時の月額換算1,600円/人と案内されています。料金・機能は変更されるため、契約前に公式ページを確認してください。</p>
-  </div>
-  <p class="source-note">公式確認：OpenAI ChatGPT Business FAQ / Google Workspace Gmail・Business料金（2026年9月21日確認）</p>
-
-  <h2>結論：営業メールは「AIに書かせる」より「分業する」</h2>
-  <p>営業対象と目的を人が決め、AIに初稿を作らせ、人が事実と提案内容を確認する。この分業なら、文章作成の時間を減らしながら、営業判断までAIに任せずに運用できます。</p>
-  <p>まずは過去に自分で送った営業メールを1通用意し、同じ条件でAIに初稿を作らせてください。生成速度ではなく、<strong>人の修正を含めて完成までの作業が減ったか</strong>で判断します。</p>
-
-  <div class="next-box">
-    <h2>次に、どの仕事をAI化する？</h2>
-    <div class="next-links">
-      <a href="ai-email-tools.html">AIメール作成ツールを比較 →</a>
-      <a href="ai-meeting-tools.html">商談・議事録をAI化 →</a>
-      <a href="ai-presentation-tools.html">提案資料をAI化 →</a>
-      <a href="ai-tools-sales.html">営業職向けAIツール比較 →</a>
-    </div>
-  </div>
-</main>
-
-<footer class="footer">
-  <div class="container footer-grid">
-    <div><a class="logo" href="index.html">その仕事、<span>AIにできる？</span></a><p>個人事業主・フリーランス・小さな会社のためのAI仕事効率化メディア。</p></div>
-    <div><a href="about.html">このサイトについて</a><a href="privacy.html">プライバシーポリシー</a><a href="contact.html">お問い合わせ</a></div>
-  </div>
-  <div class="container copyright">© 2026 その仕事、AIにできる？</div>
+<h2>送信前は、この7項目だけ確認する</h2>
+<p class="section-lead">AIが自然な文章を作れても、正しい営業メールになったとは限りません。最後は人が確認します。</p>
+<div class="check-grid">
+<div class="check-item"><div class="check">✓</div><div><b>会社名・氏名・役職</b><span>宛先と本文で食い違っていないか。</span></div></div>
+<div class="check-item"><div class="check">✓</div><div><b>相手について書いた事実</b><span>公式サイトなど一次情報で確認したか。</span></div></div>
+<div class="check-item"><div class="check">✓</div><div><b>実績・数字・料金</b><span>AIが数字を作っていないか。</span></div></div>
+<div class="check-item"><div class="check">✓</div><div><b>相手にとっての価値</b><span>自社紹介だけで終わっていないか。</span></div></div>
+<div class="check-item"><div class="check">✓</div><div><b>長さ</b><span>説明を詰め込みすぎていないか。</span></div></div>
+<div class="check-item"><div class="check">✓</div><div><b>CTAは1つ</b><span>返信・予約・資料確認などを混ぜていないか。</span></div></div>
+<div class="check-item"><div class="check">✓</div><div><b>AIへ入力した情報</b><span>顧客情報や機密情報を入力してよい環境か。</span></div></div>
+</div>
+<h2>どのAIで試す？</h2>
+<div class="tool-box">
+<p><strong>最初は、普段使っている生成AIで十分です。</strong> ChatGPTには無料利用があります。チーム向けChatGPT BusinessのStandardシートは、2026年9月21日時点の公式案内で年払い月20ドル/人、月払い25ドル/人、最低2席です。Google WorkspaceではGmail内のGemini AIアシスタントが提供されており、Business Standardは日本向け公式ページで年契約時の月額換算1,600円/人と案内されています。料金・機能は変更されるため、契約前に公式ページを確認してください。</p>
+</div>
+<p class="source-note">公式確認：OpenAI ChatGPT Business FAQ / Google Workspace Gmail・Business料金（2026年9月21日確認）</p>
+<h2>結論：営業メールは「AIに書かせる」より「分業する」</h2>
+<p>営業対象と目的を人が決め、AIに初稿を作らせ、人が事実と提案内容を確認する。この分業なら、文章作成の時間を減らしながら、営業判断までAIに任せずに運用できます。</p>
+<p>まずは過去に自分で送った営業メールを1通用意し、同じ条件でAIに初稿を作らせてください。生成速度ではなく、<strong>人の修正を含めて完成までの作業が減ったか</strong>で判断します。</p>
+<div class="next-box">
+<h2>次に、どの仕事をAI化する？</h2>
+<div class="next-links">
+<a href="ai-email-tools.html">AIメール作成ツールを比較 →</a>
+<a href="ai-meeting-tools.html">商談・議事録をAI化 →</a>
+<a href="ai-presentation-tools.html">提案資料をAI化 →</a>
+<a href="ai-tools-sales.html">営業職向けAIツール比較 →</a>
+</div>
+</div>
+<section class="related-nav"><div class="related-nav__head"><div><p class="related-nav__eyebrow">NEXT STEP</p><h2>次に見る</h2></div><span>カード全体をクリックできます</span></div><div class="related-nav__grid"><a class="related-card" href="ai-email-reply.html"><small>関連記事</small><strong>AIでメール返信を効率化する方法</strong><span>記事を読む</span></a><a class="related-card" href="ai-email-tools.html"><small>関連記事</small><strong>AIメール作成ツール比較｜営業・返信・要約に使える3候補【2026年版】</strong><span>記事を読む</span></a><a class="related-card" href="ai-writing-tools.html"><small>関連記事</small><strong>AI文章作成ツール比較｜ChatGPT・Claude・Geminiを仕事で比較【2026年版】</strong><span>記事を読む</span></a></div></section></main>
+<footer class="site-footer">
+<div class="container">
+<div class="site-footer__inner">
+<div><a class="logo" href="index.html">その仕事、<span>AIにできる？</span></a></div>
+<div class="site-footer__links">
+<a href="about.html">このサイトについて</a>
+<a href="privacy.html">プライバシーポリシー</a>
+<a href="contact.html">お問い合わせ</a>
+</div>
+</div>
+<div class="site-footer__copy">© 2026 その仕事、AIにできる？</div>
+</div>
 </footer>
 </body>
 </html>

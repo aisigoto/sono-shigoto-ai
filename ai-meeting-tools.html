@@ -1,133 +1,104 @@
-<!DOCTYPE html>
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI議事録ツール比較｜小さな会社・個人事業主向け | その仕事、AIにできる？</title><meta name="description" content="議事録AIは「文字起こし」だけでなく、決定事項と担当タスクを会議後すぐ取り出せるかが重要です。">
+<link rel="canonical" href="https://sono-shigoto-ai.com/ai-meeting-tools.html"><link rel="stylesheet" href="styles.css">
+<style>.article{max-width:860px;margin:auto;padding:44px 20px 80px}.article h1{font-size:clamp(2rem,5vw,3.1rem);line-height:1.25}.article h2{margin-top:2.2em;border-bottom:2px solid #e5e7eb;padding-bottom:.35em}.box,.prompt{padding:18px 20px;border-radius:12px;margin:20px 0;background:#f5f7fa}.prompt{white-space:pre-wrap;border-left:4px solid #2563eb}.meta{color:#64748b;font-size:.92rem}
+.exp-hero{margin:24px 0;padding:24px;border:1px solid #cbd5e1;border-radius:16px;background:#fff}.badge{display:inline-block;padding:5px 10px;border-radius:999px;background:#111827;color:#fff;font-size:.82rem;font-weight:700}.score{font-weight:800}.table-wrap{overflow-x:auto;margin:20px 0}.compare{min-width:760px}.raw{margin:16px 0;padding:18px;border:1px solid #dbe2ea;border-radius:12px;background:#fff}.raw h3{margin-top:0}.raw pre{white-space:pre-wrap;font:inherit;line-height:1.75;margin:0}.good{background:#f8fafc}.warn{border-left:4px solid #f59e0b}.jump{display:inline-block;margin-top:10px;font-weight:700}.method{font-size:.9rem;color:#475569}.verdict{padding:18px 20px;border-radius:12px;background:#f8fafc;border:1px solid #dbe2ea}
+</style></head>
+<body><header class="site-header"><div class="container"><a class="logo" href="index.html">その仕事、AIにできる？</a></div></header>
+<main class="article"><p class="meta">会議｜更新日：2026年9月23日</p><h1>AI議事録ツール比較｜小さな会社・個人事業主向け</h1>
+<p>議事録AIは「文字起こし」だけでなく、決定事項と担当タスクを会議後すぐ取り出せるかが重要です。</p><div class="box"><strong>このページの考え方：</strong>AIに仕事を丸投げするのではなく、「AIに任せる工程」と「人が確認する工程」を分けて導入します。</div>
+<section id="experiment" class="exp-hero">
+<span class="badge">独自検証 #02</span>
+<h2>実験：同じ会議記録をChatGPT・Claude・Geminiに議事録化させてみた</h2>
+<p><strong>結論：</strong>3つとも実用的な議事録を作れましたが、Claudeでは「決定事項・未決事項・ToDo」の分類にズレが出ました。文章が自然でも、会議で本当に決まったことかは人が確認する必要があります。</p>
+<p class="method">検証条件：3AIに同じ会議記録・同じ指示を入力し、初回出力を比較。追加入力や修正指示は行っていません。出力はモデル・時期・設定によって変わる可能性があります。</p>
+<a class="jump" href="#results">比較結果を見る ↓</a>
+</section>
 
-<html lang="ja">
-<head>
-<!-- Google tag (gtag.js) -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-58NKR47NW8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-58NKR47NW8');
-</script>
-<meta charset="utf-8"/>
-<meta content="width=device-width,initial-scale=1" name="viewport"/>
-<title>AI議事録ツール比較｜個人事業主・小さな会社向け【2026年版】 | その仕事、AIにできる？</title>
-<meta content="AI議事録ツールをNotta、Zoom、Google Meet、Microsoft Teamsで比較。料金、無料枠、向いている人、導入前の注意点を個人事業主・小さな会社向けに整理します。" name="description"/>
-<link href="https://sono-shigoto-ai.com/ai-meeting-tools.html" rel="canonical"/>
-<link href="styles.css" rel="stylesheet"/>
-<style>
-.article{max-width:940px;margin:auto;padding:44px 20px 80px}
-.article h1{font-size:clamp(2rem,5vw,3.1rem);line-height:1.25}
-.article h2{margin-top:2.2em;border-bottom:2px solid #e5e7eb;padding-bottom:.35em}
-.article h3{margin-top:1.8em}.lead{font-size:1.08rem;line-height:1.9}
-.box,.note{padding:18px 20px;border-radius:12px;margin:20px 0;background:#f5f7fa}
-.note{border-left:4px solid #2563eb}
-.meta{color:#64748b;font-size:.92rem}
-table{width:100%;border-collapse:collapse;margin:20px 0;font-size:.94rem}
-th,td{border:1px solid #dbe2ea;padding:12px;vertical-align:top;text-align:left}
-th{background:#f1f5f9}
-.cta{display:inline-block;background:#111827;color:#fff;padding:12px 18px;border-radius:9px;text-decoration:none;font-weight:700;margin:6px 8px 6px 0}
-.cta.secondary{background:#eef2f7;color:#111827}
-.small{font-size:.88rem;color:#64748b}
-@media(max-width:720px){table{display:block;overflow-x:auto;white-space:normal}}
-</style>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"AI議事録ツール比較｜個人事業主・小さな会社向け【2026年版】","dateModified":"2026-09-21","mainEntityOfPage":"https://sono-shigoto-ai.com/ai-meeting-tools.html","publisher":{"@type":"Organization","name":"その仕事、AIにできる？"}}
-</script>
-</head>
-<body>
-<header class="site-header">
-<div class="container nav">
-<a class="logo" href="index.html">その仕事、<span>AIにできる？</span></a>
-<nav>
-<a href="index.html#work">仕事から探す</a>
-<a href="ai-tools-sole-proprietor.html">AIツール比較</a>
-<a class="nav-cta" href="diagnosis.html">AI仕事診断</a>
-</nav>
-</div>
-</header>
-<main class="article">
-<p class="meta">会議｜更新日：2026年9月21日</p>
-<h1>AI議事録ツール比較｜個人事業主・小さな会社向け【2026年版】</h1>
-<p class="lead">AI議事録ツールは、文字起こし精度だけで選ぶと失敗しやすい分野です。普段使っている会議サービス、会議後に欲しい「決定事項・担当者・次の行動」、料金、録音方法まで含めて選びます。</p>
-<div class="note"><strong>先に結論：</strong>会議サービスを問わず文字起こしをまとめたいならNotta、Zoom中心ならZoomのAI機能、Google Workspace中心ならGoogle MeetのGemini、Teams中心ならTeamsの要約機能から試すのが分かりやすい選び方です。</div>
-<h2>AI議事録ツール4候補を比較</h2>
-<table>
-<thead><tr><th>候補</th><th>向いている人</th><th>2026年9月時点の主な料金・条件</th><th>特徴</th></tr></thead>
-<tbody>
-<tr><td><strong>Notta</strong></td><td>Zoom・Meet・Teamsなど複数環境を使う人</td><td>無料：120分/月（1回3分まで）。プレミアム：年払い月額換算1,185円（税込）、1,800分/月</td><td>Zoom、Google Meet、Teams、Webex等の文字起こし。AI要約、話者識別。会議サービスをまたいで使いやすい。</td></tr>
-<tr><td><strong>Zoom</strong></td><td>Zoom会議が中心の人</td><td>無料のZoomMateベーシックでは、ミーティング要約・会議内質問・AIノート作成がそれぞれ月3回の主催会議等で利用可能</td><td>会議サービス内で要約まで完結させやすい。別の議事録サービスを増やしたくない場合の候補。</td></tr>
-<tr><td><strong>Google Meet + Gemini</strong></td><td>Gmail・Docs・DriveもGoogle Workspace中心の人</td><td>Business Standard：年契約の月額換算1,600円/ユーザー、通常月額1,900円/ユーザー。14日間無料試用あり</td><td>「Take notes for me」で会議内容を整理しGoogleドキュメントへ保存。決定事項や次の行動も抽出できる。</td></tr>
-<tr><td><strong>Microsoft Teams</strong></td><td>Teams・Outlook・WordなどMicrosoft環境中心の会社</td><td>インテリジェント要約にはMicrosoft CopilotまたはTeams Premiumが必要。Teams Premiumは年払い月額換算1,499円/ユーザー（税別）</td><td>会議の要約、タスク、メンション等をTeams内で確認。Microsoft環境との一体運用に向く。</td></tr>
-</tbody>
-</table>
-<p class="small">※料金・機能は2026年9月21日に各社公式情報を確認。キャンペーン、税、契約期間、既存ライセンスの有無で実際の支払額は変わります。</p>
-<h2>1. Notta｜複数の会議サービスを使う人</h2>
-<p>Nottaは、Zoom・Google Meet・Microsoft Teams・Webexなどの会議を文字起こしできるため、取引先によって会議サービスが変わる個人事業主や小規模チームに検討しやすい選択肢です。無料プランは月120分ですが、1回の文字起こしが3分までなので、実際の商談を丸ごと試す用途では制限があります。</p>
-<p>プレミアムは年払いで総額14,220円（税込）、月額換算1,185円で、月1,800分まで文字起こしできます。ビジネスは年払いで月額換算2,508円/アカウント（税込）で、文字起こし時間は無制限と案内されています。</p>
-<a class="cta" href="https://www.notta.ai/pricing" rel="nofollow noopener">Notta公式料金を確認</a>
-<h2>2. Zoom｜Zoom中心なら最初に確認</h2>
-<p>Zoomを普段から使っている場合は、別サービスを契約する前にZoom側のAI機能を確認する価値があります。現在のZoomMateベーシックでは、無料のWorkplaceベーシックでもミーティング要約や会議内質問、AIノート作成に月ごとの利用枠があります。</p>
-<p>「議事録のためだけに新しいツールを増やしたくない」という人は、まず既存Zoomアカウントで実際の会議を数回試し、要約の修正時間を測るのが合理的です。</p>
-<a class="cta" href="https://www.zoom.com/ja/products/ai-assistant/" rel="nofollow noopener">Zoom公式AI機能を確認</a>
-<h2>3. Google Meet + Gemini｜Google Workspace中心</h2>
-<p>Google Workspace Business Standardでは、Google MeetなどでGemini AIアシスタントを利用できます。「Take notes for me」は会議内容を整理し、GoogleドキュメントとしてDriveに保存でき、主要な論点、次のステップ、重要な決定事項の抽出にも対応しています。</p>
-<p>Gmail、Googleドキュメント、DriveまでGoogleで統一しているなら、議事録だけ別サービスへ分離しないことがメリットになります。</p>
-<a class="cta" href="https://workspace.google.com/intl/ja/business/" rel="nofollow noopener">Google Workspace公式料金を確認</a>
-<h2>4. Microsoft Teams｜Microsoft 365中心</h2>
-<p>Teamsでは、会議後の「要約」から録画や文字起こしを確認できます。インテリジェント要約ではAIによる概要、タスク、メンションなどを確認でき、Microsoft CopilotまたはTeams Premiumのライセンスが必要です。</p>
-<p>Teams Premiumは年払いで月額換算1,499円/ユーザー（税別）と案内されています。ただしTeamsライセンスも必要なので、「1,499円だけで全部使える」と考えず、現在のMicrosoft契約と合わせて確認してください。</p>
-<a class="cta" href="https://www.microsoft.com/ja-jp/microsoft-teams/premium" rel="nofollow noopener">Teams Premium公式料金を確認</a>
-<h2>個人事業主・小さな会社ならどう選ぶ？</h2>
-<table>
-<thead><tr><th>状況</th><th>最初の候補</th><th>判断ポイント</th></tr></thead>
-<tbody>
-<tr><td>取引先ごとにZoom・Meet・Teamsが変わる</td><td>Notta</td><td>複数サービスを横断して同じ形式で記録できるか</td></tr>
-<tr><td>ほぼZoomだけ</td><td>Zoom</td><td>追加契約なしの範囲で必要な要約が作れるか</td></tr>
-<tr><td>Gmail・Drive・Meet中心</td><td>Google Workspace</td><td>会議メモから文書・メールへ自然につなげられるか</td></tr>
-<tr><td>Teams・Outlook・Office中心</td><td>Teams</td><td>現在のMicrosoftライセンスに何を追加する必要があるか</td></tr>
-</tbody>
-</table>
-<h2>無料プランで比較するときのテスト方法</h2>
-<p>違う会議で試すと比較になりません。同じ10〜15分程度の模擬会議を使い、①固有名詞、②決定事項、③担当者、④期限、⑤次の行動の5項目がどこまで正しく残るかを確認します。</p>
-<div class="box"><strong>測る数字：</strong>会議後に人が議事録を完成させるまでの時間を測ってください。「文字起こし精度90%」のような数字より、自分の仕事で修正に何分かかったかの方が導入判断に役立ちます。</div>
-<h2>AIに任せてはいけない確認</h2>
-<p>AI議事録は最終記録そのものではなく、確認前の下書きとして扱うのが安全です。特に、決定事項、担当者、期限、金額、契約条件、顧客名・商品名などの固有名詞は原音や参加者の確認と照合してください。</p>
-<p>また、録音・文字起こしを開始する前に、参加者への案内、会社の情報管理ルール、顧客との秘密保持契約、各サービスの保存・共有設定を確認します。</p>
-<h2>導入は「会議後15分」を減らせるかで判断</h2>
-<p>AI議事録を導入する目的は、文字起こしデータを増やすことではありません。会議後に人が行っている「要点整理→決定事項確認→タスク化→共有」の時間を減らすことです。1週間試し、AIを使わない場合と比べて修正を含む総作業時間が短くなるかを記録してください。</p>
-<h2>まとめ</h2>
-<p>会議サービスをまたぐならNotta、Zoom中心ならZoom、Google Workspace中心ならGoogle Meet + Gemini、Microsoft環境中心ならTeamsから比較すると候補を絞りやすくなります。最終的には機能数ではなく、会議後の確認作業まで含めて時間が減るかで選びましょう。</p>
-<div class="box"><strong>関連記事</strong>
-<p><a href="zoom-ai-meeting.html">Zoom会議をAIで効率化する方法</a></p>
-<p><a href="teams-ai-meeting.html">Teams会議をAIで効率化する方法</a></p>
-<p><a href="google-meet-ai.html">Google MeetをAIで効率化する方法</a></p>
-<p><a href="ai-tools-sole-proprietor.html">個人事業主向けAIツール比較</a></p>
-<p><a href="ai-implementation-checklist.html">AI導入で失敗しないためのチェックリスト</a></p>
-</div>
-<h2>確認した公式情報</h2>
-<ul>
-<li><a href="https://www.notta.ai/pricing" rel="nofollow noopener">Notta 料金プラン</a></li>
-<li><a href="https://www.zoom.com/ja/products/ai-assistant/" rel="nofollow noopener">Zoom AIアシスタント</a></li>
-<li><a href="https://workspace.google.com/solutions/ai/ai-note-taking/" rel="nofollow noopener">Google Workspace AI note taking</a></li>
-<li><a href="https://workspace.google.com/intl/ja/business/" rel="nofollow noopener">Google Workspace料金</a></li>
-<li><a href="https://support.microsoft.com/ja-jp/teams/meetings/meeting-recap-app-teams" rel="nofollow noopener">Microsoft Teams 会議要約</a></li>
-<li><a href="https://www.microsoft.com/ja-jp/microsoft-teams/premium" rel="nofollow noopener">Microsoft Teams Premium料金</a></li>
-</ul>
-<p class="meta">※サービスの料金・機能・利用条件は変更されます。契約・導入前に各社公式情報で最新条件を確認してください。</p>
-<section class="related-nav"><div class="related-nav__head"><div><p class="related-nav__eyebrow">NEXT STEP</p><h2>次に見る</h2></div><span>カード全体をクリックできます</span></div><div class="related-nav__grid"><a class="related-card" href="zoom-ai-meeting.html"><small>関連記事</small><strong>Zoom会議をAIで効率化する方法</strong><span>記事を読む</span></a><a class="related-card" href="teams-ai-meeting.html"><small>関連記事</small><strong>Teams会議をAIで効率化する方法</strong><span>記事を読む</span></a><a class="related-card" href="google-meet-ai.html"><small>関連記事</small><strong>Google MeetをAIで効率化する方法</strong><span>記事を読む</span></a></div></section></main>
-<footer class="site-footer">
-<div class="container">
-<div class="site-footer__inner">
-<div><a class="logo" href="index.html">その仕事、<span>AIにできる？</span></a></div>
-<div class="site-footer__links">
-<a href="about.html">このサイトについて</a>
-<a href="privacy.html">プライバシーポリシー</a>
-<a href="contact.html">お問い合わせ</a>
-</div>
-</div>
-<div class="site-footer__copy">© 2026 その仕事、AIにできる？</div>
-</div>
-</footer></body>
-</html>
+<h2>検証方法</h2>
+<p>架空の営業会議に、決定事項、担当者と期限のあるToDo、未決事項、数字・日付、雑談を混ぜました。さらに「見積もり取得は決定済みだが、外部デザイナーへの発注は未決定」という誤分類しやすい条件を入れています。</p>
+<div class="box"><strong>正解データ</strong><p>決定事項3件／ToDo 3件／未決事項4件。数字・日付を変えないこと、原文にない情報を足さないこと、コーヒーメーカーの雑談を除外することも確認しました。</p></div>
+
+<h2 id="results">3AIを正解データと照合</h2>
+<div class="table-wrap"><table class="compare"><thead><tr><th>検証項目</th><th>ChatGPT</th><th>Gemini</th><th>Claude</th></tr></thead><tbody>
+<tr><td>本来の決定事項3件</td><td class="score">3/3</td><td class="score">3/3</td><td class="score">2/3</td></tr>
+<tr><td>本来のToDo 3件</td><td>3/3</td><td>3/3</td><td>3/3</td></tr>
+<tr><td>担当者・期限</td><td>3/3</td><td>3/3</td><td>3/3</td></tr>
+<tr><td>未決事項4件</td><td>4/4</td><td>内容として4/4</td><td>内容は把握</td></tr>
+<tr><td>数字・日付の誤り</td><td>なし</td><td>なし</td><td>なし</td></tr>
+<tr><td>原文にない実績・数字の追加</td><td>なし</td><td>なし</td><td>なし</td></tr>
+<tr><td>雑談の除外</td><td>成功</td><td>成功</td><td>成功</td></tr>
+<tr><td>目立ったズレ</td><td>正解データと一致</td><td>正解データとほぼ一致</td><td>未決事項を決定事項にも分類。問い合わせフォーム案を追加ToDo化</td></tr>
+</tbody></table></div>
+
+<div class="verdict"><strong>今回わかったこと</strong><p>AIは決定事項・ToDo・期限の抽出までかなり行えます。一方で「検討する」「今回は決めない」といった発言の分類は、もっともらしい文章のままズレることがあります。議事録では文章表現より、<strong>決定／未決／担当／期限</strong>の確認を優先するのが安全です。</p></div>
+
+<h2>実際の初回出力</h2>
+<div class="raw good"><h3>ChatGPT</h3><pre>■ 決定事項
+・サービス紹介資料の料金説明を1ページにまとめる。
+・A社への初回提案は佐藤さんが担当する。
+・次回の会議は10月7日15時から実施する。
+
+■ ToDo
+・料金説明資料を1ページにまとめた修正版を作成／佐藤／9月30日
+・外部デザイナー2社から見積もりを取得／鈴木／10月3日
+・A社へ初回提案を送付／佐藤／10月5日
+
+■ 未決事項
+・外部デザイナーへ実際に依頼するかどうか。
+・現行の月額3万円を維持するか、月額5万円のプランを追加するか。
+・お問い合わせフォームのどの入力項目を削るか。
+・お問い合わせフォームの改善案を作成する担当者。</pre></div>
+
+<div class="raw good"><h3>Gemini</h3><pre>■ 決定事項
+・サービス紹介資料の料金説明を1ページにまとめる。
+・A社への初回提案は佐藤さんが担当する。
+・次回の会議を10月7日15時から実施する。
+
+■ ToDo
+・料金説明資料の修正版作成／佐藤／9月30日
+・デザイナー2社からの見積もり取得／鈴木／10月3日
+・A社への初回提案送付／佐藤／10月5日
+
+■ 未決事項
+・外部デザイナーへの発注（費用確認後に判断）
+・サービス料金の変更
+・Webサイトのお問い合わせフォームの項目削減内容および改善案の作成担当者</pre></div>
+
+<div class="raw warn"><h3>Claude</h3><pre>■ 決定事項
+・新しいサービス紹介資料の料金説明ページは1ページにまとめる
+・外部デザイナーへの依頼は費用確認後に判断する(今回は依頼しない)
+・サービス料金プランは今回決定せず、次回会議で検討する
+・次回会議は10月7日15時からとする
+
+■ ToDo
+・料金説明資料を1ページに修正／佐藤さん／9月30日
+・外部デザイナー2社から見積もりを取得／鈴木さん／10月3日
+・A社への初回提案を送付／佐藤さん／10月5日
+・問い合わせフォームの入力項目削減案を検討／担当者:未定／期限:未定(次回会議までに)</pre></div>
+<p class="method">※読みやすさのため、各出力は主要部分を掲載しています。比較・判定はこの検証で得られた初回出力に基づきます。</p>
+
+<h2>人が最後に確認する4点</h2>
+<ol><li><strong>決定事項：</strong>「検討」「保留」が混ざっていないか</li><li><strong>ToDo：</strong>担当者と期限が原文どおりか</li><li><strong>数字：</strong>金額・日付・件数が変わっていないか</li><li><strong>推測：</strong>会議で言っていない情報が補完されていないか</li></ol>
+
+<h2>最初に仕事を分解する</h2><p>Zoom、Teams、Google Meet、Notionなど、普段の会議環境に近い候補から検討します。</p>
+<ol><li>今の作業手順を書き出す</li><li>繰り返し発生する工程を見つける</li><li>AIに渡す入力情報を決める</li><li>AIの出力を人が確認する基準を決める</li><li>削減できた時間と修正時間を記録する</li></ol>
+<h2>AIに任せやすいこと</h2><p>下書き、要約、分類、構成案、言い換え、チェック候補の作成など、「正解を人が確認できる作業」はAI化の候補です。最終判断や対外的な約束は、人が確認してから確定します。</p>
+<h2>人が確認すべきこと</h2><p>録音・文字起こしの同意、固有名詞、決定事項の誤認識を人が確認します。</p><p>さらに、固有名詞、金額、日付、引用、契約条件、個人情報・機密情報の扱いは公開・送信前に確認します。</p>
+<h2>そのまま使える基本プロンプト</h2>
+<div class="prompt">次の業務を効率化したいです。
+業務：［対象業務］
+目的：［何を短縮・改善したいか］
+入力情報：［AIに渡せる情報］
+出力形式：［箇条書き／表／メールなど］
+
+まず作業を工程に分解し、
+1. AIに任せられる工程
+2. 人が確認すべき工程
+3. 不足している情報
+を示してください。
+事実・数字・固有名詞を推測で補わないでください。</div>
+<h2>導入手順</h2><p>最初の1週間は1つの業務だけで試します。AIを使う前後の所要時間、修正回数、ミスの種類を記録し、実際に負担が減ったかを判断します。効果が確認できてから対象業務を増やします。</p>
+<h2>まとめ</h2><p>AI議事録ツール比較｜小さな会社・個人事業主向けで重要なのは、ツールを増やすことではなく、仕事のどこをAIに渡すかを明確にすることです。小さく試し、人の確認を残したまま改善していきましょう。</p>
+<div class="box"><strong>関連記事</strong><p><a href="article-ai-efficiency.html">個人事業主の仕事をAIで効率化する方法</a></p><p><a href="ai-tools-sole-proprietor.html">個人事業主向けAIツール比較</a></p><p><a href="ai-sales-email.html">AIで営業メールを作る方法</a></p></div>
+<p class="meta">※サービスの料金・機能・利用条件は変更される場合があります。契約・導入前に各社公式情報を確認してください。</p></main></body></html>

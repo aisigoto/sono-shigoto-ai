@@ -9,6 +9,22 @@
 <meta name="description" content="営業メール、会議、資料、経理、SNS。減らしたい仕事からAIの使い方を探せる、個人事業主・フリーランス・小さな会社向けのAI仕事効率化メディア。">
 <link rel="canonical" href="https://sono-shigoto-ai.com/">
 <link rel="stylesheet" href="styles.css">
+
+<style>
+/* Interactive AI work demo */
+.ai-live-demo{padding:28px 0 34px;background:#0b1220;color:#fff;overflow:hidden}
+.ai-live-demo .demo-shell{display:grid;grid-template-columns:.9fr 1.4fr;gap:28px;align-items:center}
+.demo-kicker{font-size:.75rem;letter-spacing:.16em;font-weight:800;color:#93c5fd;margin:0 0 8px}
+.demo-copy h2{font-size:clamp(1.55rem,3vw,2.35rem);line-height:1.25;margin:0 0 10px;color:#fff}
+.demo-copy p{color:#cbd5e1;line-height:1.75;margin:0}.demo-copy a{display:inline-flex;margin-top:15px;color:#fff;font-weight:800;text-decoration:none;border-bottom:1px solid #60a5fa;padding-bottom:3px}
+.demo-stage{background:#111b2e;border:1px solid #263550;border-radius:18px;padding:16px;min-width:0}
+.demo-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}.demo-tab{appearance:none;border:1px solid #34445f;background:#162238;color:#cbd5e1;border-radius:999px;padding:8px 12px;font:inherit;font-size:.82rem;font-weight:700;cursor:pointer}.demo-tab[aria-selected="true"]{background:#fff;color:#0f172a;border-color:#fff}
+.demo-flow{display:grid;grid-template-columns:1fr 42px 1fr 42px 1fr;align-items:stretch}.demo-node{min-width:0;background:#0d1728;border:1px solid #263550;border-radius:14px;padding:15px;transition:.3s ease}.demo-node small{display:block;color:#94a3b8;font-size:.7rem;letter-spacing:.1em;font-weight:800;margin-bottom:7px}.demo-node strong{display:block;font-size:.95rem;line-height:1.45}.demo-node em{display:block;color:#94a3b8;font-style:normal;font-size:.78rem;line-height:1.5;margin-top:6px}.demo-node.is-active{border-color:#60a5fa;box-shadow:0 0 0 3px rgba(96,165,250,.12);transform:translateY(-2px)}
+.demo-arrow{display:flex;align-items:center;justify-content:center;color:#64748b;font-size:1.25rem}.demo-status{display:flex;align-items:center;gap:9px;margin-top:13px;color:#bfdbfe;font-size:.8rem;font-weight:700}.demo-dot{width:8px;height:8px;border-radius:50%;background:#60a5fa;box-shadow:0 0 0 0 rgba(96,165,250,.5);animation:demoPulse 1.6s infinite}.demo-result{margin-left:auto;color:#86efac}.demo-progress{height:3px;background:#1e293b;border-radius:99px;overflow:hidden;margin-top:12px}.demo-progress span{display:block;height:100%;width:0;background:#60a5fa;animation:demoProgress 5.4s linear infinite}
+@keyframes demoPulse{70%{box-shadow:0 0 0 8px rgba(96,165,250,0)}}@keyframes demoProgress{to{width:100%}}
+@media(max-width:800px){.ai-live-demo .demo-shell{grid-template-columns:1fr}.demo-flow{grid-template-columns:1fr}.demo-arrow{height:28px;transform:rotate(90deg)}.demo-copy p{font-size:.94rem}}
+@media(prefers-reduced-motion:reduce){.demo-dot,.demo-progress span{animation:none}.demo-progress span{width:100%}.demo-node{transition:none}}
+</style>
 </head>
 <body>
 <header class="site-header">
@@ -55,6 +71,34 @@
           </div>
         </div>
         <p class="visual-note">全部をAIに任せるのではなく、<br>仕事を分けるところから始めます。</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="ai-live-demo" aria-labelledby="demo-title">
+    <div class="container demo-shell">
+      <div class="demo-copy">
+        <p class="demo-kicker">WATCH AI AT WORK</p>
+        <h2 id="demo-title">仕事がAIを通ると、<br>どこまで変わる？</h2>
+        <p>サイトの考え方を5秒で。仕事を選ぶと「人が決める → AIが処理 → 人が確認」が動きます。</p>
+        <a id="demo-link" href="ai-sales-email.html">営業メールの実証を見る →</a>
+      </div>
+      <div class="demo-stage">
+        <div class="demo-tabs" role="tablist" aria-label="仕事を選ぶ">
+          <button class="demo-tab" type="button" role="tab" aria-selected="true" data-demo="mail">営業メール</button>
+          <button class="demo-tab" type="button" role="tab" aria-selected="false" data-demo="meeting">議事録</button>
+          <button class="demo-tab" type="button" role="tab" aria-selected="false" data-demo="docs">資料整理</button>
+        </div>
+        <div class="demo-flow" aria-live="polite">
+          <div class="demo-node is-active" data-step="0"><small>01 / HUMAN</small><strong id="demo-in-title">相手・目的を入力</strong><em id="demo-in-sub">伝えたい価値と条件を決める</em></div>
+          <div class="demo-arrow">→</div>
+          <div class="demo-node" data-step="1"><small>02 / AI</small><strong id="demo-ai-title">構成・初稿を生成</strong><em id="demo-ai-sub">文章のたたき台を数秒で作る</em></div>
+          <div class="demo-arrow">→</div>
+          <div class="demo-node" data-step="2"><small>03 / REVIEW</small><strong id="demo-out-title">事実を確認して完成</strong><em id="demo-out-sub">価格・表現・送信判断は人が確認</em></div>
+        </div>
+        <div class="demo-status"><span class="demo-dot"></span><span id="demo-status-text">人が条件を決めています</span><span class="demo-result" id="demo-result">実証 #01</span></div>
+        <div class="demo-progress" aria-hidden="true"><span></span></div>
       </div>
     </div>
   </section>
@@ -203,5 +247,23 @@
   </div>
   <div class="container copyright">© 2026 その仕事、AIにできる？</div>
 </footer>
+
+<script>
+(() => {
+  const root=document.querySelector('.ai-live-demo'); if(!root) return;
+  const data={
+    mail:{inT:'相手・目的を入力',inS:'伝えたい価値と条件を決める',aiT:'構成・初稿を生成',aiS:'文章のたたき台を数秒で作る',outT:'事実を確認して完成',outS:'価格・表現・送信判断は人が確認',status:['人が条件を決めています','AIが営業メールを作成中…','人が事実と表現を確認します'],result:'実証 #01',link:'ai-sales-email.html',linkText:'営業メールの実証を見る →'},
+    meeting:{inT:'会議記録を渡す',inS:'発言・数字・期限をそのまま入力',aiT:'決定・ToDoを抽出',aiS:'未決事項も分けて整理する',outT:'分類ミスを確認',outS:'決定と未決を人が最終確認',status:['会議記録を読み込んでいます','AIが決定事項とToDoを整理中…','人が分類と期限を確認します'],result:'実証 #02',link:'ai-meeting-tools.html',linkText:'議事録の実証を見る →'},
+    docs:{inT:'元資料と目的を指定',inS:'使う情報と完成形を決める',aiT:'要点を整理・構成',aiS:'情報をまとめて初稿にする',outT:'数字・出典を確認',outS:'重要情報は元資料と照合する',status:['資料と目的を整理しています','AIが要点を構成中…','人が数字と出典を確認します'],result:'WORK FLOW',link:'ai-presentation-tools.html',linkText:'資料作成の記事を見る →'}
+  };
+  const ids=['in-title','in-sub','ai-title','ai-sub','out-title','out-sub'];
+  let step=0,timer;
+  function setJob(key){const d=data[key]; ['inT','inS','aiT','aiS','outT','outS'].forEach((k,i)=>document.getElementById('demo-'+ids[i]).textContent=d[k]); document.getElementById('demo-result').textContent=d.result; const a=document.getElementById('demo-link');a.href=d.link;a.textContent=d.linkText; root.dataset.job=key; step=0;paint();}
+  function paint(){const d=data[root.dataset.job||'mail'];root.querySelectorAll('.demo-node').forEach((n,i)=>n.classList.toggle('is-active',i===step));document.getElementById('demo-status-text').textContent=d.status[step];step=(step+1)%3;}
+  function start(){clearInterval(timer);timer=setInterval(paint,1800)}
+  root.querySelectorAll('.demo-tab').forEach(b=>b.addEventListener('click',()=>{root.querySelectorAll('.demo-tab').forEach(x=>x.setAttribute('aria-selected','false'));b.setAttribute('aria-selected','true');setJob(b.dataset.demo);start()}));
+  setJob('mail'); if(!matchMedia('(prefers-reduced-motion: reduce)').matches) start();
+})();
+</script>
 </body>
 </html>

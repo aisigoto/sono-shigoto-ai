@@ -1,24 +1,24 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AI議事録ツール比較｜小さな会社・個人事業主向け | その仕事、AIにできる？</title><meta name="description" content="議事録AIは「文字起こし」だけでなく、決定事項と担当タスクを会議後すぐ取り出せるかが重要です。">
-<link rel="canonical" href="https://sono-shigoto-ai.com/ai-meeting-tools.html"><link rel="stylesheet" href="styles.css">
+<!DOCTYPE html>
+
+<html lang="ja"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>AI議事録ツール比較｜小さな会社・個人事業主向け | その仕事、AIにできる？</title><meta content="議事録AIは「文字起こし」だけでなく、決定事項と担当タスクを会議後すぐ取り出せるかが重要です。" name="description"/>
+<link href="https://sono-shigoto-ai.com/ai-meeting-tools.html" rel="canonical"/><link href="styles.css" rel="stylesheet"/>
 <style>.article{max-width:860px;margin:auto;padding:44px 20px 80px}.article h1{font-size:clamp(2rem,5vw,3.1rem);line-height:1.25}.article h2{margin-top:2.2em;border-bottom:2px solid #e5e7eb;padding-bottom:.35em}.box,.prompt{padding:18px 20px;border-radius:12px;margin:20px 0;background:#f5f7fa}.prompt{white-space:pre-wrap;border-left:4px solid #2563eb}.meta{color:#64748b;font-size:.92rem}
 .exp-hero{margin:24px 0;padding:24px;border:1px solid #cbd5e1;border-radius:16px;background:#fff}.badge{display:inline-block;padding:5px 10px;border-radius:999px;background:#111827;color:#fff;font-size:.82rem;font-weight:700}.score{font-weight:800}.table-wrap{overflow-x:auto;margin:20px 0}.compare{min-width:760px}.raw{margin:16px 0;padding:18px;border:1px solid #dbe2ea;border-radius:12px;background:#fff}.raw h3{margin-top:0}.raw pre{white-space:pre-wrap;font:inherit;line-height:1.75;margin:0}.good{background:#f8fafc}.warn{border-left:4px solid #f59e0b}.jump{display:inline-block;margin-top:10px;font-weight:700}.method{font-size:.9rem;color:#475569}.verdict{padding:18px 20px;border-radius:12px;background:#f8fafc;border:1px solid #dbe2ea}
 </style></head>
 <body><header class="site-header"><div class="container"><a class="logo" href="index.html">その仕事、AIにできる？</a></div></header>
 <main class="article"><p class="meta">会議｜更新日：2026年9月23日</p><h1>AI議事録ツール比較｜小さな会社・個人事業主向け</h1>
-<p>議事録AIは「文字起こし」だけでなく、決定事項と担当タスクを会議後すぐ取り出せるかが重要です。</p><div class="box"><strong>このページの考え方：</strong>AIに仕事を丸投げするのではなく、「AIに任せる工程」と「人が確認する工程」を分けて導入します。</div>
-<section id="experiment" class="exp-hero">
+<p>議事録AIは「文字起こし」だけでなく、決定事項と担当タスクを会議後すぐ取り出せるかが重要です。</p>
+<section class="exp-hero" id="experiment">
 <span class="badge">独自検証 #02</span>
 <h2>実験：同じ会議記録をChatGPT・Claude・Geminiに議事録化させてみた</h2>
 <p><strong>結論：</strong>3つとも実用的な議事録を作れましたが、Claudeでは「決定事項・未決事項・ToDo」の分類にズレが出ました。文章が自然でも、会議で本当に決まったことかは人が確認する必要があります。</p>
-<p class="method">検証条件：3AIに同じ会議記録・同じ指示を入力し、初回出力を比較。追加入力や修正指示は行っていません。出力はモデル・時期・設定によって変わる可能性があります。</p>
+<p class="method">検証条件：同じ会議記録・同じ指示で初回出力を比較。追加指示・修正なし。※出力はモデル・時期・設定で変わる場合があります。</p>
 <a class="jump" href="#results">比較結果を見る ↓</a>
 </section>
-
 <h2>検証方法</h2>
 <p>架空の営業会議に、決定事項、担当者と期限のあるToDo、未決事項、数字・日付、雑談を混ぜました。さらに「見積もり取得は決定済みだが、外部デザイナーへの発注は未決定」という誤分類しやすい条件を入れています。</p>
 <div class="box"><strong>正解データ</strong><p>決定事項3件／ToDo 3件／未決事項4件。数字・日付を変えないこと、原文にない情報を足さないこと、コーヒーメーカーの雑談を除外することも確認しました。</p></div>
-
 <h2 id="results">3AIを正解データと照合</h2>
 <div class="table-wrap"><table class="compare"><thead><tr><th>検証項目</th><th>ChatGPT</th><th>Gemini</th><th>Claude</th></tr></thead><tbody>
 <tr><td>本来の決定事項3件</td><td class="score">3/3</td><td class="score">3/3</td><td class="score">2/3</td></tr>
@@ -30,9 +30,7 @@
 <tr><td>雑談の除外</td><td>成功</td><td>成功</td><td>成功</td></tr>
 <tr><td>目立ったズレ</td><td>正解データと一致</td><td>正解データとほぼ一致</td><td>未決事項を決定事項にも分類。問い合わせフォーム案を追加ToDo化</td></tr>
 </tbody></table></div>
-
 <div class="verdict"><strong>今回わかったこと</strong><p>AIは決定事項・ToDo・期限の抽出までかなり行えます。一方で「検討する」「今回は決めない」といった発言の分類は、もっともらしい文章のままズレることがあります。議事録では文章表現より、<strong>決定／未決／担当／期限</strong>の確認を優先するのが安全です。</p></div>
-
 <h2>実際の初回出力</h2>
 <div class="raw good"><h3>ChatGPT</h3><pre>■ 決定事項
 ・サービス紹介資料の料金説明を1ページにまとめる。
@@ -49,7 +47,6 @@
 ・現行の月額3万円を維持するか、月額5万円のプランを追加するか。
 ・お問い合わせフォームのどの入力項目を削るか。
 ・お問い合わせフォームの改善案を作成する担当者。</pre></div>
-
 <div class="raw good"><h3>Gemini</h3><pre>■ 決定事項
 ・サービス紹介資料の料金説明を1ページにまとめる。
 ・A社への初回提案は佐藤さんが担当する。
@@ -64,7 +61,6 @@
 ・外部デザイナーへの発注（費用確認後に判断）
 ・サービス料金の変更
 ・Webサイトのお問い合わせフォームの項目削減内容および改善案の作成担当者</pre></div>
-
 <div class="raw warn"><h3>Claude</h3><pre>■ 決定事項
 ・新しいサービス紹介資料の料金説明ページは1ページにまとめる
 ・外部デザイナーへの依頼は費用確認後に判断する(今回は依頼しない)
@@ -77,14 +73,12 @@
 ・A社への初回提案を送付／佐藤さん／10月5日
 ・問い合わせフォームの入力項目削減案を検討／担当者:未定／期限:未定(次回会議までに)</pre></div>
 <p class="method">※読みやすさのため、各出力は主要部分を掲載しています。比較・判定はこの検証で得られた初回出力に基づきます。</p>
-
 <h2>人が最後に確認する4点</h2>
 <ol><li><strong>決定事項：</strong>「検討」「保留」が混ざっていないか</li><li><strong>ToDo：</strong>担当者と期限が原文どおりか</li><li><strong>数字：</strong>金額・日付・件数が変わっていないか</li><li><strong>推測：</strong>会議で言っていない情報が補完されていないか</li></ol>
-
 <h2>最初に仕事を分解する</h2><p>Zoom、Teams、Google Meet、Notionなど、普段の会議環境に近い候補から検討します。</p>
-<ol><li>今の作業手順を書き出す</li><li>繰り返し発生する工程を見つける</li><li>AIに渡す入力情報を決める</li><li>AIの出力を人が確認する基準を決める</li><li>削減できた時間と修正時間を記録する</li></ol>
-<h2>AIに任せやすいこと</h2><p>下書き、要約、分類、構成案、言い換え、チェック候補の作成など、「正解を人が確認できる作業」はAI化の候補です。最終判断や対外的な約束は、人が確認してから確定します。</p>
-<h2>人が確認すべきこと</h2><p>録音・文字起こしの同意、固有名詞、決定事項の誤認識を人が確認します。</p><p>さらに、固有名詞、金額、日付、引用、契約条件、個人情報・機密情報の扱いは公開・送信前に確認します。</p>
+<ol><li>対象業務を1つ選ぶ</li><li>AIに渡す情報と、人が確認する基準を決める</li><li>時間・修正回数・ミスを記録して効果を見る</li></ol>
+<h2>AIに任せやすいこと</h2><p>下書き・要約・分類など、人が正解を確認できる作業から任せます。最終判断は人が行います。</p>
+<h2>人が確認すべきこと</h2><p>録音・文字起こしの同意、固有名詞、決定事項の誤認識を人が確認します。</p><p>固有名詞・金額・日付・機密情報は、公開・送信前に確認します。</p>
 <h2>そのまま使える基本プロンプト</h2>
 <div class="prompt">次の業務を効率化したいです。
 業務：［対象業務］
@@ -98,7 +92,7 @@
 3. 不足している情報
 を示してください。
 事実・数字・固有名詞を推測で補わないでください。</div>
-<h2>導入手順</h2><p>最初の1週間は1つの業務だけで試します。AIを使う前後の所要時間、修正回数、ミスの種類を記録し、実際に負担が減ったかを判断します。効果が確認できてから対象業務を増やします。</p>
-<h2>まとめ</h2><p>AI議事録ツール比較｜小さな会社・個人事業主向けで重要なのは、ツールを増やすことではなく、仕事のどこをAIに渡すかを明確にすることです。小さく試し、人の確認を残したまま改善していきましょう。</p>
+<h2>導入手順</h2><p>まず1業務だけ試し、時間・修正回数・ミスを記録します。効果が出てから対象を増やします。</p>
+<h2>まとめ</h2><p>1つの業務から試し、AIに任せる範囲と人が確認する範囲を決めて改善します。</p>
 <div class="box"><strong>関連記事</strong><p><a href="article-ai-efficiency.html">個人事業主の仕事をAIで効率化する方法</a></p><p><a href="ai-tools-sole-proprietor.html">個人事業主向けAIツール比較</a></p><p><a href="ai-sales-email.html">AIで営業メールを作る方法</a></p></div>
 <p class="meta">※サービスの料金・機能・利用条件は変更される場合があります。契約・導入前に各社公式情報を確認してください。</p></main></body></html>

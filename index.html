@@ -1,15 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="ja">
 <head>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-58NKR47NW8"></script>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-58NKR47NW8"></script>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
 <title>その仕事、AIにできる？｜仕事から選ぶAI効率化メディア</title>
-<meta name="description" content="営業メール、会議、資料、経理、SNS。減らしたい仕事からAIの使い方を探せる、個人事業主・フリーランス・小さな会社向けのAI仕事効率化メディア。">
-<link rel="canonical" href="https://sono-shigoto-ai.com/">
-<link rel="stylesheet" href="styles.css">
-
+<meta content="営業メール、会議、資料、経理、SNS。減らしたい仕事からAIの使い方を探せる、個人事業主・フリーランス・小さな会社向けのAI仕事効率化メディア。" name="description"/>
+<link href="https://sono-shigoto-ai.com/" rel="canonical"/>
+<link href="styles.css" rel="stylesheet"/>
 <style>
 /* Interactive AI work demo */
 .ai-live-demo{padding:28px 0 34px;background:#0b1220;color:#fff;overflow:hidden}
@@ -28,226 +28,212 @@
 </head>
 <body>
 <header class="site-header">
-  <div class="container nav">
-    <a class="logo" href="index.html">その仕事、<span>AIにできる？</span></a>
-    <nav>
-      <a href="#work">仕事から探す</a>
-      <a href="ai-tools-sole-proprietor.html">AIツール比較</a>
-      <a class="nav-cta" href="diagnosis.html">AI仕事診断</a>
-    </nav>
-  </div>
+<div class="container nav">
+<a class="logo" href="index.html">その仕事、<span>AIにできる？</span></a>
+<nav>
+<a href="#work">仕事から探す</a>
+<a href="ai-tools-sole-proprietor.html">AIツール比較</a>
+<a class="nav-cta" href="diagnosis.html">AI仕事診断</a>
+</nav>
+</div>
 </header>
-
 <main>
-  <section class="hero">
-    <div class="container hero-inner">
-      <div class="hero-copy">
-        <p class="eyebrow">AIツールを探す前に、まず「仕事」を選ぶ。</p>
-        <h1>その仕事、<br><span>AIにできる？</span></h1>
-        <p class="lead">営業メール、議事録、資料作成、経理、SNS。<br class="pc">減らしたい仕事を選ぶと、<strong>AIに任せる部分</strong>と<strong>人が確認する部分</strong>が分かります。</p>
-        <div class="hero-actions">
-          <a class="button primary" href="diagnosis.html">5問でAI仕事診断 <span>→</span></a>
-          <a class="button ghost" href="#work">仕事から探す</a>
-        </div>
-        <p class="microcopy">ツールの知識がなくてもOK。まず1つの業務から。</p>
-      </div>
-
-      <div class="hero-visual" aria-label="AI化の考え方">
-        <div class="visual-label">たとえば「営業メール」</div>
-        <div class="flow-card">
-          <div class="flow-step">
-            <span class="flow-icon">01</span>
-            <div><small>人が決める</small><b>相手・目的・伝える価値</b></div>
-          </div>
-          <div class="flow-arrow">↓</div>
-          <div class="flow-step ai">
-            <span class="flow-icon">02</span>
-            <div><small>AIに任せる</small><b>構成・初稿・言い換え</b></div>
-          </div>
-          <div class="flow-arrow">↓</div>
-          <div class="flow-step">
-            <span class="flow-icon">03</span>
-            <div><small>人が確認する</small><b>事実・価格・送信判断</b></div>
-          </div>
-        </div>
-        <p class="visual-note">全部をAIに任せるのではなく、<br>仕事を分けるところから始めます。</p>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="ai-live-demo" aria-labelledby="demo-title">
-    <div class="container demo-shell">
-      <div class="demo-copy">
-        <p class="demo-kicker">WATCH AI AT WORK</p>
-        <h2 id="demo-title">仕事がAIを通ると、<br>どこまで変わる？</h2>
-        <p>サイトの考え方を5秒で。仕事を選ぶと「人が決める → AIが処理 → 人が確認」が動きます。</p>
-        <a id="demo-link" href="ai-sales-email.html">営業メールの実証を見る →</a>
-      </div>
-      <div class="demo-stage">
-        <div class="demo-tabs" role="tablist" aria-label="仕事を選ぶ">
-          <button class="demo-tab" type="button" role="tab" aria-selected="true" data-demo="mail">営業メール</button>
-          <button class="demo-tab" type="button" role="tab" aria-selected="false" data-demo="meeting">議事録</button>
-          <button class="demo-tab" type="button" role="tab" aria-selected="false" data-demo="docs">資料整理</button>
-        </div>
-        <div class="demo-flow" aria-live="polite">
-          <div class="demo-node is-active" data-step="0"><small>01 / HUMAN</small><strong id="demo-in-title">相手・目的を入力</strong><em id="demo-in-sub">伝えたい価値と条件を決める</em></div>
-          <div class="demo-arrow">→</div>
-          <div class="demo-node" data-step="1"><small>02 / AI</small><strong id="demo-ai-title">構成・初稿を生成</strong><em id="demo-ai-sub">文章のたたき台を数秒で作る</em></div>
-          <div class="demo-arrow">→</div>
-          <div class="demo-node" data-step="2"><small>03 / REVIEW</small><strong id="demo-out-title">事実を確認して完成</strong><em id="demo-out-sub">価格・表現・送信判断は人が確認</em></div>
-        </div>
-        <div class="demo-status"><span class="demo-dot"></span><span id="demo-status-text">人が条件を決めています</span><span class="demo-result" id="demo-result">実証 #01</span></div>
-        <div class="demo-progress" aria-hidden="true"><span></span></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="quick-strip">
-    <div class="container quick-inner">
-      <span>いま減らしたい仕事は？</span>
-      <a href="ai-sales-email.html">✉ 営業メール</a>
-      <a href="ai-meeting-tools.html">◉ 会議・議事録</a>
-      <a href="ai-presentation-tools.html">▤ 資料作成</a>
-      <a href="ai-accounting-invoice.html">¥ 経理・請求</a>
-      <a href="ai-sns-posts.html"># SNS</a>
-    </div>
-  </section>
-
-  <section class="section work-section" id="work">
-    <div class="container">
-      <div class="section-heading split-heading">
-        <div>
-          <p class="eyebrow">CHOOSE YOUR WORK</p>
-          <h2>AIツールではなく、<br>減らしたい仕事から選ぶ。</h2>
-        </div>
-        <p>「何のAIを使えばいい？」より先に、<br>「何を減らしたい？」を決めます。</p>
-      </div>
-
-      <div class="work-grid">
-        <a class="work-tile featured" href="ai-sales-email.html">
-          <div class="tile-icon">✉</div>
-          <div class="tile-copy"><span>SALES / MAIL</span><h3>営業メール</h3><p>新規営業・フォロー・商談後メールの初稿を短くする。</p></div>
-          <b class="tile-arrow">→</b>
-        </a>
-        <a class="work-tile" href="ai-meeting-tools.html">
-          <div class="tile-icon">◉</div>
-          <div class="tile-copy"><span>MEETING</span><h3>会議・議事録</h3><p>文字起こし、要約、ToDo整理まで。</p></div>
-          <b class="tile-arrow">→</b>
-        </a>
-        <a class="work-tile" href="ai-presentation-tools.html">
-          <div class="tile-icon">▤</div>
-          <div class="tile-copy"><span>DOCUMENT</span><h3>資料・提案書</h3><p>構成案からスライド初稿まで。</p></div>
-          <b class="tile-arrow">→</b>
-        </a>
-        <a class="work-tile" href="ai-email-reply.html">
-          <div class="tile-icon">↩</div>
-          <div class="tile-copy"><span>REPLY</span><h3>メール返信</h3><p>要点整理と返信文の下書きを速くする。</p></div>
-          <b class="tile-arrow">→</b>
-        </a>
-        <a class="work-tile" href="ai-accounting-invoice.html">
-          <div class="tile-icon">¥</div>
-          <div class="tile-copy"><span>BACK OFFICE</span><h3>経理・請求</h3><p>入力・整理・確認の手間を減らす。</p></div>
-          <b class="tile-arrow">→</b>
-        </a>
-        <a class="work-tile" href="ai-sns-posts.html">
-          <div class="tile-icon">#</div>
-          <div class="tile-copy"><span>CONTENT</span><h3>SNS投稿</h3><p>ネタ出し、構成、投稿文の初稿まで。</p></div>
-          <b class="tile-arrow">→</b>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section process-section">
-    <div class="container">
-      <div class="section-heading center">
-        <p class="eyebrow">HOW WE THINK</p>
-        <h2>AI化は、3つに分けると分かりやすい。</h2>
-        <p>このサイトでは、どの記事も同じ考え方で仕事を分解します。</p>
-      </div>
-      <div class="process-grid">
-        <div class="process-card"><span>1</span><small>INPUT</small><h3>人が決める</h3><p>目的、相手、条件、守るべきルールを決める。</p></div>
-        <div class="process-connector">→</div>
-        <div class="process-card accent-card"><span>2</span><small>AI WORK</small><h3>AIに任せる</h3><p>調査補助、整理、要約、構成、初稿を作らせる。</p></div>
-        <div class="process-connector">→</div>
-        <div class="process-card"><span>3</span><small>REVIEW</small><h3>人が確認する</h3><p>事実、数字、顧客情報、公開・送信判断を確認する。</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section picks-section">
-    <div class="container">
-      <div class="section-heading">
-        <p class="eyebrow">START HERE</p>
-        <h2>最初の3本だけ読む。</h2>
-        <p>記事を大量に読む必要はありません。目的に合わせて1本選んでください。</p>
-      </div>
-      <div class="pick-grid">
-        <a class="pick-card dark" href="article-ai-efficiency.html">
-          <span class="pick-no">01</span><div><small>まず全体像を知る</small><h3>個人事業主の仕事を<br>AIで効率化する方法</h3><p>最初にAI化したい7つの業務を整理。</p></div><b>読む →</b>
-        </a>
-        <a class="pick-card" href="ai-tools-sole-proprietor.html">
-          <span class="pick-no">02</span><div><small>ツールを絞る</small><h3>個人事業主向け<br>AIツール比較</h3><p>仕事別に候補を比較して選ぶ。</p></div><b>比較する →</b>
-        </a>
-        <a class="pick-card" href="ai-sales-email.html">
-          <span class="pick-no">03</span><div><small>今日から試す</small><h3>AIで営業メールを<br>作る方法</h3><p>そのまま試せる手順とプロンプト。</p></div><b>実践する →</b>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section audience-section">
-    <div class="container audience-inner">
-      <div>
-        <p class="eyebrow">BY YOUR SITUATION</p>
-        <h2>あなたの状況から選ぶ。</h2>
-      </div>
-      <div class="audience-links">
-        <a href="ai-tools-freelance.html"><span>フリーランス</span><b>→</b></a>
-        <a href="one-person-company-ai.html"><span>1人会社</span><b>→</b></a>
-        <a href="small-company-ai-tools.html"><span>小さな会社</span><b>→</b></a>
-        <a href="free-ai-tools.html"><span>まず無料で試す</span><b>→</b></a>
-        <a href="ai-under-5000-yen.html"><span>月5,000円以内</span><b>→</b></a>
-        <a href="ai-tools-10.html"><span>AIツール10選</span><b>→</b></a>
-      </div>
-    </div>
-  </section>
-
-  <section class="diagnosis-banner">
-    <div class="container diagnosis-inner">
-      <div>
-        <p class="eyebrow">5 QUESTIONS / FREE</p>
-        <h2>何からAI化するか、<br>5問で整理する。</h2>
-        <p>ツールを契約する前に、まず自分の仕事を棚卸し。最初に見直す業務を絞ります。</p>
-      </div>
-      <a class="button light" href="diagnosis.html">AIにできる仕事を診断する <span>→</span></a>
-    </div>
-  </section>
-
-  <section class="section standard-section">
-    <div class="container">
-      <div class="section-heading center">
-        <p class="eyebrow">OUR STANDARD</p>
-        <h2>このサイトが大事にする3つ。</h2>
-      </div>
-      <div class="standard-grid">
-        <div><span>01</span><h3>仕事から考える</h3><p>有名なAIではなく、減らしたい作業から逆算します。</p></div>
-        <div><span>02</span><h3>人の確認を残す</h3><p>数字、契約、顧客情報、公開判断は人が確認します。</p></div>
-        <div><span>03</span><h3>小さく試す</h3><p>最初から全自動化せず、1業務で効果と修正量を測ります。</p></div>
-      </div>
-    </div>
-  </section>
+<section class="hero">
+<div class="container hero-inner">
+<div class="hero-copy">
+<p class="eyebrow">AIツールを探す前に、まず「仕事」を選ぶ。</p>
+<h1>その仕事、<br/><span>AIにできる？</span></h1>
+<p class="lead">営業メール、議事録、資料作成、経理、SNS。<br class="pc"/>減らしたい仕事を選ぶと、<strong>AIに任せる部分</strong>と<strong>人が確認する部分</strong>が分かります。</p>
+<div class="hero-actions">
+<a class="button primary" href="diagnosis.html">5問でAI仕事診断 <span>→</span></a>
+<a class="button ghost" href="#work">仕事から探す</a>
+</div>
+<p class="microcopy">ツールの知識がなくてもOK。まず1つの業務から。</p>
+</div>
+<div aria-label="AI化の考え方" class="hero-visual">
+<div class="visual-label">たとえば「営業メール」</div>
+<div class="flow-card">
+<div class="flow-step">
+<span class="flow-icon">01</span>
+<div><small>人が決める</small><b>相手・目的・伝える価値</b></div>
+</div>
+<div class="flow-arrow">↓</div>
+<div class="flow-step ai">
+<span class="flow-icon">02</span>
+<div><small>AIに任せる</small><b>構成・初稿・言い換え</b></div>
+</div>
+<div class="flow-arrow">↓</div>
+<div class="flow-step">
+<span class="flow-icon">03</span>
+<div><small>人が確認する</small><b>事実・価格・送信判断</b></div>
+</div>
+</div>
+<p class="visual-note">全部をAIに任せるのではなく、<br/>仕事を分けるところから始めます。</p>
+</div>
+</div>
+</section>
+<section aria-labelledby="demo-title" class="ai-live-demo">
+<div class="container demo-shell">
+<div class="demo-copy">
+<p class="demo-kicker">WATCH AI AT WORK</p>
+<h2 id="demo-title">仕事がAIを通ると、<br/>どこまで変わる？</h2>
+<p>サイトの考え方を5秒で。仕事を選ぶと「人が決める → AIが処理 → 人が確認」が動きます。</p>
+<a href="ai-sales-email.html" id="demo-link">営業メールの実証を見る →</a>
+</div>
+<div class="demo-stage">
+<div aria-label="仕事を選ぶ" class="demo-tabs" role="tablist">
+<button aria-selected="true" class="demo-tab" data-demo="mail" role="tab" type="button">営業メール</button>
+<button aria-selected="false" class="demo-tab" data-demo="meeting" role="tab" type="button">議事録</button>
+<button aria-selected="false" class="demo-tab" data-demo="docs" role="tab" type="button">資料整理</button>
+</div>
+<div aria-live="polite" class="demo-flow">
+<div class="demo-node is-active" data-step="0"><small>01 / HUMAN</small><strong id="demo-in-title">相手・目的を入力</strong><em id="demo-in-sub">伝えたい価値と条件を決める</em></div>
+<div class="demo-arrow">→</div>
+<div class="demo-node" data-step="1"><small>02 / AI</small><strong id="demo-ai-title">構成・初稿を生成</strong><em id="demo-ai-sub">文章のたたき台を数秒で作る</em></div>
+<div class="demo-arrow">→</div>
+<div class="demo-node" data-step="2"><small>03 / REVIEW</small><strong id="demo-out-title">事実を確認して完成</strong><em id="demo-out-sub">価格・表現・送信判断は人が確認</em></div>
+</div>
+<div class="demo-status"><span class="demo-dot"></span><span id="demo-status-text">人が条件を決めています</span><span class="demo-result" id="demo-result">実証 #01</span></div>
+<div aria-hidden="true" class="demo-progress"><span></span></div>
+</div>
+</div>
+</section>
+<section class="quick-strip">
+<div class="container quick-inner">
+<span>いま減らしたい仕事は？</span>
+<a href="ai-sales-email.html">✉ 営業メール</a>
+<a href="ai-meeting-tools.html">◉ 会議・議事録</a>
+<a href="ai-presentation-tools.html">▤ 資料作成</a>
+<a href="ai-accounting-invoice.html">¥ 経理・請求</a>
+<a href="ai-sns-posts.html"># SNS</a>
+</div>
+</section>
+<section class="section work-section" id="work">
+<div class="container">
+<div class="section-heading split-heading">
+<div>
+<p class="eyebrow">CHOOSE YOUR WORK</p>
+<h2>AIツールではなく、<br/>減らしたい仕事から選ぶ。</h2>
+</div>
+<p>「何のAIを使えばいい？」より先に、<br/>「何を減らしたい？」を決めます。</p>
+</div>
+<div class="work-grid">
+<a class="work-tile featured" href="ai-sales-email.html">
+<div class="tile-icon">✉</div>
+<div class="tile-copy"><span>SALES / MAIL</span><h3>営業メール</h3><p>新規営業・フォロー・商談後メールの初稿を短くする。</p></div>
+<b class="tile-arrow">→</b>
+</a>
+<a class="work-tile" href="ai-meeting-tools.html">
+<div class="tile-icon">◉</div>
+<div class="tile-copy"><span>MEETING</span><h3>会議・議事録</h3><p>文字起こし、要約、ToDo整理まで。</p></div>
+<b class="tile-arrow">→</b>
+</a>
+<a class="work-tile" href="ai-presentation-tools.html">
+<div class="tile-icon">▤</div>
+<div class="tile-copy"><span>DOCUMENT</span><h3>資料・提案書</h3><p>構成案からスライド初稿まで。</p></div>
+<b class="tile-arrow">→</b>
+</a>
+<a class="work-tile" href="ai-email-reply.html">
+<div class="tile-icon">↩</div>
+<div class="tile-copy"><span>REPLY</span><h3>メール返信</h3><p>要点整理と返信文の下書きを速くする。</p></div>
+<b class="tile-arrow">→</b>
+</a>
+<a class="work-tile" href="ai-accounting-invoice.html">
+<div class="tile-icon">¥</div>
+<div class="tile-copy"><span>BACK OFFICE</span><h3>経理・請求</h3><p>入力・整理・確認の手間を減らす。</p></div>
+<b class="tile-arrow">→</b>
+</a>
+<a class="work-tile" href="ai-sns-posts.html">
+<div class="tile-icon">#</div>
+<div class="tile-copy"><span>CONTENT</span><h3>SNS投稿</h3><p>ネタ出し、構成、投稿文の初稿まで。</p></div>
+<b class="tile-arrow">→</b>
+</a>
+</div>
+</div>
+</section>
+<section class="section process-section">
+<div class="container">
+<div class="section-heading center">
+<p class="eyebrow">HOW WE THINK</p>
+<h2>AI化は、3つに分けると分かりやすい。</h2>
+<p>このサイトでは、どの記事も同じ考え方で仕事を分解します。</p>
+</div>
+<div class="process-grid">
+<div class="process-card"><span>1</span><small>INPUT</small><h3>人が決める</h3><p>目的、相手、条件、守るべきルールを決める。</p></div>
+<div class="process-connector">→</div>
+<div class="process-card accent-card"><span>2</span><small>AI WORK</small><h3>AIに任せる</h3><p>調査補助、整理、要約、構成、初稿を作らせる。</p></div>
+<div class="process-connector">→</div>
+<div class="process-card"><span>3</span><small>REVIEW</small><h3>人が確認する</h3><p>事実、数字、顧客情報、公開・送信判断を確認する。</p></div>
+</div>
+</div>
+</section>
+<section class="section picks-section">
+<div class="container">
+<div class="section-heading">
+<p class="eyebrow">START HERE</p>
+<h2>最初の3本だけ読む。</h2>
+<p>記事を大量に読む必要はありません。目的に合わせて1本選んでください。</p>
+</div>
+<div class="pick-grid">
+<a class="pick-card dark" href="article-ai-efficiency.html">
+<span class="pick-no">01</span><div><small>まず全体像を知る</small><h3>個人事業主の仕事を<br/>AIで効率化する方法</h3><p>最初にAI化したい7つの業務を整理。</p></div><b>読む →</b>
+</a>
+<a class="pick-card" href="ai-tools-sole-proprietor.html">
+<span class="pick-no">02</span><div><small>ツールを絞る</small><h3>個人事業主向け<br/>AIツール比較</h3><p>仕事別に候補を比較して選ぶ。</p></div><b>比較する →</b>
+</a>
+<a class="pick-card" href="ai-sales-email.html">
+<span class="pick-no">03</span><div><small>今日から試す</small><h3>AIで営業メールを<br/>作る方法</h3><p>そのまま試せる手順とプロンプト。</p></div><b>実践する →</b>
+</a>
+</div>
+</div>
+</section>
+<section class="section audience-section">
+<div class="container audience-inner">
+<div>
+<p class="eyebrow">BY YOUR SITUATION</p>
+<h2>あなたの状況から選ぶ。</h2>
+</div>
+<div class="audience-links">
+<a href="ai-tools-freelance.html"><span>フリーランス</span><b>→</b></a>
+<a href="one-person-company-ai.html"><span>1人会社</span><b>→</b></a>
+<a href="small-company-ai-tools.html"><span>小さな会社</span><b>→</b></a>
+<a href="free-ai-tools.html"><span>まず無料で試す</span><b>→</b></a>
+<a href="ai-under-5000-yen.html"><span>月5,000円以内</span><b>→</b></a>
+<a href="ai-tools-10.html"><span>AIツール10選</span><b>→</b></a>
+</div>
+</div>
+</section>
+<section class="diagnosis-banner">
+<div class="container diagnosis-inner">
+<div>
+<p class="eyebrow">5 QUESTIONS / FREE</p>
+<h2>何からAI化するか、<br/>5問で整理する。</h2>
+<p>ツールを契約する前に、まず自分の仕事を棚卸し。最初に見直す業務を絞ります。</p>
+</div>
+<a class="button light" href="diagnosis.html">AIにできる仕事を診断する <span>→</span></a>
+</div>
+</section>
+<section class="section standard-section">
+<div class="container">
+<div class="section-heading center">
+<p class="eyebrow">OUR STANDARD</p>
+<h2>このサイトが大事にする3つ。</h2>
+</div>
+<div class="standard-grid">
+<div><span>01</span><h3>仕事から考える</h3><p>有名なAIではなく、減らしたい作業から逆算します。</p></div>
+<div><span>02</span><h3>人の確認を残す</h3><p>数字、契約、顧客情報、公開判断は人が確認します。</p></div>
+<div><span>03</span><h3>小さく試す</h3><p>最初から全自動化せず、1業務で効果と修正量を測ります。</p></div>
+</div>
+</div>
+</section>
 </main>
-
 <footer class="footer">
-  <div class="container footer-grid">
-    <div><a class="logo" href="index.html">その仕事、<span>AIにできる？</span></a><p>個人事業主・フリーランス・小さな会社のための<br>AI仕事効率化メディア。</p></div>
-    <div><a href="about.html">このサイトについて</a><a href="privacy.html">プライバシーポリシー</a><a href="contact.html">お問い合わせ</a></div>
-  </div>
-  <div class="container copyright">© 2026 その仕事、AIにできる？</div>
+<div class="container footer-grid">
+<div><a class="logo" href="index.html">その仕事、<span>AIにできる？</span></a><p>個人事業主・フリーランス・小さな会社のための<br/>AI仕事効率化メディア。</p></div>
+<div><a href="about.html">このサイトについて</a><a href="privacy.html">プライバシーポリシー</a><a href="contact.html">お問い合わせ</a></div>
+</div>
+<div class="container copyright">© 2026 その仕事、AIにできる？</div>
 </footer>
-
 <script>
 (() => {
   const root=document.querySelector('.ai-live-demo'); if(!root) return;

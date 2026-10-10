@@ -1,1 +1,93 @@
 
+name: Update experiment links
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/update-experiment-links.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Update site files
+        shell: python
+        run: |
+          from pathlib import Path
+
+          target = "ai-revenue-experiment-01.html"
+          label = "実証#03：AIに収益化を任せた1か月の結果"
+
+          def add_before(path, marker, html):
+              p = Path(path)
+              content = p.read_text(encoding="utf-8")
+              if f'href="{target}"' in content:
+                  print(f"{path}: link already exists")
+                  return
+              if marker not in content:
+                  raise RuntimeError(f"{path}: insertion point missing")
+              content = content.replace(marker, html + marker, 1)
+              p.write_text(content, encoding="utf-8")
+              print(f"{path}: updated")
+
+          assert Path(target).exists(), "Experiment #03 page missing"
+
+          add_before(
+              "index.html",
+              '</main>',
+              '<section class="section"><div class="container">'
+              '<p class="eyebrow">REAL EXPERIMENT #03</p>'
+              '<h2>AIに収益化まで任せた結果は？</h2>'
+              '<p>約1か月の検証結果は収益0円。'
+              '検索表示56回、クリック0回という結果を公開しています。</p>'
+              f'<p><a href="{target}">{label} →</a></p>'
+              '</div></section>\n'
+          )
+
+          add_before(
+              "ai-sales-email.html",
+              '</main>',
+              '<section class="next-box">'
+              '<h2>実証#03：AIによる自動収益化</h2>'
+              '<p>サイト制作から集客までAIに任せた結果を公開。</p>'
+              f'<p><a href="{target}">{label} →</a></p>'
+              '</section>\n'
+          )
+
+          add_before(
+              "ai-meeting-tools.html",
+              '</main>',
+              '<div class="box"><strong>次の実証</strong>'
+              f'<p><a href="{target}">{label} →</a></p>'
+              '</div>\n'
+          )
+
+          sitemap = Path("sitemap.xml")
+          xml = sitemap.read_text(encoding="utf-8")
+          url = f"https://sono-shigoto-ai.com/{target}"
+          if url not in xml:
+              assert "</urlset>" in xml
+              xml = xml.replace(
+                  "</urlset>",
+                  f"  <url><loc>{url}</loc></url>\n</urlset>"
+              )
+              sitemap.write_text(xml, encoding="utf-8")
+              print("sitemap.xml: updated")
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html ai-sales-email.html ai-meeting-tools.html sitemap.xml
+          if ! git diff --cached --quiet; then
+            git commit -m "Link experiment 03 across site"
+            git push
+          fi
+

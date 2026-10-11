@@ -7,6 +7,10 @@ on:
       - ".github/workflows/update-experiment-links.yml"
       - "*.html"
       - "sitemap.xml"
+      - "practical-guide.js"
+      - "practical-guide.css"
+      - "downloads/ai-work-review.txt"
+      - ".github/scripts/check-calculator.cjs"
 
 permissions:
   contents: read
@@ -58,3 +62,7 @@ jobs:
           assert f"https://sono-shigoto-ai.com/{hub}" in urls
           assert f"https://sono-shigoto-ai.com/{report}" in urls
           print("Independent revenue project navigation verified; no site files changed.")
+      - name: Check calculator syntax and behavior
+        run: |
+          node --check practical-guide.js
+          node .github/scripts/check-calculator.cjs

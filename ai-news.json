@@ -1,7 +1,28 @@
 {
-  "lastChecked": "2026-10-13",
-  "lastUpdated": "2026-10-13",
+  "lastChecked": "2026-10-14",
+  "lastUpdated": "2026-10-14",
   "items": [
+    {
+      "id": "gemini-4-argon-20261013",
+      "date": "2026-10-13",
+      "title": "Gemini 4 Argon、開発者向けに提供開始",
+      "category": "AIモデル・業務開発",
+      "source": "Google公式ブログ",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-argon/",
+      "summary": "Googleは10月13日、Gemini 4 Argonを開発者向けに提供すると発表しました。複数段階のソフトウェア開発や企業の知識業務などを対象に挙げています。",
+      "meaning": "自社の業務ツールを開発・保守する小さな会社では、複雑な作業を任せる候補になります。導入前に既存モデルと同じ作業で比較し、回答の正確さ、確認・修正時間、API費用を合わせて判断しましょう。単純な要約にも常に適するかは別途検証が必要です。",
+      "conditions": "公式発表では、Google AI StudioとAndroid StudioでGemini APIの有料枠から利用できると案内しています。Google AI Ultra契約者向けにはAI StudioとGoogle Antigravityでの試用も案内しています。日本での利用可否、個別アカウントの対象範囲、料金と上限は導入前に公式情報で確認してください。性能の説明は提供元の主張であり、当サイトでの実測ではありません。",
+      "related": [
+        {
+          "url": "sme-ai-first-step.html",
+          "label": "小さな会社でAIを導入する手順"
+        },
+        {
+          "url": "ai-time-savings.html",
+          "label": "確認・修正時間込みの費用試算"
+        }
+      ]
+    },
     {
       "id": "ink-canvas-20261013",
       "date": "2026-10-13",

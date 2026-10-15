@@ -1,7 +1,28 @@
 {
-  "lastChecked": "2026-10-14",
-  "lastUpdated": "2026-10-14",
+  "lastChecked": "2026-10-15",
+  "lastUpdated": "2026-10-15",
   "items": [
+    {
+      "id": "gemini-argon-app-20261013",
+      "date": "2026-10-13",
+      "title": "Gemini 4 Argon、アプリでPro・Ultra契約者向けに提供",
+      "category": "業務アプリ・提供条件",
+      "source": "Google公式ブログ",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-4-argon-availability/",
+      "summary": "Googleは10月13日、GeminiアプリでGemini 4 Argonを提供すると発表しました。チャットからタスクへ切り替える機能や、Googleアプリなどと連携して作業を進める機能も紹介しています。",
+      "meaning": "個人事業主が業務で試す際、APIを組み込む方法に加えて、アプリから利用する選択肢を検討できます。まず資料整理など確認しやすい作業で試し、接続するアプリの権限と実行結果を確認しましょう。",
+      "conditions": "公式発表で対象とされるのはGoogle AI Pro・Ultra契約者です。日本での各機能の提供状況、個別アカウントの利用上限、接続先アプリの契約や権限は別途確認が必要です。会社のWorkspace契約でも同じ条件で利用できるとは限りません。既掲載の開発者向けAPI提供とは利用経路・条件が異なります。性能の説明は提供元の主張で、当サイトの実測ではありません。",
+      "related": [
+        {
+          "url": "sme-ai-first-step.html",
+          "label": "業務を1つに絞って導入する手順"
+        },
+        {
+          "url": "ai-time-savings.html",
+          "label": "確認時間と費用を含めて試算"
+        }
+      ]
+    },
     {
       "id": "gemini-4-argon-20261013",
       "date": "2026-10-13",

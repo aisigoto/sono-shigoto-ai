@@ -140,11 +140,12 @@
         "unit": "USD",
         "symbol": "NVDA",
         "source": "https://finance.yahoo.com/quote/NVDA/history/",
-        "retrieved": "2026-10-15",
-        "quote": 221.3,
-        "quoteAt": "2026-10-14T20:00:00.000Z",
+        "retrieved": "2026-10-16",
+        "quote": 217.23,
+        "quoteAt": "2026-10-15T20:00:00.000Z",
         "timezone": "America/New_York",
-        "session": "通常取引終了時点の価格"
+        "session": "通常取引終了時点の価格",
+        "historyRetrieved": "2026-10-15"
       }
     },
     {
@@ -286,11 +287,12 @@
         "unit": "USD",
         "symbol": "TSM",
         "source": "https://finance.yahoo.com/quote/TSM/history/",
-        "retrieved": "2026-10-15",
-        "quote": 430,
-        "quoteAt": "2026-10-14T20:00:02.000Z",
+        "retrieved": "2026-10-16",
+        "quote": 422.25,
+        "quoteAt": "2026-10-15T20:00:02.000Z",
         "timezone": "America/New_York",
-        "session": "通常取引終了時点の価格"
+        "session": "通常取引終了時点の価格",
+        "historyRetrieved": "2026-10-15"
       }
     },
     {
@@ -432,15 +434,28 @@
         "unit": "JPY",
         "symbol": "6857.T",
         "source": "https://finance.yahoo.com/quote/6857.T/history/",
-        "retrieved": "2026-10-15",
-        "quote": 34340,
-        "quoteAt": "2026-10-15T06:30:00.000Z",
+        "retrieved": "2026-10-16",
+        "quote": 34530,
+        "quoteAt": "2026-10-16T06:30:00.000Z",
         "timezone": "Asia/Tokyo",
-        "session": "通常取引終了時点の価格"
+        "session": "通常取引終了時点の価格",
+        "historyRetrieved": "2026-10-15"
       }
     }
   ],
   "topics": [
+    {
+      "region": "ドイツ・欧州",
+      "category": "技術提携・企業発表",
+      "title": "SUSS、Ignite Nextと技術提携",
+      "date": "2026-10-13",
+      "dateLabel": "会社発表",
+      "checked": "2026-10-16",
+      "fact": "SUSSはIgnite Nextとの戦略提携を発表。半導体装置の技術を提供し、技術探索やスタートアップ評価、交流プログラムに参加すると説明しています。",
+      "meaning": "将来の先端パッケージ需要を把握する取り組みとして追います。発表自体は受注・売上の確定を意味せず、具体的な製品化や顧客案件への進展を次に確認します。",
+      "url": "https://www.suss.com/en/news/corporate-news/2026/suss-expands-innovation-ecosystem-through-strategic-partnership-with-ignite-next",
+      "source": "SUSS公式発表"
+    },
     {
       "region": "米国",
       "category": "金利・経済",
@@ -450,7 +465,8 @@
       "fact": "FRBは政策金利の誘導目標を0.25ポイント引き上げ、3.75～4.00%とする決定を公表しました。",
       "meaning": "将来の利益への期待で評価される銘柄では、金利上昇が評価の重荷になり得ます。企業の増収と、市場の評価倍率を別々に確認します。この声明だけで当日の値動きの原因は断定できません。",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
-      "source": "FRB公式声明"
+      "source": "FRB公式声明",
+      "checked": "2026-10-16"
     },
     {
       "region": "日本",
@@ -461,7 +477,8 @@
       "fact": "経済産業省は、2024年11月策定の枠組みに基づき、2030年度までの7年間で10兆円以上の公的支援を行う方針を案内しています。",
       "meaning": "支援方針を個別企業の受注確定と混同しないことが重要です。採択先・発注先・量産時期を確認して初めて各社への関係を判断します。これは本日の新規発表ではなく、継続監視する政策です。",
       "url": "https://www.meti.go.jp/policy/mono_info_service/ai_semiconductor_frame/ai_semiconductor_frame.html",
-      "source": "経済産業省の政策原文"
+      "source": "経済産業省の政策原文",
+      "checkStatus": "2026-10-16は公式本文の取得制限により再確認できず、前回確認の記録を保持。"
     },
     {
       "region": "米国・中国など",
@@ -486,7 +503,7 @@
       "source": "NVIDIA公式決算発表"
     }
   ],
-  "researchChecked": "2026-10-15",
+  "researchChecked": "2026-10-16",
   "discovery": [
     {
       "id": "suss",
@@ -528,11 +545,11 @@
       "reject": "納期延期や受注取消し、利益率予想の引下げがあれば見送り。上期は減収であり、受注残は翌年の売上予想そのものではない。",
       "access": "ドイツ株・EUR建て。利用する証券会社のXETRA取扱い、手数料、売買単位を事前確認。",
       "valuation": {
-        "pe": 41.9,
-        "forwardPe": 21.29,
-        "cap": "10.7億 EUR",
+        "pe": 42.46,
+        "forwardPe": 19.68,
+        "cap": "11.0億 EUR",
         "url": "https://stockanalysis.com/quote/etr/SMHN/statistics/",
-        "asOf": "TTM EPS・予想PER・時価総額の提供元ページを2026-10-15確認。提供元指標の価格基準時刻は未公表",
+        "asOf": "提供元株価表示：2026-10-16 10:42 AM CET（原文表記）。指標確認10月16日。個別倍率の価格基準時刻は未公表",
         "note": "利益回復が前提の評価。予想PERが低くても、減益・納期延期で割高になり得る。",
         "trailingEps": 1.34
       },
@@ -638,11 +655,12 @@
         "unit": "EUR",
         "symbol": "SMHN.DE",
         "source": "https://finance.yahoo.com/quote/SMHN.DE/history/",
-        "retrieved": "2026-10-15",
-        "quote": 56.15,
-        "quoteAt": "2026-10-15T12:51:48.000Z",
+        "retrieved": "2026-10-16",
+        "quote": 56.9,
+        "quoteAt": "2026-10-16T09:18:54.000Z",
         "timezone": "Europe/Berlin",
-        "session": "通常取引中の遅延価格（終値ではない）"
+        "session": "通常取引中の遅延価格（終値ではない）",
+        "historyRetrieved": "2026-10-15"
       }
     },
     {
@@ -685,11 +703,11 @@
       "reject": "量産延期、顧客案件の縮小、売上回復を伴わない利益率上昇なら再評価。台湾の地政学・顧客案件への依存にも注意。",
       "access": "台湾株・TWD建て。台湾現地株を扱う証券会社、売買単位・為替・現地税を確認。米国株と同じ操作で買えるとは限らない。",
       "valuation": {
-        "pe": 53.79,
-        "forwardPe": 18.26,
-        "cap": "3,206.8億 TWD",
+        "pe": 53.5,
+        "forwardPe": 18.18,
+        "cap": "3,193.9億 TWD",
         "url": "https://stockanalysis.com/quote/tpe/3661/statistics/",
-        "asOf": "TTM EPS・予想PER・時価総額の提供元ページを2026-10-15確認。提供元指標の価格基準時刻は未公表",
+        "asOf": "提供元株価表示：2026-10-15 13:30 台湾時間。指標確認10月16日。チャートの10月16日価格と同時刻ではない",
         "note": "実績PERと予想PERの差が大きい。高い利益成長を織り込んでおり、未発見の割安株とは断定できない。",
         "trailingEps": 68.88
       },
@@ -795,11 +813,12 @@
         "unit": "TWD",
         "symbol": "3661.TW",
         "source": "https://finance.yahoo.com/quote/3661.TW/history/",
-        "retrieved": "2026-10-15",
-        "quote": 3705,
-        "quoteAt": "2026-10-15T05:30:19.000Z",
+        "retrieved": "2026-10-16",
+        "quote": 3685,
+        "quoteAt": "2026-10-16T05:30:24.000Z",
         "timezone": "Asia/Taipei",
-        "session": "通常取引終了時点の価格"
+        "session": "通常取引終了時点の価格",
+        "historyRetrieved": "2026-10-15"
       }
     },
     {
@@ -842,12 +861,12 @@
       "reject": "売上予想下方修正、顧客導入延期、資金回収の悪化なら見送り。転換社債による希薄化、株価急変にも注意。",
       "access": "米国株・USD建て。PENGの取扱い、注文時のスプレッドと為替費用を確認。",
       "valuation": {
-        "pe": 26,
-        "forwardPe": 14.83,
-        "cap": "34.6億 USD",
+        "pe": 23.79,
+        "forwardPe": 13.57,
+        "cap": "31.7億 USD",
         "url": "https://stockanalysis.com/stocks/peng/statistics/",
-        "asOf": "TTM EPS・予想PER・時価総額の提供元ページを2026-10-15確認。提供元指標の価格基準時刻は未公表",
-        "note": "予想PERの算定利益は提供元基準。会社のGAAP EPS3.50USDを使うと67.59÷3.50≒19.3倍。",
+        "asOf": "提供元株価表示：2026-10-15 16:00 EDT。指標確認10月16日。個別倍率の価格基準時刻は未公表",
+        "note": "予想PERの算定利益は提供元基準。会社のGAAP EPS3.50USDを使うと61.86÷3.50≒17.7倍。",
         "trailingEps": 2.6
       },
       "longPrices": {
@@ -952,11 +971,12 @@
         "unit": "USD",
         "symbol": "PENG",
         "source": "https://finance.yahoo.com/quote/PENG/history/",
-        "retrieved": "2026-10-15",
-        "quote": 67.59,
-        "quoteAt": "2026-10-14T20:00:01.000Z",
+        "retrieved": "2026-10-16",
+        "quote": 61.86,
+        "quoteAt": "2026-10-15T20:00:00.000Z",
         "timezone": "America/New_York",
-        "session": "通常取引終了時点の価格"
+        "session": "通常取引終了時点の価格",
+        "historyRetrieved": "2026-10-15"
       }
     }
   ],
@@ -964,6 +984,10 @@
     {
       "date": "2026-10-15",
       "reason": "調査の主役をSUSS・Alchip・Penguinに変更。従来3社は基準銘柄として保持。短期6営業日チャートを月次2年・期間切替へ刷新。銘柄の売却指示ではない。"
+    },
+    {
+      "date": "2026-10-16",
+      "reason": "6銘柄の取得価格・価格日時と3候補の評価指標を更新。月次24点は2026-10-15取得の値を維持。10月13日発表のSUSS技術提携を追加。決算KPI・検討条件・見送り条件は維持。"
     }
   ]
 }

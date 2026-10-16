@@ -1,7 +1,34 @@
 {
-  "lastChecked": "2026-10-15",
-  "lastUpdated": "2026-10-15",
+  "lastChecked": "2026-10-16",
+  "lastUpdated": "2026-10-16",
   "items": [
+    {
+      "id": "chatgpt-live-11-20261015",
+      "date": "2026-10-15",
+      "title": "ChatGPT Voice、GPT-Live-1.1と日本語を含む新しい音声を順次提供",
+      "category": "音声AI・提供条件",
+      "source": "OpenAI公式リリースノート",
+      "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "summary": "OpenAIは10月15日、ChatGPT VoiceでGPT-Live-1.1と小型版Quipを順次提供すると発表しました。日本語を含む複数言語の新しい音声も案内しています。",
+      "meaning": "企画の壁打ちや説明の練習など、音声で考えを整理する仕事で試す候補です。業務上の重要な数字・日時・約束は会話後にテキストで照合し、認識違いの修正時間も含めて使いやすさを確認しましょう。新モデルによる時短効果を当サイトで実測したものではありません。",
+      "conditions": "段階的な提供で、表示される音声や機能は地域・アカウント等により異なります。利用モデル・上限はプランやワークスペース設定にも依存します。音声は設定のVoiceから選択でき、Liveは動画・画面共有には対応しません。日本語音声の追加は、すべての日本のアカウントで即日使えることを保証しません。自然さの改善は提供元の説明です。",
+      "additionalSources": [
+        {
+          "url": "https://help.openai.com/en/articles/20001274-chatgpt-voice",
+          "label": "Voiceの提供条件・上限を確認"
+        }
+      ],
+      "related": [
+        {
+          "url": "article-ai-efficiency.html",
+          "label": "AIへの指示を仕事別の7例で整理"
+        },
+        {
+          "url": "ai-time-savings.html",
+          "label": "確認・修正込みの時短を試算"
+        }
+      ]
+    },
     {
       "id": "gemini-argon-app-20261013",
       "date": "2026-10-13",

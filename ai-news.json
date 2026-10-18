@@ -1,7 +1,28 @@
 {
-  "lastChecked": "2026-10-16",
-  "lastUpdated": "2026-10-16",
+  "lastChecked": "2026-10-18",
+  "lastUpdated": "2026-10-18",
   "items": [
+    {
+      "id": "chatgpt-slides-20261016",
+      "date": "2026-10-16",
+      "title": "ChatGPTでスライド作成・共同編集。対象ユーザーへ順次提供",
+      "category": "資料作成・共同編集",
+      "source": "OpenAI公式リリースノート",
+      "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "summary": "OpenAIは10月16日、会話・ファイル・構成案などからプレゼン資料を作り、Spaceで共同編集できるChatGPT Slidesの段階提供を発表しました。WebではPowerPoint・PDF・Google Slidesへの書き出しを案内しています。",
+      "meaning": "提案書や社内説明資料のたたき台を作る仕事で試す候補です。まず既存資料1本で、数字の転記、図表、書き出した際のレイアウトを確認し、確認・修正にかかる時間も含めて比較しましょう。当サイトで時短効果や品質を実測したものではありません。",
+      "conditions": "Spaceへアクセスできる対象のPro・Business・EnterpriseユーザーにWebとデスクトップアプリで順次提供されます。すべての契約者への即時提供や、日本の各アカウントでの利用を保証する発表ではありません。利用開始はChatGPTのWorkでSpaceへのプレゼン作成を依頼する方式です。Webの書き出しと、デスクトップでインストール済みのPowerPoint・Keynoteを開く機能は異なります。共同編集の招待先と共有する資料は送信前に確認してください。",
+      "related": [
+        {
+          "url": "ai-presentation-tools.html",
+          "label": "AIで資料を作るときの確認点"
+        },
+        {
+          "url": "ai-time-savings.html",
+          "label": "確認・修正込みの時短を試算"
+        }
+      ]
+    },
     {
       "id": "chatgpt-live-11-20261015",
       "date": "2026-10-15",

@@ -1,7 +1,28 @@
 {
-  "lastChecked": "2026-10-18",
-  "lastUpdated": "2026-10-18",
+  "lastChecked": "2026-10-20",
+  "lastUpdated": "2026-10-20",
   "items": [
+    {
+      "id": "gemini-notebook-review-20261019",
+      "date": "2026-10-19",
+      "title": "Gemini Notebook、スライド・動画の生成前に構成を確認できる機能",
+      "category": "資料作成・構成レビュー",
+      "source": "Google公式ブログ",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/co-create-slides-videos/",
+      "summary": "Googleは10月19日、Gemini Notebookで資料をもとにスライドや動画の構成を相談し、生成前に確認・修正できる機能を発表しました。Reviewを有効にすると、構成メモを見て順序の変更や要約の追加などを指示し、確認後に生成へ進めます。",
+      "meaning": "小さな会社の提案資料や説明動画では、完成後の作り直しを減らすために、先に構成を確認する使い方が候補になります。まず目的・読者・必須の数字を決め、元資料に沿っているかを構成と完成物の両方で照合しましょう。当サイトで修正時間や品質の効果を実測したものではありません。",
+      "conditions": "公式発表では、今後1週間で全世界のGemini Notebookユーザーへ順次提供すると案内しています。日本の各アカウントで即日使えることや、無制限・追加費用なしの利用を保証するものではありません。契約ごとの生成上限や管理設定は別途確認が必要です。Reviewを使わず従来どおり直接生成する方法も残ります。",
+      "related": [
+        {
+          "url": "ai-presentation-tools.html",
+          "label": "AIで資料を作るときの確認点"
+        },
+        {
+          "url": "ai-time-savings.html",
+          "label": "構成・確認・修正込みの時間を試算"
+        }
+      ]
+    },
     {
       "id": "chatgpt-slides-20261016",
       "date": "2026-10-16",

@@ -1,7 +1,28 @@
 {
-  "lastChecked": "2026-10-20",
-  "lastUpdated": "2026-10-20",
+  "lastChecked": "2026-10-21",
+  "lastUpdated": "2026-10-21",
   "items": [
+    {
+      "id": "gemini-small-business-20261020",
+      "date": "2026-10-20",
+      "title": "Gemini、小規模事業者向けの業務ハブとブランド・財務ツールを発表",
+      "category": "小規模事業・アプリ連携",
+      "source": "Google公式ブログ",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/new-tools-small-business-owners/",
+      "summary": "Googleは10月20日、小規模事業者向けの新しい業務ハブを発表しました。ブランド資料をもとにした画像生成、表計算・領収書などの財務データの整理、Google製品や外部アプリとの連携を案内しています。",
+      "meaning": "販促画像の見た目をそろえる作業や、経営数字の整理に試す候補です。まず公開可能なブランド資料や匿名化した少量のデータで確認し、計算・集計結果は原資料と照合しましょう。時短・売上改善は当サイトで未実測です。",
+      "conditions": "公式発表では、業務ハブ、マーケティング・財務のスキル、新しい連携アプリを、今後数日で世界のGeminiアプリ利用者へ順次提供するとしています。日本の各アカウントで即時に使えることや、すべての連携の無料利用を保証するものではありません。利用上限・連携先の契約・権限は個別に確認してください。",
+      "related": [
+        {
+          "url": "sme-ai-first-step.html",
+          "label": "小さな会社のAI導入の進め方"
+        },
+        {
+          "url": "ai-accounting-invoice.html",
+          "label": "AIで経理・請求書を扱う際の確認点"
+        }
+      ]
+    },
     {
       "id": "gemini-notebook-review-20261019",
       "date": "2026-10-19",

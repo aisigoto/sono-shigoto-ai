@@ -140,9 +140,9 @@
         "unit": "USD",
         "symbol": "NVDA",
         "source": "https://finance.yahoo.com/quote/NVDA/history/",
-        "retrieved": "2026-10-21",
-        "quote": 216.47,
-        "quoteAt": "2026-10-20T20:00:01.000Z",
+        "retrieved": "2026-10-22",
+        "quote": 221.97,
+        "quoteAt": "2026-10-21T20:00:00.000Z",
         "timezone": "America/New_York",
         "session": "通常取引終了時点の価格",
         "historyRetrieved": "2026-10-15"
@@ -163,7 +163,7 @@
       "fact": "2026年Q3売上467.2億USD、粗利益率66.4%、営業利益率58.7%。Q4売上予想523〜543億USD。10月15日の公式四半期資料で確認。",
       "reason": "特定のAIモデルや半導体設計企業だけに絞らず、製造需要の広がりを観測できる候補です。月次売上と四半期決算を照合し、成長が利益に残るかを追えます。",
       "risk": "台湾を巡る地政学、設備投資負担、海外工場の費用が懸念。売上増だけでは利益率や株価の割安さは判断できません。ADR価格と台湾株の価格は単位・通貨が異なります。",
-      "review": "公式予定の10月15日決算で利益率・設備投資・次期見通しを確認。高成長でも利益率が落ちる、需要見通しが弱まる場合は評価を見直します。",
+      "review": "10月15日公表のQ3実績とQ4会社予想を基準に、次回の開示で利益率・設備投資・需要見通しを点検。利益率低下や会社予想の下方修正があれば評価を見直します。",
       "prices": {
         "dates": [
           "2026-10-06",
@@ -287,9 +287,9 @@
         "unit": "USD",
         "symbol": "TSM",
         "source": "https://finance.yahoo.com/quote/TSM/history/",
-        "retrieved": "2026-10-21",
-        "quote": 425.08,
-        "quoteAt": "2026-10-20T20:00:03.000Z",
+        "retrieved": "2026-10-22",
+        "quote": 431.89,
+        "quoteAt": "2026-10-21T20:00:03.000Z",
         "timezone": "America/New_York",
         "session": "通常取引終了時点の価格",
         "historyRetrieved": "2026-10-15"
@@ -434,9 +434,9 @@
         "unit": "JPY",
         "symbol": "6857.T",
         "source": "https://finance.yahoo.com/quote/6857.T/history/",
-        "retrieved": "2026-10-21",
-        "quote": 34440,
-        "quoteAt": "2026-10-21T06:30:00.000Z",
+        "retrieved": "2026-10-22",
+        "quote": 32370,
+        "quoteAt": "2026-10-22T06:30:00.000Z",
         "timezone": "Asia/Tokyo",
         "session": "通常取引終了時点の価格",
         "historyRetrieved": "2026-10-15"
@@ -444,6 +444,18 @@
     }
   ],
   "topics": [
+    {
+      "region": "欧州・世界",
+      "category": "AI設備・電力・新技術",
+      "title": "AI工場はGPUだけでなく、電力供給も見る",
+      "date": "2026-10-21",
+      "dateLabel": "NVIDIA公式発表",
+      "checked": "2026-10-22",
+      "fact": "NVIDIAはDSXを使った電力網・施設・計算基盤の統合設計や運用を紹介。GE Vernova、日立エナジー、Schneider Electric、Siemens Energyの取り組みを挙げています。採用や効率に関する説明は発表元の主張です。",
+      "meaning": "AI設備投資を見る際は、GPUの受注に加え、電源・冷却・送電接続の進捗も確認する材料です。編集部の見立てとして、電力制約による稼働遅延や資金負担を追います。この記事は3候補への新規受注や利益増を示すものではありません。",
+      "url": "https://blogs.nvidia.com/blog/dsx-power/",
+      "source": "NVIDIA公式ブログ（10月21日）"
+    },
     {
       "region": "ドイツ・欧州",
       "category": "技術提携・企業発表",
@@ -466,7 +478,7 @@
       "meaning": "将来の利益への期待で評価される銘柄では、金利上昇が評価の重荷になり得ます。企業の増収と、市場の評価倍率を別々に確認します。この声明だけで当日の値動きの原因は断定できません。",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
       "source": "FRB公式声明",
-      "checked": "2026-10-21"
+      "checked": "2026-10-22"
     },
     {
       "region": "日本",
@@ -478,7 +490,7 @@
       "meaning": "支援方針を個別企業の受注確定と混同しないことが重要です。採択先・発注先・量産時期を確認して初めて各社への関係を判断します。これは本日の新規発表ではなく、継続監視する政策です。",
       "url": "https://www.meti.go.jp/policy/mono_info_service/ai_semiconductor_frame/ai_semiconductor_frame.html",
       "source": "経済産業省の政策原文",
-      "checkStatus": "2026-10-21も公式本文を取得できず、前回確認の記録を保持。"
+      "checkStatus": "2026-10-22も公式本文を取得できず、前回確認の記録を保持。"
     },
     {
       "region": "米国・中国など",
@@ -490,7 +502,7 @@
       "meaning": "販売できる国・顧客の制約は、AI需要が強くても売上の制約になり得ます。対象製品と会社の業績予想への織り込みを照合します。今回、新たな規制変更を確認したという意味ではありません。",
       "url": "https://www.bis.gov/",
       "source": "米BIS公式の先端計算製品案内",
-      "checked": "2026-10-21"
+      "checked": "2026-10-22"
     },
     {
       "region": "世界",
@@ -504,7 +516,7 @@
       "source": "NVIDIA公式決算発表"
     }
   ],
-  "researchChecked": "2026-10-21",
+  "researchChecked": "2026-10-22",
   "discovery": [
     {
       "id": "suss",
@@ -546,11 +558,11 @@
       "reject": "納期延期や受注取消し、利益率予想の引下げがあれば見送り。上期は減収であり、受注残は翌年の売上予想そのものではない。",
       "access": "ドイツ株・EUR建て。利用する証券会社のXETRA取扱い、手数料、売買単位を事前確認。",
       "valuation": {
-        "pe": 41.23,
-        "forwardPe": 18.71,
-        "cap": "10.6億 EUR",
+        "pe": 39.66,
+        "forwardPe": 19.21,
+        "cap": "10.1億 EUR",
         "url": "https://stockanalysis.com/quote/etr/SMHN/statistics/",
-        "asOf": "提供元株価表示：2026-10-21 1:37 PM CET（原文表記、55.25 EUR）。指標確認10月21日。チャートの価格日時とは異なり、個別倍率の価格基準時刻は未公表",
+        "asOf": "提供元株価表示：2026-10-22 11:23 AM CEST（53.00 EUR）。指標確認10月22日。チャート価格53.15 EURとは日時が異なり、個別倍率・時価総額の基準時刻は未公表",
         "note": "利益回復が前提の評価。予想PERが低くても、減益・納期延期で割高になり得る。",
         "trailingEps": 1.34
       },
@@ -656,9 +668,9 @@
         "unit": "EUR",
         "symbol": "SMHN.DE",
         "source": "https://finance.yahoo.com/quote/SMHN.DE/history/",
-        "retrieved": "2026-10-21",
-        "quote": 55.25,
-        "quoteAt": "2026-10-21T12:16:04.000Z",
+        "retrieved": "2026-10-22",
+        "quote": 53.15,
+        "quoteAt": "2026-10-22T11:33:01.000Z",
         "timezone": "Europe/Berlin",
         "session": "通常取引中の遅延価格（終値ではない）",
         "historyRetrieved": "2026-10-15"
@@ -704,11 +716,11 @@
       "reject": "量産延期、顧客案件の縮小、売上回復を伴わない利益率上昇なら再評価。台湾の地政学・顧客案件への依存にも注意。",
       "access": "台湾株・TWD建て。台湾現地株を扱う証券会社、売買単位・為替・現地税を確認。米国株と同じ操作で買えるとは限らない。",
       "valuation": {
-        "pe": 53.86,
-        "forwardPe": 17.87,
-        "cap": "3,198.2億 TWD",
+        "pe": 50.74,
+        "forwardPe": 18.21,
+        "cap": "3,159.4億 TWD",
         "url": "https://stockanalysis.com/quote/tpe/3661/statistics/",
-        "asOf": "提供元株価表示：2026-10-21 1:30 PM CST（原文表記、3,710 TWD）。指標確認10月21日。個別倍率の価格基準時刻は未公表",
+        "asOf": "提供元株価表示：2026-10-22 10:44 AM CST（原文表記、3,665 TWD）。指標確認10月22日。チャートは同日13:30の3,495 TWDで時刻が異なる。個別倍率・時価総額の基準時刻は未公表",
         "note": "実績PERと予想PERの差が大きい。高い利益成長を織り込んでおり、未発見の割安株とは断定できない。",
         "trailingEps": 68.88
       },
@@ -814,9 +826,9 @@
         "unit": "TWD",
         "symbol": "3661.TW",
         "source": "https://finance.yahoo.com/quote/3661.TW/history/",
-        "retrieved": "2026-10-21",
-        "quote": 3710,
-        "quoteAt": "2026-10-21T05:30:31.000Z",
+        "retrieved": "2026-10-22",
+        "quote": 3495,
+        "quoteAt": "2026-10-22T05:30:30.000Z",
         "timezone": "Asia/Taipei",
         "session": "通常取引終了時点の価格",
         "historyRetrieved": "2026-10-15"
@@ -862,12 +874,12 @@
       "reject": "売上予想下方修正、顧客導入延期、資金回収の悪化なら見送り。転換社債による希薄化、株価急変にも注意。",
       "access": "米国株・USD建て。PENGの取扱い、注文時のスプレッドと為替費用を確認。",
       "valuation": {
-        "pe": 21.66,
-        "forwardPe": 12.35,
-        "cap": "28.9億 USD",
+        "pe": 22.45,
+        "forwardPe": 12.81,
+        "cap": "35.2億 USD",
         "url": "https://stockanalysis.com/stocks/peng/statistics/",
-        "asOf": "提供元株価表示：2026-10-20 16:00 EDT（終値56.32 USD）。指標確認10月21日。個別倍率の価格基準時刻は未公表。21日の時間外価格は混ぜていない",
-        "note": "予想PERの算定利益は提供元基準。会社のGAAP EPS3.50USDを使うと56.32÷3.50≒16.1倍。",
+        "asOf": "提供元株価表示：2026-10-21 16:00 EDT（終値58.38 USD）。指標確認10月22日。個別倍率・時価総額の基準時刻は未公表。22日の時間外価格は混ぜていない",
+        "note": "予想PERの算定利益は提供元基準。会社の2027年度GAAP予想EPS3.50 USDを使うと58.38÷3.50≒16.7倍。実績TTM EPS2.60 USDとは別の数値。",
         "trailingEps": 2.6
       },
       "longPrices": {
@@ -972,9 +984,9 @@
         "unit": "USD",
         "symbol": "PENG",
         "source": "https://finance.yahoo.com/quote/PENG/history/",
-        "retrieved": "2026-10-21",
-        "quote": 56.32,
-        "quoteAt": "2026-10-20T20:00:01.000Z",
+        "retrieved": "2026-10-22",
+        "quote": 58.38,
+        "quoteAt": "2026-10-21T20:00:00.000Z",
         "timezone": "America/New_York",
         "session": "通常取引終了時点の価格",
         "historyRetrieved": "2026-10-15"
@@ -1005,6 +1017,10 @@
     {
       "date": "2026-10-21",
       "reason": "6銘柄の価格・日時、3候補の提供元予想PER・時価総額を更新。実績PERは表示価格÷取得済みEPSで編集部計算。SUSSは取引中の遅延価格、米国は20日通常取引終了時点。主要候補の公式決算と検討・見送り条件を点検し維持。月次履歴の取得日、取得できなかった資料の確認日は保持。"
+    },
+    {
+      "date": "2026-10-22",
+      "reason": "6銘柄の価格・日時と3候補の提供元予想PER・時価総額を更新。実績PERは表示価格÷提供元TTM EPSで再計算。NVIDIAの10月21日DSX・電力関連発表を追加し、発表元の説明と編集部の見立てを区別。公式決算を再点検し主要3候補のKPI・検討条件は維持。取得できない資料の確認日と月次履歴は保持。"
     }
   ]
 }

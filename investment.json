@@ -140,9 +140,9 @@
         "unit": "USD",
         "symbol": "NVDA",
         "source": "https://finance.yahoo.com/quote/NVDA/history/",
-        "retrieved": "2026-10-22",
-        "quote": 221.97,
-        "quoteAt": "2026-10-21T20:00:00.000Z",
+        "retrieved": "2026-10-23",
+        "quote": 212.21,
+        "quoteAt": "2026-10-22T20:00:00.000Z",
         "timezone": "America/New_York",
         "session": "通常取引終了時点の価格",
         "historyRetrieved": "2026-10-15"
@@ -287,9 +287,9 @@
         "unit": "USD",
         "symbol": "TSM",
         "source": "https://finance.yahoo.com/quote/TSM/history/",
-        "retrieved": "2026-10-22",
-        "quote": 431.89,
-        "quoteAt": "2026-10-21T20:00:03.000Z",
+        "retrieved": "2026-10-23",
+        "quote": 412.35,
+        "quoteAt": "2026-10-22T20:00:03.000Z",
         "timezone": "America/New_York",
         "session": "通常取引終了時点の価格",
         "historyRetrieved": "2026-10-15"
@@ -434,9 +434,9 @@
         "unit": "JPY",
         "symbol": "6857.T",
         "source": "https://finance.yahoo.com/quote/6857.T/history/",
-        "retrieved": "2026-10-22",
-        "quote": 32370,
-        "quoteAt": "2026-10-22T06:30:00.000Z",
+        "retrieved": "2026-10-23",
+        "quote": 32340,
+        "quoteAt": "2026-10-23T06:30:00.000Z",
         "timezone": "Asia/Tokyo",
         "session": "通常取引終了時点の価格",
         "historyRetrieved": "2026-10-15"
@@ -445,12 +445,24 @@
   ],
   "topics": [
     {
+      "region": "世界",
+      "category": "AI設備・運用ソフトウェア",
+      "title": "NVIDIA Minerva、AI工場の稼働を見える化",
+      "date": "2026-10-22",
+      "dateLabel": "NVIDIA公式発表",
+      "checked": "2026-10-23",
+      "fact": "NVIDIAはAI工場向けAIOps基盤Minervaを発表。GPU・ネットワーク・ストレージ・ジョブの情報をまとめ、異常検知や原因の調査を支援すると説明しています。IRENは利用中、IBMやJioなどは導入予定とされ、実績と予定は異なります。性能・効果は提供元の説明です。",
+      "meaning": "編集部は、AI設備の台数に加え、稼働率や障害復旧、運用費用が利益にどう結び付くかを追います。運用企業にとって連携機会にも競争にもなり得ますが、この発表からPenguinへの採用・受注・利益増や株価下落の原因を断定できません。",
+      "url": "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/",
+      "source": "NVIDIA公式ブログ（10月22日）"
+    },
+    {
       "region": "欧州・世界",
       "category": "AI設備・電力・新技術",
       "title": "AI工場はGPUだけでなく、電力供給も見る",
       "date": "2026-10-21",
       "dateLabel": "NVIDIA公式発表",
-      "checked": "2026-10-22",
+      "checked": "2026-10-23",
       "fact": "NVIDIAはDSXを使った電力網・施設・計算基盤の統合設計や運用を紹介。GE Vernova、日立エナジー、Schneider Electric、Siemens Energyの取り組みを挙げています。採用や効率に関する説明は発表元の主張です。",
       "meaning": "AI設備投資を見る際は、GPUの受注に加え、電源・冷却・送電接続の進捗も確認する材料です。編集部の見立てとして、電力制約による稼働遅延や資金負担を追います。この記事は3候補への新規受注や利益増を示すものではありません。",
       "url": "https://blogs.nvidia.com/blog/dsx-power/",
@@ -478,7 +490,7 @@
       "meaning": "将来の利益への期待で評価される銘柄では、金利上昇が評価の重荷になり得ます。企業の増収と、市場の評価倍率を別々に確認します。この声明だけで当日の値動きの原因は断定できません。",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
       "source": "FRB公式声明",
-      "checked": "2026-10-22"
+      "checked": "2026-10-23"
     },
     {
       "region": "日本",
@@ -490,7 +502,7 @@
       "meaning": "支援方針を個別企業の受注確定と混同しないことが重要です。採択先・発注先・量産時期を確認して初めて各社への関係を判断します。これは本日の新規発表ではなく、継続監視する政策です。",
       "url": "https://www.meti.go.jp/policy/mono_info_service/ai_semiconductor_frame/ai_semiconductor_frame.html",
       "source": "経済産業省の政策原文",
-      "checkStatus": "2026-10-22も公式本文を取得できず、前回確認の記録を保持。"
+      "checkStatus": "2026-10-23も公式本文を取得できず、前回確認の記録を保持。"
     },
     {
       "region": "米国・中国など",
@@ -502,7 +514,7 @@
       "meaning": "販売できる国・顧客の制約は、AI需要が強くても売上の制約になり得ます。対象製品と会社の業績予想への織り込みを照合します。今回、新たな規制変更を確認したという意味ではありません。",
       "url": "https://www.bis.gov/",
       "source": "米BIS公式の先端計算製品案内",
-      "checked": "2026-10-22"
+      "checked": "2026-10-23"
     },
     {
       "region": "世界",
@@ -516,7 +528,7 @@
       "source": "NVIDIA公式決算発表"
     }
   ],
-  "researchChecked": "2026-10-22",
+  "researchChecked": "2026-10-23",
   "discovery": [
     {
       "id": "suss",
@@ -558,11 +570,11 @@
       "reject": "納期延期や受注取消し、利益率予想の引下げがあれば見送り。上期は減収であり、受注残は翌年の売上予想そのものではない。",
       "access": "ドイツ株・EUR建て。利用する証券会社のXETRA取扱い、手数料、売買単位を事前確認。",
       "valuation": {
-        "pe": 39.66,
-        "forwardPe": 19.21,
-        "cap": "10.1億 EUR",
+        "pe": 37.39,
+        "forwardPe": 17.74,
+        "cap": "9.6629億 EUR",
         "url": "https://stockanalysis.com/quote/etr/SMHN/statistics/",
-        "asOf": "提供元株価表示：2026-10-22 11:23 AM CEST（53.00 EUR）。指標確認10月22日。チャート価格53.15 EURとは日時が異なり、個別倍率・時価総額の基準時刻は未公表",
+        "asOf": "提供元株価表示：2026-10-23 11:10 AM CEST（50.55 EUR）。指標確認10月23日。チャート価格50.10 EURとは日時が異なり、個別倍率・時価総額の基準時刻は未公表",
         "note": "利益回復が前提の評価。予想PERが低くても、減益・納期延期で割高になり得る。",
         "trailingEps": 1.34
       },
@@ -668,9 +680,9 @@
         "unit": "EUR",
         "symbol": "SMHN.DE",
         "source": "https://finance.yahoo.com/quote/SMHN.DE/history/",
-        "retrieved": "2026-10-22",
-        "quote": 53.15,
-        "quoteAt": "2026-10-22T11:33:01.000Z",
+        "retrieved": "2026-10-23",
+        "quote": 50.1,
+        "quoteAt": "2026-10-23T10:07:43.000Z",
         "timezone": "Europe/Berlin",
         "session": "通常取引中の遅延価格（終値ではない）",
         "historyRetrieved": "2026-10-15"
@@ -717,10 +729,10 @@
       "access": "台湾株・TWD建て。台湾現地株を扱う証券会社、売買単位・為替・現地税を確認。米国株と同じ操作で買えるとは限らない。",
       "valuation": {
         "pe": 50.74,
-        "forwardPe": 18.21,
-        "cap": "3,159.4億 TWD",
+        "forwardPe": 17.15,
+        "cap": "3,012.9億 TWD",
         "url": "https://stockanalysis.com/quote/tpe/3661/statistics/",
-        "asOf": "提供元株価表示：2026-10-22 10:44 AM CST（原文表記、3,665 TWD）。指標確認10月22日。チャートは同日13:30の3,495 TWDで時刻が異なる。個別倍率・時価総額の基準時刻は未公表",
+        "asOf": "提供元株価表示：2026-10-22 13:30 CST（原文表記、3,495 TWD）。指標確認10月23日。株価は10月22日のままで、23日の新価格を確認したものではない。個別倍率・時価総額の基準時刻は未公表",
         "note": "実績PERと予想PERの差が大きい。高い利益成長を織り込んでおり、未発見の割安株とは断定できない。",
         "trailingEps": 68.88
       },
@@ -868,18 +880,18 @@
           "GAAP。調整後EPSは4.45USD、両者を混同しない"
         ]
       ],
-      "fact": "Q4のAI基盤顧客は新規6社。ただし売上増はメモリー事業の寄与が大きく、全社の68%成長をAI基盤単独の成長率とは扱えない。",
+      "fact": "Q4のAI基盤顧客は新規6社。ただし全社の68%増収をAI基盤単独の成長率とは扱えない。10月6日開示の営業CFはQ4が−1.63136億USD、FY2026通期が−1.51914億USD。通期の売掛金・在庫増加が資金流出要因で、利益増と現金回収を分けて確認する。",
       "catalyst": "新規顧客が継続売上へ育ち、会社の次年度成長予想を実現できるか。AI構築・運用への広がりを検証する。",
-      "watch": "次の決算でAI基盤部門とメモリー部門の成長を分けて確認。利益増に営業CFが伴うことを重視する。",
-      "reject": "売上予想下方修正、顧客導入延期、資金回収の悪化なら見送り。転換社債による希薄化、株価急変にも注意。",
+      "watch": "会社予想の維持に加え、次の開示で営業CFの赤字縮小・改善と売掛金・在庫の回収を確認できるまで条件確認待ち。AI基盤とメモリーの部門別成長も分けて点検する。",
+      "reject": "売上予想下方修正、導入延期、営業CF赤字や資金回収の悪化が続けば見送り。直近は営業CFが赤字で、利益増に現金回収が伴うという検討条件は未充足。転換社債の希薄化にも注意。",
       "access": "米国株・USD建て。PENGの取扱い、注文時のスプレッドと為替費用を確認。",
       "valuation": {
-        "pe": 22.45,
-        "forwardPe": 12.81,
-        "cap": "35.2億 USD",
+        "pe": 19.97,
+        "forwardPe": 11.39,
+        "cap": "31.3億 USD",
         "url": "https://stockanalysis.com/stocks/peng/statistics/",
-        "asOf": "提供元株価表示：2026-10-21 16:00 EDT（終値58.38 USD）。指標確認10月22日。個別倍率・時価総額の基準時刻は未公表。22日の時間外価格は混ぜていない",
-        "note": "予想PERの算定利益は提供元基準。会社の2027年度GAAP予想EPS3.50 USDを使うと58.38÷3.50≒16.7倍。実績TTM EPS2.60 USDとは別の数値。",
+        "asOf": "提供元株価表示：2026-10-22 16:00 EDT（終値51.91 USD）。指標確認10月23日。個別倍率・時価総額の基準時刻は未公表。23日の時間外価格は混ぜていない",
+        "note": "予想PERの算定利益は提供元基準。会社の2027年度GAAP予想EPS3.50 USDを使うと51.91÷3.50≒14.8倍。実績TTM EPS2.60 USDとは別の数値。営業CFの赤字も併せて検討する。",
         "trailingEps": 2.6
       },
       "longPrices": {
@@ -984,9 +996,9 @@
         "unit": "USD",
         "symbol": "PENG",
         "source": "https://finance.yahoo.com/quote/PENG/history/",
-        "retrieved": "2026-10-22",
-        "quote": 58.38,
-        "quoteAt": "2026-10-21T20:00:00.000Z",
+        "retrieved": "2026-10-23",
+        "quote": 51.91,
+        "quoteAt": "2026-10-22T20:00:00.000Z",
         "timezone": "America/New_York",
         "session": "通常取引終了時点の価格",
         "historyRetrieved": "2026-10-15"
@@ -1021,6 +1033,10 @@
     {
       "date": "2026-10-22",
       "reason": "6銘柄の価格・日時と3候補の提供元予想PER・時価総額を更新。実績PERは表示価格÷提供元TTM EPSで再計算。NVIDIAの10月21日DSX・電力関連発表を追加し、発表元の説明と編集部の見立てを区別。公式決算を再点検し主要3候補のKPI・検討条件は維持。取得できない資料の確認日と月次履歴は保持。"
+    },
+    {
+      "date": "2026-10-23",
+      "reason": "5銘柄の価格・日時と3候補の評価指標を更新。Alchipの価格・取得日は10月22日のまま維持。NVIDIA Minervaの10月22日発表を追加。Penguinの10月6日決算から営業CF赤字を追記し、現金回収改善の検討条件が未充足と明記。新決算や下落原因を確認したという意味ではない。"
     }
   ]
 }

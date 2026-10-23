@@ -1,0 +1,145 @@
+[
+  {
+    "id": "A01",
+    "order": {
+      "customer": "青空商店",
+      "quantity": 2,
+      "unitPrice": 10000,
+      "account": "1111111",
+      "due": "2026-11-30"
+    },
+    "invoice": {
+      "customer": "青空商店",
+      "quantity": 2,
+      "unitPrice": 10000,
+      "subtotal": 18000,
+      "account": "1111111",
+      "due": "2026-11-30"
+    }
+  },
+  {
+    "id": "A02",
+    "order": {
+      "customer": "若葉商店",
+      "quantity": 3,
+      "unitPrice": 5000,
+      "account": "2222222",
+      "due": "2026-11-30"
+    },
+    "invoice": {
+      "customer": "若葉商店",
+      "quantity": 3,
+      "unitPrice": 5000,
+      "subtotal": 15000,
+      "account": "2222229",
+      "due": "2026-11-30"
+    }
+  },
+  {
+    "id": "A03",
+    "order": {
+      "customer": "星空商店",
+      "quantity": 1,
+      "unitPrice": 30000,
+      "account": "3333333",
+      "due": "2026-11-30"
+    },
+    "invoice": {
+      "customer": "星空商店",
+      "quantity": 1,
+      "unitPrice": 30000,
+      "subtotal": 30000,
+      "account": "3333333",
+      "due": "2026-11-20"
+    }
+  },
+  {
+    "id": "A04",
+    "order": {
+      "customer": "海風商店",
+      "quantity": 4,
+      "unitPrice": 2500,
+      "account": "4444444",
+      "due": "2026-11-30"
+    },
+    "invoice": {
+      "customer": "山風商店",
+      "quantity": 4,
+      "unitPrice": 2500,
+      "subtotal": 10000,
+      "account": "4444444",
+      "due": "2026-11-30"
+    }
+  },
+  {
+    "id": "A05",
+    "order": {
+      "customer": "夕日商店",
+      "quantity": 2,
+      "unitPrice": 8000,
+      "account": "5555555",
+      "due": "2026-11-30"
+    },
+    "invoice": {
+      "customer": "夕日商店",
+      "quantity": 3,
+      "unitPrice": 8000,
+      "subtotal": 24000,
+      "account": "5555555",
+      "due": "2026-11-30"
+    }
+  },
+  {
+    "id": "A06",
+    "order": {
+      "customer": "朝日商店",
+      "quantity": 1,
+      "unitPrice": 12000,
+      "account": "6666666",
+      "due": "2026-11-30"
+    },
+    "invoice": {
+      "customer": "朝日商店",
+      "quantity": 1,
+      "unitPrice": 12000,
+      "subtotal": 12000,
+      "account": "6666666"
+    }
+  },
+  {
+    "id": "A07",
+    "order": {
+      "customer": "森の商店",
+      "quantity": 2,
+      "unitPrice": 7000,
+      "account": "7777777",
+      "due": "2026-11-30"
+    },
+    "invoice": {
+      "customer": "森の商店",
+      "quantity": 2,
+      "unitPrice": 7000,
+      "subtotal": 14000,
+      "account": "7777777",
+      "due": "2026-11-30"
+    }
+  },
+  {
+    "id": "A08",
+    "order": {
+      "customer": "川の商店",
+      "quantity": 3,
+      "unitPrice": 4000,
+      "account": "8888888",
+      "due": "2026-11-30"
+    },
+    "invoice": {
+      "customer": "川の商店",
+      "quantity": 3,
+      "unitPrice": 4000,
+      "subtotal": 12000,
+      "account": "8888888",
+      "due": "2026-11-30"
+    }
+  }
+]

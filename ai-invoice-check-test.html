@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-58NKR47NW8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-58NKR47NW8');
+</script>
+<meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>AIで請求書のミスを探せる？架空8件の公開チェック教材</title>
+<meta content="請求書の金額・宛名・期限・振込先の照合を架空8件で確認。入力・AI応答・正解・検算スクリプトを公開。非盲検の教材で性能評価ではありません。" name="description"/>
+<link href="styles.css?v=20261014-2" rel="stylesheet"/>
+<link rel="canonical" href="https://sono-shigoto-ai.com/ai-invoice-check-test.html"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="AIで請求書のミスを探せる？架空8件の公開チェック教材"/><meta property="og:description" content="請求書の金額・宛名・期限・振込先の照合を架空8件で確認。入力・AI応答・正解・検算スクリプトを公開。非盲検の教材で性能評価ではありません。"/>
+<meta property="og:url" content="https://sono-shigoto-ai.com/ai-invoice-check-test.html"/><meta property="og:site_name" content="その仕事、AIにできる？"/>
+<meta name="twitter:card" content="summary"/><link rel="stylesheet" href="practical-guide.css?v=20261015-1"/>
+<script defer src="practical-guide.js?v=20261012-1"></script>
+<link rel="stylesheet" href="site-components.css?v=20261015-1"></head>
+<body><header class="site-header">
+<div class="container nav">
+<a class="logo" href="index.html">その仕事、<span>AIにできる？</span></a>
+<nav aria-label="メインメニュー"><a class="pillar-nav" href="index.html">ホーム</a><a class="pillar-nav" href="ai-work.html">仕事をAIに任せる</a><a class="pillar-nav" href="ai-revenue.html">AIに稼いでもらう</a><a class="pillar-nav" href="ai-investment.html">AIに投資相談</a></nav>
+</div>
+</header><main class="article practical-guide"><nav class="guide-breadcrumb" aria-label="パンくず"><a href="index.html">ホーム</a> / <a href="ai-work.html">仕事をAIに任せる</a></nav><p class="meta">公開・更新：2026年10月24日｜編集：<a href="about.html">その仕事、AIにできる？編集部</a></p>
+<h1>AIで請求書のミスを探せる？<br/>架空8件の公開チェック教材</h1>
+<div class="site-guide"><img src="assets/character-navy-jacket.webp" width="144" height="144" alt="AIスペシャリスト兼AI秘書 けいこ"/><div><small>AIスペシャリスト兼AI秘書　けいこ</small><strong>掛け算が合っていても、注文と違うことがあります。</strong></div></div>
+<div class="guide-answer"><strong>今回確認したのは「この8件の差分」。実務での正答率ではありません。</strong><p>誤りを設定した6件と、指定項目に差分がない2件を公開。現在のCodexセッションによる1回の応答を記録し、明示した照合ルールとも比較しました。同じAIが問題作成と回答を担当する非盲検の確認です。独立評価・人力との比較・時短測定は行っていません。</p></div>
+<nav class="guide-toc" aria-label="目次"><a href="#method">方法と限界</a><a href="#results">8件の結果</a><a href="#reproduce">データと再現手順</a><a href="ai-accounting-invoice.html">自分の業務での使い方</a></nav>
+<h2 id="method">何を確かめたか</h2><p>注文を基準に、宛名・数量・単価・振込先・期限を照合し、請求案の税抜小計＝数量×単価を検算しました。通貨は円、割引・税・端数処理なしという教材の条件です。実在の顧客・口座は使用していません。税務上の適否、口座の実在性、PDFの文字認識は対象外です。</p><p>比較対象は同じ8件を照合するJavaScriptの固定ルールです。単純な構造化データでは固定ルールで確認できるため、この結果でAIの優位性は示せません。問題作成者が回答しており、モデル名の厳密な識別・待ち時間・個別の利用料金は取得していません。</p>
+<h2 id="results">記録した応答と固定ルールの照合</h2><div class="guide-table-scroll" tabindex="0" role="region" aria-label="8件の照合結果"><table><thead><tr><th>ID</th><th>AI応答の指摘</th><th>扱い</th></tr></thead><tbody><tr><td>A01</td><td>2×10000=20000、記載18000との差2000</td><td>要確認</td></tr><tr><td>A02</td><td>注文2222222に対し請求案2222229</td><td>要確認</td></tr><tr><td>A03</td><td>注文11/30に対し請求案11/20</td><td>要確認</td></tr><tr><td>A04</td><td>注文は海風商店、請求案は山風商店</td><td>要確認</td></tr><tr><td>A05</td><td>注文2に対し請求案3。請求案内の掛け算自体は整合</td><td>要確認</td></tr><tr><td>A06</td><td>請求案の期限が未記載</td><td>要確認</td></tr><tr><td>A07</td><td>指定した比較項目では差分なし</td><td>指定項目の差分なし</td></tr><tr><td>A08</td><td>指定した比較項目では差分なし</td><td>指定項目の差分なし</td></tr></tbody></table></div><p>保存したAI応答は8件とも作成済みの正解と一致。固定ルールも同じ8件で一致しました。これは公開教材内の照合結果であり、「AIの検出率100%」という性能評価には使えません。</p><p><strong>A05がポイント：</strong>数量3×単価8,000円＝24,000円という請求案の計算は合っています。しかし注文は数量2。請求書だけを見る検算では注文との差を確認できません。</p>
+<h2 id="reproduce">入力・正解・応答をすべて公開</h2><ul><li><a href="downloads/invoice-check-20261024/cases.json" download>cases.json を保存</a></li><li><a href="downloads/invoice-check-20261024/answer-key.json" download>answer-key.json を保存</a></li><li><a href="downloads/invoice-check-20261024/ai-response.json" download>ai-response.json を保存</a></li><li><a href="downloads/invoice-check-20261024/run-info.json" download>run-info.json を保存</a></li><li><a href="downloads/invoice-check-20261024/verify.mjs" download>verify.mjs を保存</a></li></ul><ol><li>同じフォルダに5ファイルを保存します。</li><li>Node.jsで <code>node verify.mjs</code> を実行。固定ルールと正解、記録済みAI応答との一致を確認できます。このコマンドは新たなAI生成を行いません。</li><li>別のAIで試す場合は、先にrun-info.jsonの指示文とcases.jsonだけを渡して応答を保存します。正解を見せず、サービス名・モデル・実行日・設定を記録してから採点してください。応答はモデルや実行ごとに変わります。</li></ol>
+<h2>実務に持ち込む前に</h2><p>未見のデータで第三者が評価すること、誤指摘と見逃しを別々に数えること、確認・修正込みの所要時間を測ることが次の課題です。今回はそこまでの効果を主張しません。</p><p><a class="button primary" href="ai-accounting-invoice.html">請求書チェックの指示文と手順を見る →</a></p></main><footer class="footer"><section class="footer-news container" aria-label="AIニュース見出し一覧"><div class="footer-news-heading"><h2>AIニュース</h2><a href="ai-news.html">すべてのニュースを見る →</a></div><div class="footer-news-scroll" tabindex="0" role="region" aria-label="スクロールできるニュース見出し"><ul data-news-headlines><li><a href="ai-news.html#gemini-4-argon-20261013"><time datetime="2026-10-13">2026-10-13</time><span>Gemini 4 Argon、開発者向けに提供開始</span></a></li><li><a href="ai-news.html#ink-canvas-20261013"><time datetime="2026-10-13">2026-10-13</time><span>Microsoft Ink Canvas、対応するWindows端末への提供を開始</span></a></li><li><a href="ai-news.html#gemini-agent-20261008"><time datetime="2026-10-08">2026-10-08</time><span>Googleが仕事向けのGemini agentを発表</span></a></li><li><a href="ai-news.html#haiku-55-20261007"><time datetime="2026-10-07">2026-10-07</time><span>Claude Haiku 5.5発表。反復作業向けの小型モデル</span></a></li></ul></div></section><script defer src="news-headlines.js?v=20261014-1"></script>
+<div class="container footer-grid">
+<div><a class="logo" href="index.html">その仕事、<span>AIにできる？</span></a><p>個人事業主・フリーランス・小さな会社のための<br/>AI活用・自動収益化・投資判断の情報メディア。</p></div>
+<div><a href="about.html">このサイトについて</a><a href="privacy.html">プライバシーポリシー</a><a href="contact.html">お問い合わせ</a></div>
+</div>
+<div class="container copyright">© 2026 その仕事、AIにできる？</div>
+</footer>
+</body></html>

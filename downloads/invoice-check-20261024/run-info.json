@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-24",
+  "environment": "Codex 現在のセッション",
+  "model": "UIで正確なモデル識別子を確認していないため非記載",
+  "runs": 1,
+  "blind": false,
+  "independent": false,
+  "timeMeasured": false,
+  "incrementalCharge": "個別請求額は未取得",
+  "prompt": "架空の注文と請求案を照合してください。各IDについて不一致・不足のフィールド名と根拠を列挙し、問題がなければ空配列にしてください。subtotalはquantity×unitPrice（税抜）のみを検算。税・法令・銀行口座の実在性は判断しないでください。JSON配列で回答。",
+  "limits": "同じAIが作問と応答を担当。一般的な検出率・時短・費用効果を推定する実証ではない。"
+}

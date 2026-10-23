@@ -1,0 +1,10 @@
+import fs from 'node:fs';
+import {fileURLToPath} from 'node:url';
+import path from 'node:path';
+const root=path.dirname(fileURLToPath(import.meta.url));
+const cases=JSON.parse(fs.readFileSync(path.join(root,'cases.json'))),truth=JSON.parse(fs.readFileSync(path.join(root,'answer-key.json'))),answers=JSON.parse(fs.readFileSync(path.join(root,'ai-response.json')));
+const check=c=>{const issues=[];for(const k of ['customer','quantity','unitPrice','account','due'])if(c.order[k]!==c.invoice[k])issues.push(k);if(c.invoice.quantity*c.invoice.unitPrice!==c.invoice.subtotal)issues.push('subtotal');return issues.sort();};
+const same=(x,y)=>JSON.stringify([...x].sort())===JSON.stringify([...y].sort());
+const rows=cases.map(c=>({id:c.id,expected:truth[c.id],rule:check(c),ai:answers.find(a=>a.id===c.id).fields}));
+if(rows.some(x=>!same(x.expected,x.rule)))throw Error('fixtureとルールが不一致');
+console.log(JSON.stringify({scope:'公開教材8件・非盲検1回。性能評価ではない',aiMatches:rows.filter(x=>same(x.expected,x.ai)).length,total:rows.length,rows},null,2));

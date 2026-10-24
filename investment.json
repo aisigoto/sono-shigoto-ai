@@ -140,9 +140,9 @@
         "unit": "USD",
         "symbol": "NVDA",
         "source": "https://finance.yahoo.com/quote/NVDA/history/",
-        "retrieved": "2026-10-23",
-        "quote": 212.21,
-        "quoteAt": "2026-10-22T20:00:00.000Z",
+        "retrieved": "2026-10-24",
+        "quote": 210.96,
+        "quoteAt": "2026-10-23T20:00:00.000Z",
         "timezone": "America/New_York",
         "session": "通常取引終了時点の価格",
         "historyRetrieved": "2026-10-15"
@@ -287,9 +287,9 @@
         "unit": "USD",
         "symbol": "TSM",
         "source": "https://finance.yahoo.com/quote/TSM/history/",
-        "retrieved": "2026-10-23",
-        "quote": 412.35,
-        "quoteAt": "2026-10-22T20:00:03.000Z",
+        "retrieved": "2026-10-24",
+        "quote": 418.51,
+        "quoteAt": "2026-10-23T20:00:03.000Z",
         "timezone": "America/New_York",
         "session": "通常取引終了時点の価格",
         "historyRetrieved": "2026-10-15"
@@ -502,7 +502,7 @@
       "meaning": "支援方針を個別企業の受注確定と混同しないことが重要です。採択先・発注先・量産時期を確認して初めて各社への関係を判断します。これは本日の新規発表ではなく、継続監視する政策です。",
       "url": "https://www.meti.go.jp/policy/mono_info_service/ai_semiconductor_frame/ai_semiconductor_frame.html",
       "source": "経済産業省の政策原文",
-      "checkStatus": "2026-10-23も公式本文を取得できず、前回確認の記録を保持。"
+      "checkStatus": "2026-10-24も公式本文を取得できず、前回確認の記録を保持。"
     },
     {
       "region": "米国・中国など",
@@ -514,7 +514,7 @@
       "meaning": "販売できる国・顧客の制約は、AI需要が強くても売上の制約になり得ます。対象製品と会社の業績予想への織り込みを照合します。今回、新たな規制変更を確認したという意味ではありません。",
       "url": "https://www.bis.gov/",
       "source": "米BIS公式の先端計算製品案内",
-      "checked": "2026-10-23"
+      "checked": "2026-10-24"
     },
     {
       "region": "世界",
@@ -528,7 +528,7 @@
       "source": "NVIDIA公式決算発表"
     }
   ],
-  "researchChecked": "2026-10-23",
+  "researchChecked": "2026-10-24",
   "discovery": [
     {
       "id": "suss",
@@ -570,11 +570,11 @@
       "reject": "納期延期や受注取消し、利益率予想の引下げがあれば見送り。上期は減収であり、受注残は翌年の売上予想そのものではない。",
       "access": "ドイツ株・EUR建て。利用する証券会社のXETRA取扱い、手数料、売買単位を事前確認。",
       "valuation": {
-        "pe": 37.39,
+        "pe": 37.04,
         "forwardPe": 17.74,
-        "cap": "9.6629億 EUR",
+        "cap": "9.4890億 EUR",
         "url": "https://stockanalysis.com/quote/etr/SMHN/statistics/",
-        "asOf": "提供元株価表示：2026-10-23 11:10 AM CEST（50.55 EUR）。指標確認10月23日。チャート価格50.10 EURとは日時が異なり、個別倍率・時価総額の基準時刻は未公表",
+        "asOf": "提供元株価表示：2026-10-23 17:39 CEST（49.64 EUR、遅延価格）。指標確認10月24日。個別倍率・時価総額の基準時刻は未公表。公式終値との一致は未確認",
         "note": "利益回復が前提の評価。予想PERが低くても、減益・納期延期で割高になり得る。",
         "trailingEps": 1.34
       },
@@ -680,11 +680,11 @@
         "unit": "EUR",
         "symbol": "SMHN.DE",
         "source": "https://finance.yahoo.com/quote/SMHN.DE/history/",
-        "retrieved": "2026-10-23",
-        "quote": 50.1,
-        "quoteAt": "2026-10-23T10:07:43.000Z",
+        "retrieved": "2026-10-24",
+        "quote": 49.64,
+        "quoteAt": "2026-10-23T15:39:41.000Z",
         "timezone": "Europe/Berlin",
-        "session": "通常取引中の遅延価格（終値ではない）",
+        "session": "取引終了後の提供元価格（遅延。公式終値との一致は未確認）",
         "historyRetrieved": "2026-10-15"
       }
     },
@@ -732,7 +732,7 @@
         "forwardPe": 17.15,
         "cap": "3,012.9億 TWD",
         "url": "https://stockanalysis.com/quote/tpe/3661/statistics/",
-        "asOf": "提供元株価表示：2026-10-22 13:30 CST（原文表記、3,495 TWD）。指標確認10月23日。株価は10月22日のままで、23日の新価格を確認したものではない。個別倍率・時価総額の基準時刻は未公表",
+        "asOf": "提供元株価表示：2026-10-22 14:39 CST（原文表記、3,495 TWD、遅延価格）。指標確認10月24日。チャートの価格日時10月22日13:30とは異なる。個別倍率・時価総額の基準時刻は未公表。新しい取引日の価格は取得できていない",
         "note": "実績PERと予想PERの差が大きい。高い利益成長を織り込んでおり、未発見の割安株とは断定できない。",
         "trailingEps": 68.88
       },
@@ -886,12 +886,12 @@
       "reject": "売上予想下方修正、導入延期、営業CF赤字や資金回収の悪化が続けば見送り。直近は営業CFが赤字で、利益増に現金回収が伴うという検討条件は未充足。転換社債の希薄化にも注意。",
       "access": "米国株・USD建て。PENGの取扱い、注文時のスプレッドと為替費用を確認。",
       "valuation": {
-        "pe": 19.97,
-        "forwardPe": 11.39,
-        "cap": "31.3億 USD",
+        "pe": 20.54,
+        "forwardPe": 11.72,
+        "cap": "32.2億 USD",
         "url": "https://stockanalysis.com/stocks/peng/statistics/",
-        "asOf": "提供元株価表示：2026-10-22 16:00 EDT（終値51.91 USD）。指標確認10月23日。個別倍率・時価総額の基準時刻は未公表。23日の時間外価格は混ぜていない",
-        "note": "予想PERの算定利益は提供元基準。会社の2027年度GAAP予想EPS3.50 USDを使うと51.91÷3.50≒14.8倍。実績TTM EPS2.60 USDとは別の数値。営業CFの赤字も併せて検討する。",
+        "asOf": "提供元株価表示：2026-10-23 16:00 EDT（終値53.41 USD）。指標確認10月24日。個別倍率・時価総額の基準時刻は未公表。時間外53.33 USDは混ぜていない",
+        "note": "予想PERの算定利益は提供元基準。会社の2027年度GAAP予想EPS3.50 USDを使うと53.41÷3.50≒15.3倍。実績TTM EPS2.60 USDとは別の数値。営業CFの赤字も併せて検討する。",
         "trailingEps": 2.6
       },
       "longPrices": {
@@ -996,9 +996,9 @@
         "unit": "USD",
         "symbol": "PENG",
         "source": "https://finance.yahoo.com/quote/PENG/history/",
-        "retrieved": "2026-10-23",
-        "quote": 51.91,
-        "quoteAt": "2026-10-22T20:00:00.000Z",
+        "retrieved": "2026-10-24",
+        "quote": 53.41,
+        "quoteAt": "2026-10-23T20:00:00.000Z",
         "timezone": "America/New_York",
         "session": "通常取引終了時点の価格",
         "historyRetrieved": "2026-10-15"
@@ -1037,6 +1037,10 @@
     {
       "date": "2026-10-23",
       "reason": "5銘柄の価格・日時と3候補の評価指標を更新。Alchipの価格・取得日は10月22日のまま維持。NVIDIA Minervaの10月22日発表を追加。Penguinの10月6日決算から営業CF赤字を追記し、現金回収改善の検討条件が未充足と明記。新決算や下落原因を確認したという意味ではない。"
+    },
+    {
+      "date": "2026-10-24",
+      "reason": "SUSS・Penguin・NVIDIA・TSMC ADRの価格と日時を更新。SUSSは取引終了後の遅延表示で公式終値との一致未確認。Alchipとアドバンテストは既存価格日時・取得日を維持。3候補の提供元評価指標と算定時点の違いを確認。決算KPI・検討条件は維持し、価格変動の原因は断定していない。"
     }
   ]
 }

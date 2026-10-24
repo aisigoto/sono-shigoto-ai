@@ -568,7 +568,7 @@
       "catalyst": "2027年向け納入予定の受注が、売上増と利益率改善に結び付くかが焦点。AI関連の大型受注は需要の手掛かりになる。",
       "watch": "次の開示で通期EBIT利益率8〜10%の予想維持と、受注の納入進捗を確認できれば検討を進める。",
       "reject": "納期延期や受注取消し、利益率予想の引下げがあれば見送り。上期は減収であり、受注残は翌年の売上予想そのものではない。",
-      "access": "ドイツ株・EUR建て。利用する証券会社のXETRA取扱い、手数料、売買単位を事前確認。",
+      "access": "SBI公表の外国株取扱国にドイツが含まれず、XETRA現地株の購入経路を確認できない。OTCを代替として勧めない。 確認2026-10-24。注文時には最新の取扱い・買付制限を利用者自身が確認してください。",
       "valuation": {
         "pe": 37.04,
         "forwardPe": 17.74,
@@ -686,7 +686,8 @@
         "timezone": "Europe/Berlin",
         "session": "取引終了後の提供元価格（遅延。公式終値との一致は未確認）",
         "historyRetrieved": "2026-10-15"
-      }
+      },
+      "purchaseStatus": "今回のSBI購入候補から除外"
     },
     {
       "id": "alchip",
@@ -726,7 +727,7 @@
       "catalyst": "3nm案件の量産拡大が売上回復と利益の伸びを両立できるか。設計から出荷への移行を追う。",
       "watch": "次の四半期で出荷増と前年同期比売上の改善を確認。粗利益率だけでなく粗利益額・営業CFも照合する。",
       "reject": "量産延期、顧客案件の縮小、売上回復を伴わない利益率上昇なら再評価。台湾の地政学・顧客案件への依存にも注意。",
-      "access": "台湾株・TWD建て。台湾現地株を扱う証券会社、売買単位・為替・現地税を確認。米国株と同じ操作で買えるとは限らない。",
+      "access": "SBI公表の外国株取扱国に台湾現地市場が含まれず、米国ADR一覧でもAlchipの代替を確認できない。TSMの取扱いはAlchipを買える根拠にはならない。 確認2026-10-24。注文時には最新の取扱い・買付制限を利用者自身が確認してください。",
       "valuation": {
         "pe": 50.74,
         "forwardPe": 17.15,
@@ -844,7 +845,8 @@
         "timezone": "Asia/Taipei",
         "session": "通常取引終了時点の価格",
         "historyRetrieved": "2026-10-15"
-      }
+      },
+      "purchaseStatus": "今回のSBI購入候補から除外"
     },
     {
       "id": "peng",
@@ -884,7 +886,7 @@
       "catalyst": "新規顧客が継続売上へ育ち、会社の次年度成長予想を実現できるか。AI構築・運用への広がりを検証する。",
       "watch": "会社予想の維持に加え、次の開示で営業CFの赤字縮小・改善と売掛金・在庫の回収を確認できるまで条件確認待ち。AI基盤とメモリーの部門別成長も分けて点検する。",
       "reject": "売上予想下方修正、導入延期、営業CF赤字や資金回収の悪化が続けば見送り。直近は営業CFが赤字で、利益増に現金回収が伴うという検討条件は未充足。転換社債の希薄化にも注意。",
-      "access": "米国株・USD建て。PENGの取扱い、注文時のスプレッドと為替費用を確認。",
+      "access": "公式普通株一覧にPENGを確認。現候補では少額で比較しやすいが、営業CF改善・資金回収の条件は未充足。 確認2026-10-24。注文時には最新の取扱い・買付制限を利用者自身が確認してください。",
       "valuation": {
         "pe": 20.54,
         "forwardPe": 11.72,
@@ -1002,7 +1004,8 @@
         "timezone": "America/New_York",
         "session": "通常取引終了時点の価格",
         "historyRetrieved": "2026-10-15"
-      }
+      },
+      "purchaseStatus": "取扱掲載を確認・業績条件待ち"
     }
   ],
   "changes": [
@@ -1041,6 +1044,79 @@
     {
       "date": "2026-10-24",
       "reason": "SUSS・Penguin・NVIDIA・TSMC ADRの価格と日時を更新。SUSSは取引終了後の遅延表示で公式終値との一致未確認。Alchipとアドバンテストは既存価格日時・取得日を維持。3候補の提供元評価指標と算定時点の違いを確認。決算KPI・検討条件は維持し、価格変動の原因は断定していない。"
+    },
+    {
+      "date": "2026-10-24",
+      "reason": "SBI証券での取扱確認と少額予算を候補選定の入口に追加。PENG・NVDA・TSMの公式掲載、アドバンテストのS株表示を確認。SUSSとAlchipは今回のSBI購入候補から除外し世界調査の記録として保持。円換算は入力為替の仮定と費用予備額で比較し、現在の為替相場や必要買付余力と断定しない。損益の事実とAI寄与の主観的配分を分ける記録方針を追加。"
     }
-  ]
+  ],
+  "accessReview": {
+    "checked": "2026-10-24",
+    "listUpdated": "2026-10-16",
+    "defaultBudget": 10000,
+    "defaultUsdJpy": 150,
+    "defaultReserve": 1000,
+    "rows": [
+      {
+        "id": "peng",
+        "status": "取扱掲載を確認・業績条件待ち",
+        "route": "米国株・1株",
+        "units": 1,
+        "currency": "USD",
+        "eligible": true,
+        "reason": "公式普通株一覧にPENGを確認。現候補では少額で比較しやすいが、営業CF改善・資金回収の条件は未充足。",
+        "source": "https://search.sbisec.co.jp/v2/popwin/info/stock/pop6040_usequity_list.html"
+      },
+      {
+        "id": "nvda",
+        "status": "取扱掲載を確認・比較対象",
+        "route": "米国株・1株",
+        "units": 1,
+        "currency": "USD",
+        "eligible": true,
+        "reason": "公式普通株一覧にNVDAを確認。少額予算に収まるかを別途判定。新しい購入推奨ではない。",
+        "source": "https://search.sbisec.co.jp/v2/popwin/info/stock/pop6040_usequity_list.html"
+      },
+      {
+        "id": "advantest",
+        "status": "S株表示を確認・比較対象",
+        "route": "国内株・S株1株",
+        "units": 1,
+        "currency": "JPY",
+        "eligible": true,
+        "reason": "SBI個別画面で「単元未満株」を確認。通常単元は100株、S株は約定時刻・価格指定の条件が異なる。",
+        "source": "https://faq.sbisec.co.jp/answer/5ee1ce6e50df500012207312/"
+      },
+      {
+        "id": "tsm",
+        "status": "取扱掲載を確認・比較対象",
+        "route": "米国ADR・1株",
+        "units": 1,
+        "currency": "USD",
+        "eligible": true,
+        "reason": "公式台湾ADR一覧にTSMを確認。台湾現地株2330とは別の商品。ADR管理費用が発生する場合がある。",
+        "source": "https://search.sbisec.co.jp/v2/popwin/info/stock/pop6040_usequity_list.html"
+      },
+      {
+        "id": "suss",
+        "status": "今回のSBI購入候補から除外",
+        "route": "ドイツ現地株・監視のみ",
+        "units": null,
+        "currency": "EUR",
+        "eligible": false,
+        "reason": "SBI公表の外国株取扱国にドイツが含まれず、XETRA現地株の購入経路を確認できない。OTCを代替として勧めない。",
+        "source": "https://site0.sbisec.co.jp/marble/foreign/top.do"
+      },
+      {
+        "id": "alchip",
+        "status": "今回のSBI購入候補から除外",
+        "route": "台湾現地株・監視のみ",
+        "units": null,
+        "currency": "TWD",
+        "eligible": false,
+        "reason": "SBI公表の外国株取扱国に台湾現地市場が含まれず、米国ADR一覧でもAlchipの代替を確認できない。TSMの取扱いはAlchipを買える根拠にはならない。",
+        "source": "https://site0.sbisec.co.jp/marble/foreign/top.do"
+      }
+    ]
+  }
 }

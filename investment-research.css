@@ -5,3 +5,5 @@
 /* 国内候補を加え、発掘候補は読みやすい2列で比較。 */
 @media(min-width:621px){.discovery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .discovery-tile:nth-child(4){border-top-color:#ba4b67}
+
+.trade-summary{padding:24px 0;border-block:2px solid #1468e8;margin:26px 0}.trade-summary h3{font-size:24px;line-height:1.6;margin:8px 0}.short-term-section{border-top:2px solid #1468e8;padding-top:28px}.short-verdict{font-size:19px;border-left:4px solid #1468e8;padding:12px 20px;background:#eef5ff}.short-chart{margin:16px 0;max-width:800px}.short-chart figcaption{font-weight:700}.short-chart svg{width:100%;height:auto;margin-top:18px}.short-chart-detail{margin:16px 0}.portfolio-lab{padding:24px 0;border-top:1px solid #dce3eb;margin-top:28px}#portfolio-result{font-size:18px;font-weight:700}.decision-grid h3{font-size:17px}

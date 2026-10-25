@@ -1,7 +1,28 @@
 {
-  "lastChecked": "2026-10-21",
-  "lastUpdated": "2026-10-21",
+  "lastChecked": "2026-10-25",
+  "lastUpdated": "2026-10-25",
   "items": [
+    {
+      "id": "agent-skills-aaif-20261022",
+      "date": "2026-10-22",
+      "title": "Agent Skillsの標準をAAIFへ移管。業務手順をAIに渡す共通形式",
+      "category": "業務手順・AI連携",
+      "source": "Anthropic公式発表",
+      "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+      "summary": "Anthropicは10月22日、AIに専門知識や手順を渡す共通仕様Agent Skillsを、Linux Foundation傘下のAgentic AI Foundation（AAIF）へ寄贈すると発表しました。名称・ロゴ・GitHub組織・ドメインが対象です。",
+      "meaning": "小さな会社でも、見積書の確認点や資料の作成手順をまとめる際の共通形式として注目できます。ただし、手順の移植だけで同じ品質や時短が得られるとは限りません。利用するAIで動作と出力を確認しましょう。当サイトで効果を実測したものではありません。",
+      "conditions": "仕様の利用・貢献にAAIFへの加入は不要と案内されています。各AI製品の対応機能・契約・利用料金が共通になる発表ではありません。取得したスキルの指示・添付スクリプト・外部接続先を確認してから利用してください。",
+      "related": [
+        {
+          "url": "sme-ai-first-step.html",
+          "label": "小さな会社のAI導入の進め方"
+        },
+        {
+          "url": "ai-time-savings.html",
+          "label": "確認・修正込みの時短を試算"
+        }
+      ]
+    },
     {
       "id": "gemini-small-business-20261020",
       "date": "2026-10-20",

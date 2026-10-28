@@ -1,7 +1,34 @@
 {
-  "lastChecked": "2026-10-27",
-  "lastUpdated": "2026-10-27",
+  "lastChecked": "2026-10-28",
+  "lastUpdated": "2026-10-28",
   "items": [
+    {
+      "id": "oracle-ai-smb-20261027",
+      "date": "2026-10-27",
+      "title": "OracleとOpenAI、小規模企業向けAI・業務ツールの組み合わせを発表",
+      "category": "小規模事業・業務連携",
+      "source": "OpenAI公式発表",
+      "url": "https://openai.com/index/oracle-apps-in-chatgpt/",
+      "summary": "OpenAIは10月27日、Oracleとの提携拡大を発表しました。小規模企業向けOracle AI SMB Bundleでは、ChatGPT Business・Codex、Oracleの業務アプリ、OCI利用クレジットを組み合わせると案内しています。",
+      "meaning": "開発と請求書管理を別々に契約している小さな会社が、利用中のサービスと比較する材料です。クレジット額だけで決めず、対象業務、移行の手間、無料枠を超えた費用、接続先へのアクセス権を確認しましょう。当サイトで時短や収益改善を実測したものではありません。",
+      "conditions": "Oracle公式ページでは中小企業向けの限定提供で、申請ごとに承認審査があるとしています。各サービスに別の利用権・上限・条件が適用されます。OCIクレジットは年12,000米ドルで追加2年まで更新可能と案内されていますが、無条件の現金給付や全機能の無料利用ではありません。日本での申込可否、採択条件、超過時料金は導入前に確認が必要です。米国顧客向けOracle Marketplaceでの購入案内は、SMB Bundleの提供地域とは区別してください。",
+      "additionalSources": [
+        {
+          "url": "https://www.oracle.com/artificial-intelligence/smb-bundle/",
+          "label": "Oracle公式の申請・利用条件"
+        }
+      ],
+      "related": [
+        {
+          "url": "sme-ai-first-step.html",
+          "label": "小さな会社のAI導入手順"
+        },
+        {
+          "url": "ai-time-savings.html",
+          "label": "確認時間と費用を含めて試算"
+        }
+      ]
+    },
     {
       "id": "gpt-61-terra-20261026",
       "date": "2026-10-26",

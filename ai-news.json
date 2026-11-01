@@ -1,7 +1,28 @@
 {
-  "lastChecked": "2026-10-28",
-  "lastUpdated": "2026-10-28",
+  "lastChecked": "2026-11-01",
+  "lastUpdated": "2026-11-01",
   "items": [
+    {
+      "id": "sheets-cell-citations-20261028",
+      "date": "2026-10-28",
+      "title": "Google SheetsのAI生成セルに出典表示。1回最大3,000セルに拡大",
+      "category": "表計算・出典確認",
+      "source": "Google Workspace公式発表",
+      "url": "https://workspaceupdates.googleblog.com/2026/10/fill-with-gemini-now-provides-cell-level-citations-for-web-sources-and-supports-larger-requests.html",
+      "summary": "Googleは10月28日、SheetsのAI関数で生成したセルの値について、参照したウェブ出典をセルごとに確認できる更新を発表しました。1回のリクエストで扱える容量も最大3,000セルへ拡大すると案内しています。",
+      "meaning": "取引先候補の情報整理などで、どの資料を根拠にした値かを確認する手掛かりになります。出典が付いても正しさが保証されるわけではないため、元ページの日付や数値を照合しましょう。個人情報・機密情報の入力は社内ルールを確認してください。当サイトで精度や時短を実測したものではありません。",
+      "conditions": "セルごとの出典はウェブ版Sheetsが対象。公式には10月20日から最大15日かけて段階提供と案内されており、発表日と提供開始日は異なります。対象はBusiness Standard／Plus、Enterprise Standard／Plus、Google AI Pro／Ultra、Google AI Pro for Education、AI Expanded Access。管理者がSheetsのGeminiを有効にしている必要があります。日本語での対象機能・実際の利用可否・利用上限は契約とアカウントで確認してください。提供元の速度評価は当サイトの実測ではありません。",
+      "related": [
+        {
+          "url": "sme-ai-first-step.html",
+          "label": "小さな会社のAI導入手順"
+        },
+        {
+          "url": "ai-time-savings.html",
+          "label": "確認作業込みの費用と時短を計算"
+        }
+      ]
+    },
     {
       "id": "oracle-ai-smb-20261027",
       "date": "2026-10-27",

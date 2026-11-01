@@ -41,14 +41,14 @@
     {
       "region": "米国",
       "category": "金利・経済",
-      "title": "米国金利とAI株の評価",
+      "title": "FRBは10月28日も政策金利3.75〜4.00%を維持",
       "dateLabel": "FOMC声明",
-      "date": "2026-09-16",
-      "fact": "FRBは政策金利の誘導目標を0.25ポイント引き上げ、3.75～4.00%とする決定を公表しました。",
-      "meaning": "将来の利益への期待で評価される銘柄では、金利上昇が評価の重荷になり得ます。企業の増収と、市場の評価倍率を別々に確認します。この声明だけで当日の値動きの原因は断定できません。",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
-      "source": "FRB公式声明",
-      "checked": "2026-10-25"
+      "date": "2026-10-28",
+      "fact": "FOMCは政策金利の誘導目標を3.75〜4.00%に維持。採決は10対2で、反対2名は0.25ポイント引き上げを支持。インフレは引き続き高いと説明した。",
+      "meaning": "編集部は金利据え置きをAI株の上昇保証とは扱わない。利益倍率や設備投資の資金調達環境を点検する背景資料として扱う。個別株の10月30日の下落原因をこの声明だけに帰属させない。",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+      "source": "FRB・10月28日FOMC声明",
+      "checked": "2026-11-01"
     },
     {
       "region": "日本",
@@ -125,10 +125,10 @@
       ],
       "fact": "税引前利益43.51億円（+1.0%）。8月13日時点の2026年9月期会社予想は売上350億円・親会社帰属利益28.5億円・EPS91.84円。すでに終了した年度の未発表決算を含む予想で、翌年度予想とは区別する。",
       "catalyst": "AIの継続的な業務利用が利益成長へ結び付くか。次回の通期決算は11月12日予定。短期の出来高増と利益成長の持続性は別の判断材料として扱う。",
-      "watch": "終値は5日・20日平均を上回り、出来高は前20日平均の約1.70倍。ただし前20日の高値3,775円を終値で超えていない。 終値3,775円超と出来高315,308株以上を観察する。10月24日に置いた未検証ルールで、現時点は価格条件未成立。",
+      "watch": "10月30日終値3585 JPY、5日平均3716.00、20日平均3555.75。10月28日は終値3,830円でも出来高298,800株で基準315,308株に届かず、同時成立なし。30日は5日平均を下回り、購入予定に変更しない。 終値3,775円超・出来高315,308株以上という10月24日設定の未検証ルールを維持し、両条件の同時成立後も業績と決算日を再点検する。",
       "reject": "高値更新後の終値3,775円割れや5日平均割れ、利益成長の鈍化、決算予想の引下げがあれば再評価。S株は指定価格で即座に約定・損切りできる前提を置かない。",
-      "access": "SBIの銘柄検索3993で10月25日に単元未満株表示を確認。通常100株では37万円、S株1株なら参照代金3,700円。費用・変動用の仮定予備額1,000円を足すと4,700円。",
-      "purchaseStatus": "購入判断：条件待ち／購入予定なし",
+      "access": "11月1日、SBI公開銘柄検索で単元未満株表示・通常100株を再確認。S株1株3,585円、仮定予備額1,000円込み4,585円。通常100株は358,500円で、10万円超。",
+      "purchaseStatus": "購入判断：条件待ち・購入予定なし",
       "valuation": {
         "pe": 43.96,
         "forwardPe": 29.8,
@@ -235,20 +235,34 @@
           {
             "month": "2026-09",
             "value": 3170
+          },
+          {
+            "month": "2026-10",
+            "value": 3585
           }
         ],
         "unit": "JPY",
         "symbol": "3993.T",
-        "source": "https://finance.yahoo.com/quote/3993.T/history/",
-        "quote": 3700,
-        "quoteAt": "2026-10-23T06:30:00.000Z",
+        "source": "https://stockanalysis.com/quote/tyo/3993/history/",
+        "quote": 3585,
+        "quoteAt": "2026-10-30T06:30:00.000Z",
         "timezone": "Asia/Tokyo",
-        "session": "通常取引終了時点の価格（SBI表示と照合）",
-        "retrieved": "2026-10-25",
-        "historyRetrieved": "2026-10-25"
+        "session": "通常取引終値",
+        "retrieved": "2026-11-01",
+        "historyRetrieved": "2026-10-25",
+        "monthlySources": [
+          {
+            "month": "2026-10",
+            "source": "https://stockanalysis.com/quote/tyo/3993/history/",
+            "retrieved": "2026-11-01"
+          }
+        ],
+        "latestMonthlyRetrieved": "2026-11-01",
+        "latestQuoteSource": "https://stockanalysis.com/quote/tyo/3993/history/",
+        "historySource": "https://finance.yahoo.com/quote/3993.T/history/"
       },
-      "financialChecked": "2026-10-25",
-      "reviewNote": "Q3短信要約で売上・利益・EPS・持分比率と会社予想を確認。営業CF・受注の新しい数値はこの要約では未確認で、通期開示で点検します。"
+      "financialChecked": "2026-11-01",
+      "reviewNote": "Q3短信要約で売上・利益・EPS・持分比率と会社予想を確認。営業CF・受注の新しい数値はこの要約では未確認で、通期開示で点検します。 11月1日追記：掲載済み決算の一次資料を再読。価格・短期判断は10月30日通常取引終値へ更新。PER・時価総額・予想PERは旧確認日の記録を維持し、現在の指標とは扱わない。"
     },
     {
       "id": "exawizards",
@@ -287,9 +301,9 @@
       "fact": "Q1の親会社帰属利益は0.87億円（+31.1%）、基本EPSは0.92円。全社粗利益率は57.6%。会社は2027年3月期の売上156億円（+30.0%）・営業利益23億円（+44.3%）予想を維持。Q1実績と通期予想を区別する。4月の第三者割当増資で資本・資本剰余金は計53.95億円増加。現金増加を営業活動で稼いだ額とは扱わない。",
       "catalyst": "国内企業のAI導入が、受託案件だけでなく製品の継続売上へ育つか。次回決算は11月11日予定（公式IR案内、確認10月24日）。採用社数と利益の両方を追える点を評価する。",
       "watch": "次回決算で通期予想の維持、AI製品売上の成長、製品部門の利益成長と粗利益率を確認する。増資後のEPS・営業CFも照合し、顧客増が1株あたりの利益へつながると確認できれば検討を進める。",
-      "reject": "売上成長に対して粗利益・製品部門利益の伸びが鈍い点は弱点。予想下方修正、利益率の悪化、追加希薄化、EPS成長を伴わない規模拡大なら見送り・再評価。753円という1株価格を割安の根拠にしない。",
-      "access": "2026年10月24日、SBIの銘柄検索で4259を検索し「単元未満株」表示と通常単元100株を確認。S株1株の参照代金753円、予備額1,000円の仮定なら計1,753円。通常100株では75,300円で予算超過。約定額・必要買付余力は注文時に確認する。",
-      "purchaseStatus": "購入判断：条件待ち／購入予定なし",
+      "reject": "売上成長に対して粗利益・製品部門利益の伸びが鈍い点は弱点。予想下方修正、利益率の悪化、追加希薄化、EPS成長を伴わない規模拡大なら見送り・再評価。785円という1株価格を割安の根拠にしない。",
+      "access": "11月1日、SBI公開銘柄検索で単元未満株表示・通常100株を再確認。S株1株785円、仮定予備額1,000円込み1,785円。通常100株は78,500円で、10万円以内。",
+      "purchaseStatus": "購入判断：新規買い見送り・反転待ち",
       "valuation": {
         "pe": 43.3,
         "forwardPe": 38.15,
@@ -396,17 +410,31 @@
           {
             "month": "2026-09",
             "value": 866
+          },
+          {
+            "month": "2026-10",
+            "value": 785
           }
         ],
         "unit": "JPY",
         "symbol": "4259.T",
-        "source": "https://finance.yahoo.com/quote/4259.T/history/",
-        "retrieved": "2026-10-24",
+        "source": "https://stockanalysis.com/quote/tyo/4259/history/",
+        "retrieved": "2026-11-01",
         "historyRetrieved": "2026-10-24",
-        "quote": 753,
-        "quoteAt": "2026-10-23T06:30:00.000Z",
+        "quote": 785,
+        "quoteAt": "2026-10-30T06:30:00.000Z",
         "timezone": "Asia/Tokyo",
-        "session": "通常取引終了時点の価格（SBI表示と照合）"
+        "session": "通常取引終値",
+        "monthlySources": [
+          {
+            "month": "2026-10",
+            "source": "https://stockanalysis.com/quote/tyo/4259/history/",
+            "retrieved": "2026-11-01"
+          }
+        ],
+        "latestMonthlyRetrieved": "2026-11-01",
+        "latestQuoteSource": "https://stockanalysis.com/quote/tyo/4259/history/",
+        "historySource": "https://finance.yahoo.com/quote/4259.T/history/"
       },
       "financialChecked": "2026-10-24",
       "additionalSources": [
@@ -415,7 +443,7 @@
           "label": "再確認できた公式決算説明資料（10月25日）"
         }
       ],
-      "reviewNote": "10月25日に会社IRと決算説明資料で売上・営業利益・AI製品KPI・導入社数を再確認。EPS・増資条件等の元短信は今回の取得に失敗したため、10月24日の確認値と日付を維持しています。"
+      "reviewNote": "10月25日に会社IRと決算説明資料で売上・営業利益・AI製品KPI・導入社数を再確認。EPS・増資条件等の元短信は今回の取得に失敗したため、10月24日の確認値と日付を維持しています。 11月1日追記：決算PDFを再取得できず、業績数値の確認日を維持。価格・短期判断は10月30日通常取引終値へ更新。PER・時価総額・予想PERは旧確認日の記録を維持し、現在の指標とは扱わない。"
     },
     {
       "id": "peng",
@@ -455,7 +483,7 @@
       "catalyst": "新規顧客が継続売上へ育ち、会社の次年度成長予想を実現できるか。AI構築・運用への広がりを検証する。",
       "watch": "会社予想の維持に加え、次の開示で営業CFの赤字縮小・改善と売掛金・在庫の回収を確認できるまで条件確認待ち。AI基盤とメモリーの部門別成長も分けて点検する。",
       "reject": "売上予想下方修正、導入延期、営業CF赤字や資金回収の悪化が続けば見送り。直近は営業CFが赤字で、利益増に現金回収が伴うという検討条件は未充足。転換社債の希薄化にも注意。",
-      "access": "公式普通株一覧にPENGを確認。現候補では少額で比較しやすいが、営業CF改善・資金回収の条件は未充足。 確認2026-10-24。注文時には最新の取扱い・買付制限を利用者自身が確認してください。",
+      "access": "11月1日、SBI米国普通株一覧でPENGの掲載を再確認。1株51.93 USD。10月23日取得の参考為替156.814円を据え置いた試算は8,144円、仮定予備額込み9,144円。最新為替・買付余力は別途確認。",
       "valuation": {
         "pe": 20.54,
         "forwardPe": 11.72,
@@ -562,20 +590,35 @@
           {
             "month": "2026-09",
             "value": 54.689998626708984
+          },
+          {
+            "month": "2026-10",
+            "value": 51.93
           }
         ],
         "unit": "USD",
         "symbol": "PENG",
-        "source": "https://finance.yahoo.com/quote/PENG/history/",
-        "retrieved": "2026-10-24",
-        "quote": 53.41,
-        "quoteAt": "2026-10-23T20:00:00.000Z",
+        "source": "https://stockanalysis.com/stocks/peng/history/",
+        "retrieved": "2026-11-01",
+        "quote": 51.93,
+        "quoteAt": "2026-10-30T20:00:00.000Z",
         "timezone": "America/New_York",
-        "session": "通常取引終了時点の価格",
-        "historyRetrieved": "2026-10-15"
+        "session": "通常取引終値",
+        "historyRetrieved": "2026-10-15",
+        "monthlySources": [
+          {
+            "month": "2026-10",
+            "source": "https://stockanalysis.com/stocks/peng/history/",
+            "retrieved": "2026-11-01"
+          }
+        ],
+        "latestMonthlyRetrieved": "2026-11-01",
+        "latestQuoteSource": "https://stockanalysis.com/stocks/peng/history/",
+        "historySource": "https://finance.yahoo.com/quote/PENG/history/"
       },
-      "purchaseStatus": "購入判断：条件待ち／購入予定なし",
-      "financialChecked": "2026-10-25"
+      "purchaseStatus": "購入判断：新規買い見送り・反転待ち",
+      "financialChecked": "2026-11-01",
+      "reviewNote": " 11月1日追記：掲載済み決算の一次資料を再読。価格・短期判断は10月30日通常取引終値へ更新。PER・時価総額・予想PERは旧確認日の記録を維持し、現在の指標とは扱わない。"
     },
     {
       "id": "nvda",
@@ -615,8 +658,8 @@
       "catalyst": "AI投資が計算基盤の売上に結び付く経路を、開示数値で追いやすい点を評価します。半導体単体だけでなく、システム全体への需要が続くかを検証する候補です。",
       "watch": "10月23日終値210.96 USDは5日平均215.74・20日平均225.54 USDを下回る。業績の強さだけで短期の買いとは判断せず、値動きの反転を待つ。 次回開示ではデータセンター成長・粗利益率・製品移行費用と会社予想を照合する。",
       "reject": "好業績でも期待を下回れば株価は下落し得ます。顧客の設備投資減速、競合・独自チップ、輸出規制が懸念。会社の次四半期予想は中国向けデータセンター計算製品の売上を織り込んでいません。",
-      "access": "SBI米国普通株一覧でNVDAの掲載を10月25日に確認。1株210.96 USD、参考為替156.814円で株式代金約33,082円。予備額1,000円を足した試算約34,082円。為替・約定・手数料は注文条件で変わる。",
-      "purchaseStatus": "購入判断：反転待ち／購入予定なし",
+      "access": "11月1日、SBI米国普通株一覧でNVDAの掲載を再確認。1株204.64 USD。10月23日取得の参考為替156.814円を据え置いた試算は32,091円、仮定予備額込み33,091円。最新為替・買付余力は別途確認。",
+      "purchaseStatus": "購入判断：新規買い見送り・反転待ち",
       "valuation": {
         "pe": 26.67,
         "forwardPe": 17.44,
@@ -723,23 +766,41 @@
           {
             "month": "2026-09",
             "value": 228.3800048828125
+          },
+          {
+            "month": "2026-10",
+            "value": 204.64
           }
         ],
         "unit": "USD",
         "symbol": "NVDA",
-        "source": "https://finance.yahoo.com/quote/NVDA/history/",
-        "retrieved": "2026-10-24",
-        "quote": 210.96,
-        "quoteAt": "2026-10-23T20:00:00.000Z",
+        "source": "https://stockanalysis.com/stocks/nvda/history/",
+        "retrieved": "2026-11-01",
+        "quote": 204.64,
+        "quoteAt": "2026-10-30T20:00:00.000Z",
         "timezone": "America/New_York",
-        "session": "通常取引終了時点の価格",
-        "historyRetrieved": "2026-10-15"
+        "session": "通常取引終値",
+        "historyRetrieved": "2026-10-15",
+        "monthlySources": [
+          {
+            "month": "2026-10",
+            "source": "https://stockanalysis.com/stocks/nvda/history/",
+            "retrieved": "2026-11-01"
+          }
+        ],
+        "latestMonthlyRetrieved": "2026-11-01",
+        "latestQuoteSource": "https://stockanalysis.com/stocks/nvda/history/",
+        "historySource": "https://finance.yahoo.com/quote/NVDA/history/"
       },
-      "financialChecked": "2026-10-25",
-      "reviewNote": "四半期会社発表を10月25日に再確認。四半期EPS2.46 USDは評価計算の提供元TTM EPS7.91 USDとは対象期間が異なります。"
+      "financialChecked": "2026-11-01",
+      "reviewNote": "四半期会社発表を10月25日に再確認。四半期EPS2.46 USDは評価計算の提供元TTM EPS7.91 USDとは対象期間が異なります。 11月1日追記：掲載済み決算の一次資料を再読。価格・短期判断は10月30日通常取引終値へ更新。PER・時価総額・予想PERは旧確認日の記録を維持し、現在の指標とは扱わない。"
     }
   ],
   "changes": [
+    {
+      "date": "2026-11-01",
+      "reason": "4社の10月30日終値・短期判断・10月月末点・予算を更新。PKSHAの10月28日の出来高条件未達を記録。FRB10月28日声明を反映。旧予算判定のエクサウィザーズ100株を10万円基準へ訂正。決算PDF再取得失敗・参考為替と倍率の旧日時は明記して維持。"
+    },
     {
       "date": "2026-10-25",
       "reason": "対象をSBI取扱い・最低単位10万円以下のAI関連4社（PKSHA、エクサウィザーズ、Penguin、NVIDIA）へ統一。全社を分析→購入判断→予算判断で比較。合計配分計算は削除。毎週日曜の週次更新へ変更。"
@@ -794,7 +855,7 @@
     }
   ],
   "accessReview": {
-    "checked": "2026-10-25",
+    "checked": "2026-11-01",
     "listUpdated": "2026-10-16",
     "defaultBudget": 100000,
     "defaultUsdJpy": 156.814,
@@ -807,7 +868,8 @@
         "currency": "JPY",
         "route": "国内株・S株1株",
         "status": "SBI取扱いを確認／購入判断は別途",
-        "source": "https://faq.sbisec.co.jp/answer/5ee1ce6e50df500012207312/"
+        "source": "https://faq.sbisec.co.jp/answer/5ee1ce6e50df500012207312/",
+        "checked": "2026-11-01"
       },
       {
         "id": "exawizards",
@@ -816,7 +878,8 @@
         "currency": "JPY",
         "route": "国内株・S株1株",
         "status": "SBI取扱いを確認／購入判断は別途",
-        "source": "https://faq.sbisec.co.jp/answer/5ee1ce6e50df500012207312/"
+        "source": "https://faq.sbisec.co.jp/answer/5ee1ce6e50df500012207312/",
+        "checked": "2026-11-01"
       },
       {
         "id": "peng",
@@ -825,7 +888,8 @@
         "currency": "USD",
         "route": "米国普通株・1株",
         "status": "SBI取扱いを確認／購入判断は別途",
-        "source": "https://search.sbisec.co.jp/v2/popwin/info/stock/pop6040_usequity_list.html"
+        "source": "https://search.sbisec.co.jp/v2/popwin/info/stock/pop6040_usequity_list.html",
+        "checked": "2026-11-01"
       },
       {
         "id": "nvda",
@@ -834,12 +898,13 @@
         "currency": "USD",
         "route": "米国普通株・1株",
         "status": "SBI取扱いを確認／購入判断は別途",
-        "source": "https://search.sbisec.co.jp/v2/popwin/info/stock/pop6040_usequity_list.html"
+        "source": "https://search.sbisec.co.jp/v2/popwin/info/stock/pop6040_usequity_list.html",
+        "checked": "2026-11-01"
       }
     ]
   },
   "shortTerm": {
-    "checked": "2026-10-25",
+    "checked": "2026-11-01",
     "horizon": "数日〜数週間",
     "budget": 100000,
     "fx": 156.814,
@@ -852,42 +917,17 @@
         "name": "PKSHA Technology",
         "route": "日本・S株",
         "currency": "JPY",
-        "quote": 3700,
-        "quoteAt": "2026-10-23T06:30:00.000Z",
-        "source": "https://finance.yahoo.com/quote/3993.T/history/",
-        "retrieved": "2026-10-24",
-        "ma5": 3626,
-        "ma20": 3418.75,
+        "quote": 3585,
+        "quoteAt": "2026-10-30T06:30:00.000Z",
+        "source": "https://stockanalysis.com/quote/tyo/3993/history/",
+        "retrieved": "2026-11-01",
+        "ma5": 3716,
+        "ma20": 3555.75,
         "prior20High": 3775,
-        "prior20Volume": 210205,
-        "volumeRatio": 1.701672177160391,
-        "lastVolume": 357700,
+        "prior20Volume": 239980,
+        "volumeRatio": 0.9029919159929994,
+        "lastVolume": 216700,
         "days": [
-          {
-            "date": "2026-09-25",
-            "close": 3150,
-            "volume": 163800
-          },
-          {
-            "date": "2026-09-28",
-            "close": 3145,
-            "volume": 126300
-          },
-          {
-            "date": "2026-09-29",
-            "close": 3130,
-            "volume": 122700
-          },
-          {
-            "date": "2026-09-30",
-            "close": 3170,
-            "volume": 151600
-          },
-          {
-            "date": "2026-10-01",
-            "close": 3245,
-            "volume": 182900
-          },
           {
             "date": "2026-10-02",
             "close": 3270,
@@ -962,10 +1002,36 @@
             "date": "2026-10-23",
             "close": 3700,
             "volume": 357700
+          },
+          {
+            "date": "2026-10-26",
+            "close": 3690,
+            "volume": 235000
+          },
+          {
+            "date": "2026-10-27",
+            "close": 3730,
+            "volume": 192700
+          },
+          {
+            "date": "2026-10-28",
+            "close": 3830,
+            "volume": 298800
+          },
+          {
+            "date": "2026-10-29",
+            "close": 3745,
+            "volume": 226200
+          },
+          {
+            "date": "2026-10-30",
+            "close": 3585,
+            "volume": 216700
           }
         ],
-        "verdict": "次の購入検討1位・上抜け待ち",
-        "reason": "終値は5日・20日平均を上回り、出来高は前20日平均の約1.70倍。ただし前20日の高値3,775円を終値で超えていない。"
+        "verdict": "条件待ち・購入予定なし",
+        "reason": "10月30日終値3585 JPY、5日平均3716.00、20日平均3555.75。10月28日は終値3,830円でも出来高298,800株で基準315,308株に届かず、同時成立なし。30日は5日平均を下回り、購入予定に変更しない。",
+        "provenance": "10月23日以前は前回保存したYahoo Finance履歴、10月26〜30日はStock Analysisの終値・出来高。移動平均は表示20営業日の終値から編集部計算。出来高は提供元の集計差があり得る。"
       },
       {
         "id": "exawizards",
@@ -973,42 +1039,17 @@
         "name": "エクサウィザーズ",
         "route": "日本・S株",
         "currency": "JPY",
-        "quote": 753,
-        "quoteAt": "2026-10-23T06:30:00.000Z",
-        "source": "https://finance.yahoo.com/quote/4259.T/history/",
-        "retrieved": "2026-10-24",
-        "ma5": 778.8,
-        "ma20": 826.35,
+        "quote": 785,
+        "quoteAt": "2026-10-30T06:30:00.000Z",
+        "source": "https://stockanalysis.com/quote/tyo/4259/history/",
+        "retrieved": "2026-11-01",
+        "ma5": 774,
+        "ma20": 803.1,
         "prior20High": 961,
-        "prior20Volume": 1116500,
-        "volumeRatio": 1.4272279444693239,
-        "lastVolume": 1593500,
+        "prior20Volume": 1160780,
+        "volumeRatio": 0.9610778958975861,
+        "lastVolume": 1115600,
         "days": [
-          {
-            "date": "2026-09-25",
-            "close": 864,
-            "volume": 1363400
-          },
-          {
-            "date": "2026-09-28",
-            "close": 875,
-            "volume": 641300
-          },
-          {
-            "date": "2026-09-29",
-            "close": 870,
-            "volume": 713200
-          },
-          {
-            "date": "2026-09-30",
-            "close": 866,
-            "volume": 852600
-          },
-          {
-            "date": "2026-10-01",
-            "close": 860,
-            "volume": 668200
-          },
           {
             "date": "2026-10-02",
             "close": 853,
@@ -1083,10 +1124,36 @@
             "date": "2026-10-23",
             "close": 753,
             "volume": 1593500
+          },
+          {
+            "date": "2026-10-26",
+            "close": 741,
+            "volume": 1500700
+          },
+          {
+            "date": "2026-10-27",
+            "close": 762,
+            "volume": 932000
+          },
+          {
+            "date": "2026-10-28",
+            "close": 793,
+            "volume": 1012000
+          },
+          {
+            "date": "2026-10-29",
+            "close": 789,
+            "volume": 822300
+          },
+          {
+            "date": "2026-10-30",
+            "close": 785,
+            "volume": 1115600
           }
         ],
-        "verdict": "新規買い見送り",
-        "reason": "終値753円は5日平均778.80円・20日平均826.35円を下回る。下落中に価格の安さだけで買わず、まず反転を確認する。"
+        "verdict": "新規買い見送り・反転待ち",
+        "reason": "10月30日終値785 JPY、5日平均774.00、20日平均803.10。5日平均は上回るが20日平均は下回る。短期の反発だけで反転確認とは扱わず、11月11日予定の決算と利益成長を点検する。",
+        "provenance": "10月23日以前は前回保存したYahoo Finance履歴、10月26〜30日はStock Analysisの終値・出来高。移動平均は表示20営業日の終値から編集部計算。出来高は提供元の集計差があり得る。"
       },
       {
         "id": "peng",
@@ -1094,42 +1161,17 @@
         "name": "Penguin Solutions",
         "route": "米国・普通株",
         "currency": "USD",
-        "quote": 53.41,
-        "quoteAt": "2026-10-23T20:00:00.000Z",
-        "source": "https://finance.yahoo.com/quote/PENG/history/",
-        "retrieved": "2026-10-24",
-        "ma5": 55.3120002746582,
-        "ma20": 62.382249450683595,
+        "quote": 51.93,
+        "quoteAt": "2026-10-30T20:00:00.000Z",
+        "source": "https://stockanalysis.com/stocks/peng/history/",
+        "retrieved": "2026-11-01",
+        "ma5": 57.08599999999999,
+        "ma20": 62.56374948883056,
         "prior20High": 80.47000122070312,
-        "prior20Volume": 5121370,
-        "volumeRatio": 0.8518423781136688,
-        "lastVolume": 4362600,
+        "prior20Volume": 5467046.3,
+        "volumeRatio": 0.4478266445264969,
+        "lastVolume": 2448289,
         "days": [
-          {
-            "date": "2026-09-28",
-            "close": 54.97999954223633,
-            "volume": 1337400
-          },
-          {
-            "date": "2026-09-29",
-            "close": 55.790000915527344,
-            "volume": 1194900
-          },
-          {
-            "date": "2026-09-30",
-            "close": 54.689998626708984,
-            "volume": 1446100
-          },
-          {
-            "date": "2026-10-01",
-            "close": 54.97999954223633,
-            "volume": 1157400
-          },
-          {
-            "date": "2026-10-02",
-            "close": 61.36000061035156,
-            "volume": 3559500
-          },
           {
             "date": "2026-10-05",
             "close": 60.709999084472656,
@@ -1204,10 +1246,36 @@
             "date": "2026-10-23",
             "close": 53.40999984741211,
             "volume": 4362600
+          },
+          {
+            "date": "2026-10-26",
+            "close": 54.92,
+            "volume": 3006242
+          },
+          {
+            "date": "2026-10-27",
+            "close": 58.99,
+            "volume": 2435359
+          },
+          {
+            "date": "2026-10-28",
+            "close": 60.8,
+            "volume": 2294410
+          },
+          {
+            "date": "2026-10-29",
+            "close": 58.79,
+            "volume": 1618315
+          },
+          {
+            "date": "2026-10-30",
+            "close": 51.93,
+            "volume": 2448289
           }
         ],
-        "verdict": "新規買い見送り",
-        "reason": "終値53.41 USDは5日平均55.31・20日平均62.38 USDを下回る。反発した1日だけでは上昇転換と判断しない。"
+        "verdict": "新規買い見送り・反転待ち",
+        "reason": "10月30日終値51.93 USD、5日平均57.09、20日平均62.56。両平均を下回るため反転を待つ。下落率の大きさを割安や反発の根拠にはしない。",
+        "provenance": "10月23日以前は前回保存したYahoo Finance履歴、10月26〜30日はStock Analysisの終値・出来高。移動平均は表示20営業日の終値から編集部計算。出来高は提供元の集計差があり得る。"
       },
       {
         "id": "nvda",
@@ -1215,42 +1283,17 @@
         "name": "NVIDIA",
         "route": "米国・普通株",
         "currency": "USD",
-        "quote": 210.96,
-        "quoteAt": "2026-10-23T20:00:00.000Z",
-        "source": "https://finance.yahoo.com/quote/NVDA/history/",
-        "retrieved": "2026-10-25",
-        "ma5": 215.74000244140626,
-        "ma20": 225.54150161743163,
+        "quote": 204.64,
+        "quoteAt": "2026-10-30T20:00:00.000Z",
+        "source": "https://stockanalysis.com/stocks/nvda/history/",
+        "retrieved": "2026-11-01",
+        "ma5": 213.52399999999997,
+        "ma20": 221.45950112915042,
         "prior20High": 243.3699951171875,
-        "prior20Volume": 105792595,
-        "volumeRatio": 0.7560756024559185,
-        "lastVolume": 79987200,
+        "prior20Volume": 99397790.6,
+        "volumeRatio": 1.6943655888463984,
+        "lastVolume": 168416196,
         "days": [
-          {
-            "date": "2026-09-28",
-            "close": 228.86000061035156,
-            "volume": 142344300
-          },
-          {
-            "date": "2026-09-29",
-            "close": 227.2100067138672,
-            "volume": 101494900
-          },
-          {
-            "date": "2026-09-30",
-            "close": 228.3800048828125,
-            "volume": 121732200
-          },
-          {
-            "date": "2026-10-01",
-            "close": 230.86000061035156,
-            "volume": 98591400
-          },
-          {
-            "date": "2026-10-02",
-            "close": 233.9499969482422,
-            "volume": 135167800
-          },
           {
             "date": "2026-10-05",
             "close": 238.89999389648438,
@@ -1325,26 +1368,53 @@
             "date": "2026-10-23",
             "close": 210.9600067138672,
             "volume": 79987200
+          },
+          {
+            "date": "2026-10-26",
+            "close": 216,
+            "volume": 90829293
+          },
+          {
+            "date": "2026-10-27",
+            "close": 217.94,
+            "volume": 84799695
+          },
+          {
+            "date": "2026-10-28",
+            "close": 215.38,
+            "volume": 93030154
+          },
+          {
+            "date": "2026-10-29",
+            "close": 213.66,
+            "volume": 77568070
+          },
+          {
+            "date": "2026-10-30",
+            "close": 204.64,
+            "volume": 168416196
           }
         ],
         "verdict": "新規買い見送り・反転待ち",
-        "reason": "10月23日終値210.96 USDは5日平均215.74・20日平均225.54 USDを下回る。業績の強さだけで短期の買いとは判断せず、値動きの反転を待つ。"
+        "reason": "10月30日終値204.64 USD、5日平均213.52、20日平均221.46。両平均を下回るため反転を待つ。下落率の大きさを割安や反発の根拠にはしない。",
+        "provenance": "10月23日以前は前回保存したYahoo Finance履歴、10月26〜30日はStock Analysisの終値・出来高。移動平均は表示20営業日の終値から編集部計算。出来高は提供元の集計差があり得る。"
       }
     ],
-    "conclusion": "今週の購入予定：なし。次の購入検討1位はPKSHAで、条件待ち。",
-    "rationale": "同じ4社を、事業分析・短期の購入判断・最低単位の予算で比較。PKSHAは価格条件未成立、エクサウィザーズ・Penguin・NVIDIAは反転を待つ。10万円以内で買えることと、購入予定は分ける。",
+    "conclusion": "今週の購入予定：なし。PKSHAは価格・出来高の同時成立待ち。",
+    "rationale": "4社の通常取引終値を10月30日へ更新。PKSHAは設定済みの価格・出来高条件が同時成立していない。エクサウィザーズは5日平均を回復したが20日平均未回復。Penguin・NVIDIAは反転待ち。予算内という理由だけで買わない。",
     "trigger": {
       "level": 3775,
       "volume": 315308,
       "rule": "10月24日に、23日までの価格から設定した観察ルール：通常取引の終値が3,775円を超え、その日の出来高が315,308株以上となるか確認。前20営業日高値と前20営業日平均出来高の1.5倍から計算。条件成立後も、次の注文前に株価・買付余力・決算日を再確認する。",
-      "status": "未成立：10月23日終値3,700円。出来高条件だけは成立。"
+      "status": "未成立：10月28日は終値3,830円＞3,775円、出来高298,800株＜315,308株。29・30日は終値が基準未満。30日終値3,585円、出来高216,700株。旧条件を変更せず継続観察。"
     },
     "plan": "購入予定は現時点でなし。PKSHAは価格・出来高条件を満たした後に購入可否を再判断する。これは確定注文や売買実績ではなく、編集部の検討方針。実際の約定記録を受け取るまで購入済みと記載しない。",
     "exit": "購入後は毎営業日の終値で確認。3,775円を下回る上抜け失敗、またはその時点の5日移動平均を下回る場合は撤退を検討。10営業日で上昇が続かない場合も再評価する。S株は即時の逆指値で指定価格に売れる想定を置かず、次の約定時刻までの下落・窓開けを含む損失があり得る。決算またぎを前提にせず、11月12日のPKSHA決算前に再判断する。",
     "limits": "終値・移動平均・出来高は過去の観察値で、上昇や利益の確率を示さない。1.5倍・10営業日は編集部が置いた未検証の運用案。売買を追跡して検証するまで勝率や期待収益は掲載しない。比較対象は今回確認した4社で、市場全体の最良銘柄とは断定しない。",
     "sbiSource": "https://faq.sbisec.co.jp/answer/5f17d6e68c7981001102a0c0/",
     "pkshaIR": "https://www2.jpx.co.jp/disc/39930/081220260813518953_tse-qcedifsm-39930-20260813518953-ixbrl.htm",
-    "pkshaCalendar": "https://www.pkshatech.com/ir/calendar/"
+    "pkshaCalendar": "https://www.pkshatech.com/ir/calendar/",
+    "referenceDate": "2026-10-30"
   },
   "archives": [
     {
@@ -2116,8 +2186,8 @@
     }
   ],
   "weekly": {
-    "checked": "2026-10-25",
-    "next": "2026-11-01",
+    "checked": "2026-11-01",
+    "next": "2026-11-08",
     "schedule": "毎週日曜9時15分（日本時間）",
     "limit": 100000,
     "selectionRule": "AI関連事業が公式資料で確認でき、SBIで買付対象、最低売買単位の参照代金と仮定予備額の合計が10万円以下。日本株はS株1株、米国普通株は1株を比較。4社を毎週再評価し、入れ替えは理由と履歴を残す。"

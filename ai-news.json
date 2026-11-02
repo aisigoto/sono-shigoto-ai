@@ -1,7 +1,38 @@
 {
-  "lastChecked": "2026-11-01",
-  "lastUpdated": "2026-11-01",
+  "lastChecked": "2026-11-02",
+  "lastUpdated": "2026-11-02",
   "items": [
+    {
+      "id": "ai-training-preferences-20261030",
+      "date": "2026-10-30",
+      "title": "サイトのAI学習利用の希望をまとめて伝える共通信号。OpenAIは対応予定",
+      "category": "サイト運営・利用条件",
+      "source": "OpenAI公式発表",
+      "url": "https://openai.com/index/helping-websites-express-ai-training-preferences/",
+      "summary": "OpenAIは10月30日、サイトのrobots.txtで基盤生成AIの学習への利用希望を複数の参加提供元に伝える共通信号を尊重する方針を発表しました。提供元ごとの設定を維持する作業を減らす狙いです。",
+      "meaning": "自社サイトや記事を運営する小さな会社が、コンテンツの利用方針を整理する材料です。制作・保守担当者と現在の設定を確認し、正式な実装案内を待って対応を検討しましょう。当サイトで遮断効果や検索流入への影響を実測したものではありません。",
+      "conditions": "OpenAIの実装は今後数か月の予定で、現時点で対応済みとは案内していません。既存のクローラー制御は継続されます。共通信号は任意の取り組みで、全AI提供元への強制的な遮断を保証しません。参照仕様は10月30日更新の個人提出Internet-Draftで、IETF承認済み標準ではありません。",
+      "additionalSources": [
+        {
+          "url": "https://datatracker.ietf.org/doc/draft-kelley-aipref-training-preference-signal/",
+          "label": "IETF Datatracker：検討中の個人提出ドラフト"
+        },
+        {
+          "url": "https://developers.openai.com/api/docs/bots",
+          "label": "OpenAIの既存クローラー制御"
+        }
+      ],
+      "related": [
+        {
+          "url": "ai-revenue.html",
+          "label": "サイト運営とAI収益化の検証記録"
+        },
+        {
+          "url": "sme-ai-first-step.html",
+          "label": "小さな会社のAI導入手順"
+        }
+      ]
+    },
     {
       "id": "sheets-cell-citations-20261028",
       "date": "2026-10-28",

@@ -1,7 +1,34 @@
 {
-  "lastChecked": "2026-11-02",
-  "lastUpdated": "2026-11-02",
+  "lastChecked": "2026-11-05",
+  "lastUpdated": "2026-11-05",
   "items": [
+    {
+      "id": "images-26-20261104",
+      "date": "2026-11-04",
+      "title": "Images 2.6発表。画像の修正・キャラクター制作とGIF表現を強化",
+      "category": "画像制作・販促",
+      "source": "OpenAI公式発表",
+      "url": "https://openai.com/index/introducing-images-2-6/",
+      "summary": "OpenAIは11月4日、ChatGPT・Codex・API向けにImages 2.6を発表しました。画像生成の高速化、修正時の細部の維持、GIF表現を紹介し、APIにはFlareとSunburstの2モデルを用意しています。",
+      "meaning": "小さな店舗の商品案内やSNS画像で、同じ商品・キャラクターを保ちながら案を作り直す用途が考えられます。元画像との相違、文字・ロゴの正確さ、修正込みの時間を確認してから公開しましょう。当サイトで新モデルの速度や売上効果を測定した結果ではありません。",
+      "conditions": "公式発表では11月4日から世界のChatGPT・Codexの全契約層、デスクトップ・モバイル・ウェブに提供と案内。無料・無制限を意味せず、利用枠は契約や提供状況の確認が必要です。APIの利用料金は別途公式料金表で確認してください。Google Workspace公式ブログは11月5日に取得制限のため確認できず、本項はOpenAIの公式発表に基づきます。",
+      "additionalSources": [
+        {
+          "url": "https://developers.openai.com/api/docs/pricing",
+          "label": "OpenAI APIの公式料金表"
+        }
+      ],
+      "related": [
+        {
+          "url": "ai-revenue.html",
+          "label": "画像投稿と収益化の検証記録"
+        },
+        {
+          "url": "ai-sns-posts.html",
+          "label": "仕事向けSNS投稿の作り方"
+        }
+      ]
+    },
     {
       "id": "ai-training-preferences-20261030",
       "date": "2026-10-30",

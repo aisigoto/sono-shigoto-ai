@@ -12,3 +12,5 @@
 
 /* Live X feed stays inside the existing Keiko area. */
 .hub-top .keiko-live-feed{min-width:0;height:330px;overflow:auto;overscroll-behavior:contain}.keiko-live-feed iframe{max-width:100%!important}.keiko-live-feed>a{display:block;padding:18px 4px;font-size:13px;color:#733c35}@media(max-width:700px){.hub-top .keiko-live-feed{height:330px}}
+
+.hub-top .keiko-live-feed{height:176px}.keiko-live-feed .twitter-timeline{font-size:12px}.keiko-live-feed .keiko-post{margin-top:0}

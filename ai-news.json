@@ -1,7 +1,34 @@
 {
-  "lastChecked": "2026-11-05",
-  "lastUpdated": "2026-11-05",
+  "lastChecked": "2026-11-06",
+  "lastUpdated": "2026-11-06",
   "items": [
+    {
+      "id": "vids-omni12-20261105",
+      "date": "2026-11-05",
+      "title": "Google Vidsで最大15秒のAI動画。Omni 1.2 Flashの提供開始",
+      "category": "動画制作・販促",
+      "source": "Google Workspace公式発表",
+      "url": "https://workspaceupdates.googleblog.com/2026/11/gemini-omni-12-flash-now-in-vids-with-15second-generations-and-improved-quality.html",
+      "summary": "Googleは11月5日、VidsにGemini Omni 1.2 Flashを導入しました。生成クリップは3〜15秒で指定できます。参照画像の一貫性や音声表現の改善も案内していますが、これらは提供元の説明です。",
+      "meaning": "短い商品紹介やサービス案内の素材づくりに使う候補です。まず1本を試し、商品の形・説明の正確さと修正時間を確認しましょう。当サイトで品質や集客効果を実測した結果ではありません。",
+      "conditions": "11月5日から両リリース方式で順次提供し、表示まで1〜3日。Business Starter・Standard・Plus、個人Googleアカウント、Google AI Pro・Ultraなどが対象です。アカウント・契約により生成上限が異なり、無制限ではありません。業務アカウントのVids利用可否は管理者設定も確認してください。詳細な対象プランと上限は公式発表・ヘルプを参照。",
+      "additionalSources": [
+        {
+          "url": "https://support.google.com/docs/answer/15609411",
+          "label": "Google VidsのAI機能・利用上限"
+        }
+      ],
+      "related": [
+        {
+          "url": "ai-sns-posts.html",
+          "label": "仕事で使うSNS投稿の作り方"
+        },
+        {
+          "url": "ai-revenue.html",
+          "label": "集客と収益化の検証記録"
+        }
+      ]
+    },
     {
       "id": "images-26-20261104",
       "date": "2026-11-04",

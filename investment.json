@@ -2191,5 +2191,42 @@
     "schedule": "毎週日曜9時15分（日本時間）",
     "limit": 100000,
     "selectionRule": "AI関連事業が公式資料で確認でき、SBIで買付対象、最低売買単位の参照代金と仮定予備額の合計が10万円以下。日本株はS株1株、米国普通株は1株を比較。4社を毎週再評価し、入れ替えは理由と履歴を残す。"
+  },
+  "portfolio": {
+    "checked": "2026-11-07",
+    "positions": [
+      {
+        "name": "日産自動車",
+        "code": "7201",
+        "shares": 100,
+        "status": "保有",
+        "cost": 354,
+        "quote": 269.7,
+        "pnl": -8430,
+        "currency": "JPY"
+      },
+      {
+        "name": "インテル",
+        "code": "INTC",
+        "shares": 5,
+        "status": "保有",
+        "cost": 62.01,
+        "quote": 56.28,
+        "pnl": -28.65,
+        "currency": "USD"
+      },
+      {
+        "name": "JT（日本たばこ産業）",
+        "code": "2914",
+        "shares": 1,
+        "status": "成行発注済み・約定未確認",
+        "cost": null,
+        "quote": null,
+        "pnl": null,
+        "currency": "JPY"
+      }
+    ],
+    "intelSource": "https://www.intc.com/filings-reports/quarterly-reports/content/0000050863-26-000191/0000050863-26-000191.pdf",
+    "jtPost": "https://x.com/6Si5LZThnp5A2zk/status/2119036290197004686"
   }
 }

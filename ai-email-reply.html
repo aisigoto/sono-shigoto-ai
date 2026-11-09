@@ -7,37 +7,36 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
+  if (new URLSearchParams(location.search).get('utm_source') === 'internal_qa') {
+    window['ga-disable-G-58NKR47NW8'] = true;
+  }
   gtag('config', 'G-58NKR47NW8');
 </script>
 <meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
 <title>AIでメール返信を効率化する方法 | その仕事、AIにできる？</title><meta content="返信メールは、受信内容の要約→回答事項の抽出→下書き、の順にAIを使うと効率化しやすい業務です。" name="description"/>
 <link href="https://sono-shigoto-ai.com/ai-email-reply.html" rel="canonical"/><link href="styles.css?v=20261014-2" rel="stylesheet"/>
-<style>.article{max-width:860px;margin:auto;padding:44px 20px 80px}.article h1{font-size:clamp(2rem,5vw,3.1rem);line-height:1.25}.article h2{margin-top:2.2em;border-bottom:2px solid #e5e7eb;padding-bottom:.35em}.box,.prompt{padding:18px 20px;border-radius:12px;margin:20px 0;background:#f5f7fa}.prompt{white-space:pre-wrap;border-left:4px solid #2563eb}.meta{color:#64748b;font-size:.92rem}</style><link rel="stylesheet" href="site-components.css?v=20261015-1"></head>
+<style>.article{max-width:860px;margin:auto;padding:44px 20px 80px}.article h1{font-size:clamp(2rem,5vw,3.1rem);line-height:1.25}.article h2{margin-top:2.2em;border-bottom:2px solid #e5e7eb;padding-bottom:.35em}.box,.prompt{padding:18px 20px;border-radius:12px;margin:20px 0;background:#f5f7fa}.prompt{white-space:pre-wrap;border-left:4px solid #2563eb}.meta{color:#64748b;font-size:.92rem}</style><link rel="stylesheet" href="site-components.css?v=20261015-1"><script defer src="practical-guide.js?v=20261109-1"></script></head>
 <body><header class="site-header">
 <div class="container nav">
 <a class="logo" href="index.html">その仕事、<span>AIにできる？</span></a>
 <nav aria-label="メインメニュー"><a class="pillar-nav" href="index.html">ホーム</a><a class="pillar-nav" href="ai-work.html">仕事をAIに任せる</a><a class="pillar-nav" href="ai-revenue.html">AIに稼いでもらう</a><a class="pillar-nav" href="ai-investment.html">AIに投資相談</a></nav>
 </div>
 </header>
-<main class="article"><p class="meta">メール｜更新日：2026年9月21日</p><h1>AIでメール返信を効率化する方法</h1>
+<main class="article"><p class="meta">メール｜更新日：2026年11月9日</p><h1>AIでメール返信を効率化する方法</h1>
 <p>返信メールは、受信内容の要約→回答事項の抽出→下書き、の順にAIを使うと効率化しやすい業務です。</p>
 <h2>最初に仕事を分解する</h2><p>問い合わせ、日程調整、断り、確認依頼など用途別テンプレートを作ります。</p>
 <ol><li>対象業務を1つ選ぶ</li><li>AIに渡す情報と、人が確認する基準を決める</li><li>時間・修正回数・ミスを記録して効果を見る</li></ol>
 <h2>AIに任せやすいこと</h2><p>下書き・要約・分類など、人が正解を確認できる作業から任せます。最終判断は人が行います。</p>
 <h2>人が確認すべきこと</h2><p>個人情報・機密情報の入力可否と、約束事項の誤生成を確認します。</p><p>固有名詞・金額・日付・機密情報は、公開・送信前に確認します。</p>
-<h2>そのまま使える基本プロンプト</h2>
-<div class="prompt">次の業務を効率化したいです。
-業務：［対象業務］
-目的：［何を短縮・改善したいか］
-入力情報：［AIに渡せる情報］
-出力形式：［箇条書き／表／メールなど］
-
-まず作業を工程に分解し、
-1. AIに任せられる工程
-2. 人が確認すべき工程
-3. 不足している情報
-を示してください。
-事実・数字・固有名詞を推測で補わないでください。</div>
+<h2 id="reply-template">そのまま使える返信テンプレート</h2>
+<div class="prompt" id="email-reply-prompt">以下の問い合わせへの返信案を作ってください。
+受信内容：［個人情報と機密情報を伏せた質問］
+回答できること：［確認済みの回答］
+確認中のこと：［未確認の項目］
+質問ごとに、回答できる項目と確認中の項目を分けてください。
+未確認の納期・価格・条件は約束せず、確認中と伝えてください。</div>
+<p><button type="button" class="button primary" data-copy="email-reply-prompt">返信テンプレートをコピー</button></p>
+<p>たとえば納期だけ確認中なら、他の質問に先に回答し、納期は確認中と一文添えます。送信前に元の質問を照合してください。</p>
 <h2>導入手順</h2><p>まず1業務だけ試し、時間・修正回数・ミスを記録します。効果が出てから対象を増やします。</p>
 <h2>まとめ</h2><p>1つの業務から試し、AIに任せる範囲と人が確認する範囲を決めて改善します。</p>
 

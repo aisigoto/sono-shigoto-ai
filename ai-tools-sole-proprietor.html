@@ -8,6 +8,9 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
+  if (new URLSearchParams(location.search).get('utm_source') === 'internal_qa') {
+    window['ga-disable-G-58NKR47NW8'] = true;
+  }
   gtag('config', 'G-58NKR47NW8');
 </script>
 <meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
@@ -25,7 +28,7 @@
   "publisher":{"@type":"Organization","name":"その仕事、AIにできる？"}
 }
 </script>
-<link rel="stylesheet" href="site-components.css?v=20261015-1"></head>
+<link rel="stylesheet" href="site-components.css?v=20261015-1"><script defer src="practical-guide.js?v=20261109-1"></script></head>
 <body>
 <header class="site-header">
 <div class="container nav">
@@ -83,6 +86,13 @@
 <tr><td>Gmail・Docs・Meetが中心</td><td>Gemini / Google Workspace</td><td>返信下書き、文書要約、会議後整理</td></tr>
 <tr><td>Notionに情報を集めている</td><td>Notion AI</td><td>過去メモ検索、議事録整理、手順書作成</td></tr>
 <tr><td>Word・Excel・PowerPoint・Outlookが中心</td><td>Microsoft 365 Copilot</td><td>文書作成、表の分析、資料初稿、メール整理</td></tr>
+</tbody></table>
+<h2 id="first-task">まず1つ、何から試す？</h2>
+<p>普段使うサービスの契約で試せる範囲を確認し、架空の入力で1件だけ試します。下書きから確認・修正が終わるまでの時間を記録すると、仕事に合うか比べられます。</p>
+<table><thead><tr><th scope="col">仕事</th><th scope="col">最初の試し方</th><th scope="col">人が確認すること</th></tr></thead><tbody>
+<tr><th scope="row">メール返信</th><td><a href="ai-email-reply.html#reply-template" data-guide-link="email_reply_template">架空の問い合わせに返信案を1通作る</a></td><td>質問への回答漏れ、未確認の納期や価格を約束していないか。</td></tr>
+<tr><th scope="row">請求書</th><td><a href="ai-invoice-check-test.html" data-guide-link="invoice_check">架空の請求書1枚を原資料と照合する</a></td><td>税率、合計、振込先。実データは利用条件と社内ルールの確認後に。</td></tr>
+<tr><th scope="row">提案書</th><td><a href="ai-proposal.html" data-guide-link="proposal_guide">架空の依頼から提案の見出しを作る</a></td><td>作業範囲、成果物、納期の前提。根拠のない実績や効果を削る。</td></tr>
 </tbody></table>
 <h2>料金を見るときの注意</h2>
 <p>AIサービスは、個人向け・法人向け、月払い・年払い、既存サービスとのセット契約で条件が変わります。特に個人事業主の場合、「表示された1ユーザー月額」だけでなく、最低席数、既存ライセンスの要否、税、年間契約、キャンペーン終了後の価格まで確認してください。</p>

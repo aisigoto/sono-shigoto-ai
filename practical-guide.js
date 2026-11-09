@@ -1,7 +1,9 @@
 (() => {
   'use strict';
   const event = (name, params) => {
-    if (typeof window.gtag === 'function') window.gtag('event', name, params);
+    if (!window['ga-disable-G-58NKR47NW8'] && typeof window.gtag === 'function') {
+      window.gtag('event', name, params);
+    }
   };
   const announceCopy = async (button, text, resource) => {
     const previous = button.textContent;
@@ -26,6 +28,9 @@
   });
   document.querySelectorAll('[data-share]').forEach(button => {
     button.addEventListener('click', () => announceCopy(button, 'https://sono-shigoto-ai.com/ai-time-savings.html', 'calculator_url'));
+  });
+  document.querySelectorAll('[data-guide-link]').forEach(link => {
+    link.addEventListener('click', () => event('guide_link_click', {resource_id: link.dataset.guideLink}));
   });
   const form = document.getElementById('savings-form');
   const result = document.getElementById('savings-result');

@@ -1,7 +1,28 @@
 {
-  "lastChecked": "2026-11-06",
-  "lastUpdated": "2026-11-06",
+  "lastChecked": "2026-11-10",
+  "lastUpdated": "2026-11-10",
   "items": [
+    {
+      "id": "claude-fable-52-20261109",
+      "date": "2026-11-09",
+      "title": "Claude Fable 5.2とMythos 5.2発表。複雑な開発向け、利用条件に違い",
+      "category": "AIモデル・開発",
+      "source": "Anthropic公式発表",
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "summary": "Anthropicは11月9日、コーディング・推論・画像理解を強化したClaude Fable 5.2とMythos 5.2を発表しました。両者は同じ基盤モデルを使い、Fableにはサイバーセキュリティと生物学に関する利用上の制限があります。性能改善はAnthropicの評価に基づきます。",
+      "meaning": "小さな開発チームなら、既存システムの移行計画など、普段のモデルで行き詰まる課題を1件選んでFableを比較する使い方が考えられます。機密情報を除いた検証環境で、テストの合否、修正時間、API費用を確認します。",
+      "conditions": "Fable 5.2は11月9日から提供され、Claude PlatformのAPIでは claude-fable-5-2 を使用します。通常API料金は入力100万トークン当たり8米ドル、出力は40米ドル。Claudeの利用枠は契約・席種で異なります。Mythosのサイバーセキュリティ・生命科学向けアクセスは審査制で、Claude Enterpriseでは対応機能のClaude Securityも案内されています。",
+      "related": [
+        {
+          "url": "ai-tools-sole-proprietor.html",
+          "label": "個人事業主向けAIツール比較"
+        },
+        {
+          "url": "sme-ai-first-step.html",
+          "label": "小さな会社のAI導入手順"
+        }
+      ]
+    },
     {
       "id": "vids-omni12-20261105",
       "date": "2026-11-05",

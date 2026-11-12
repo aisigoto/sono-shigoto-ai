@@ -1,7 +1,41 @@
 {
-  "lastChecked": "2026-11-10",
-  "lastUpdated": "2026-11-10",
+  "lastChecked": "2026-11-12",
+  "lastUpdated": "2026-11-12",
   "items": [
+    {
+      "id": "gemini-gmail-expansion-20261110",
+      "date": "2026-11-10",
+      "title": "GmailのAI要約・下書き機能、全Workspaceプランに対象拡大",
+      "category": "メール業務",
+      "source": "Google Workspace公式発表",
+      "url": "https://workspaceupdates.googleblog.com/2026/11/expanding-gemini-in-gmail-to-more-Google-Workspace-users.html?m=1",
+      "summary": "Googleは11月10日、長いメールスレッドのAI要約と、個人の文体などに合わせないメール下書き・推敲機能の提供対象を広げると発表しました。",
+      "meaning": "取引先との長いメールでは、要約から未回答の項目を拾い、納期・金額・約束した内容を元のメールで確認してから返信を作ると使いやすそうです。",
+      "conditions": "18歳以上でGmailのスマート機能を有効にした全Google Workspaceプラン、Workspace Individual、個人Googleアカウントが対象です。11月10日から段階的に提供され、表示まで最大15日かかります。管理者や利用者が無効にできます。",
+      "related": [
+        {
+          "url": "ai-email-reply.html",
+          "label": "AIでメール返信を作る"
+        }
+      ]
+    },
+    {
+      "id": "gemini-4-carbon-availability-20261110",
+      "date": "2026-11-10",
+      "title": "Gemini 4 Carbon、Google AI Ultraと有料APIで提供開始",
+      "category": "AIモデル・利用条件",
+      "source": "Google公式発表",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+      "summary": "Googleは11月10日、10月に発表したGemini 4 Carbonの提供開始を案内しました。複数の資料を横断する情報整理や、手順の多い作業向けのモデルです。",
+      "meaning": "仕様書が複数ある案件では、同じ資料で既存モデルと比較し、根拠を確認できた項目数、修正時間、費用を記録すると使い分けを判断できます。",
+      "conditions": "個人向けはGoogle AI Ultra契約者にGeminiアプリや検索のAIモードなどで順次提供。有料APIの導入価格は100万トークンあたり入力2ドル・出力10ドル。11月30日の導入期間終了後は入力4ドル・出力20ドルと案内されています。",
+      "related": [
+        {
+          "url": "ai-work.html",
+          "label": "仕事へのAI活用"
+        }
+      ]
+    },
     {
       "id": "claude-fable-52-20261109",
       "date": "2026-11-09",

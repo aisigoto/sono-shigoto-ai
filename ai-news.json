@@ -1,7 +1,28 @@
 {
-  "lastChecked": "2026-11-12",
-  "lastUpdated": "2026-11-12",
+  "lastChecked": "2026-11-14",
+  "lastUpdated": "2026-11-14",
   "items": [
+    {
+      "id": "gemini-4-hydrogen-20261112",
+      "date": "2026-11-12",
+      "title": "Gemini 4 Hydrogen提供開始。無料のGeminiアプリにも順次展開",
+      "category": "AIモデル・利用条件",
+      "source": "Google公式発表",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+      "summary": "Googleは11月12日、日常的なコーディングや複数手順の作業向けに設計したGemini 4 Hydrogenを発表し、順次提供を始めました。",
+      "meaning": "商品説明の下書きや資料の要点整理で、現在のモデルと同じ入力を使い、事実確認と修正込みの所要時間を比べると、切り替える価値を判断しやすくなります。",
+      "conditions": "Geminiアプリの無料ユーザーには、適切な質問で自動選択される形で提供。APIの公表単価は100万トークンあたり入力1.50ドル、出力7.50ドル。Google Sheets内のGeminiは対象の法人契約やGoogle AI Pro・Ultra向けです。",
+      "related": [
+        {
+          "url": "ai-work.html",
+          "label": "仕事へのAI活用"
+        },
+        {
+          "url": "ai-time-savings.html",
+          "label": "AIの時短効果を測る"
+        }
+      ]
+    },
     {
       "id": "gemini-gmail-expansion-20261110",
       "date": "2026-11-10",

@@ -2,6 +2,24 @@
   "updated": "2026-11-16",
   "posts": [
     {
+      "id": "2122307197258588447",
+      "date": "2026-11-16",
+      "category": "market",
+      "title": "GDP速報で見る消費と設備投資",
+      "text": "けいこの市場メモ（11/16）。日本の7〜9月期GDP速報は実質年率−0.1%。前期比では個人消費−0.3%、企業の設備投資＋1.6%でした。国内株では設備投資の強さが受注に続くかに注目。次の速報で設備投資も減少に転じれば、見方を慎重にします。\nhttps://www.esri.cao.go.jp/jp/sna/data/data_list/sokuhou/files/2026/qe263/pdf/qepoint2631.pdf",
+      "url": "https://x.com/6Si5LZThnp5A2zk/status/2122307197258588447",
+      "image": "assets/keiko/gdp-2122307197258588447.png",
+      "alt": "夕方の窓辺でボルドーのジャケットを着て腕を伸ばす、けいこの自撮り風AIイラスト",
+      "heading": "設備投資の伸びが受注に続くか",
+      "detail": "11月16日公表の1次速報。設備投資の伸びにはサーバーなどの電子計算機や半導体製造装置への支出増加が寄与したと内閣府はみています。次の速報で設備投資の改定を、各社の決算では受注や受注残を確認します。",
+      "sources": [
+        {
+          "label": "内閣府 2026年7〜9月期GDP 1次速報のポイント",
+          "url": "https://www.esri.cao.go.jp/jp/sna/data/data_list/sokuhou/files/2026/qe263/pdf/qepoint2631.pdf"
+        }
+      ]
+    },
+    {
       "id": "2122283333505929583",
       "date": "2026-11-16",
       "category": "daily",

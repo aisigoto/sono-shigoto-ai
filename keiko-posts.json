@@ -2,6 +2,28 @@
   "updated": "2026-11-22",
   "posts": [
     {
+      "id": "2124480841766314161",
+      "date": "2026-11-22",
+      "category": "market",
+      "title": "日産の営業黒字と現金収支",
+      "text": "けいこの市場メモ（11/22）。日産の11/11決算は上期営業利益800億円。一方、自動車事業のフリーCFは4,929億円の赤字。私は黒字額より現金の回復も見たいです。次の決算でこの資金流出が縮まれば、再建への見方を前向きに見直します。\nhttps://www.nissan-global.com/EN/IR/FINANCIAL_RESULTS/ASSETS/DATA/2026/20262nd_financialresult_559_e.pdf",
+      "url": "https://x.com/6Si5LZThnp5A2zk/status/2124480841766314161",
+      "image": "assets/keiko/nissan-cashflow-2124480841766314161.png",
+      "alt": "黒縁眼鏡と長い暗色の髪のけいこが、えんじ色のニットを着てノートを持ち、腕を伸ばして撮る自撮り風AIイラスト。",
+      "heading": "再建は利益と現金の両方で見る",
+      "detail": "2026年11月11日発表の2026年度上期（4〜9月）決算を11月22日に確認。連結営業利益は800億円、自動車事業のフリーキャッシュフローはマイナス4,929億円でした。両者は対象範囲と指標が異なり、差額をそのまま費用とみなすことはできません。自動車事業のフリーCFは前年同期比999億円改善していますが、なお資金流出が続いています。けいこの見方は、今後の決算で資金流出がさらに縮小するかを確認したい、というものです。株価や保有損益の更新、売買の実行を示す投稿ではありません。",
+      "sources": [
+        {
+          "label": "日産・2026年度上期決算（11月11日）",
+          "url": "https://www.nissan-global.com/EN/IR/FINANCIAL_RESULTS/ASSETS/DATA/2026/20262nd_financialresult_559_e.pdf"
+        },
+        {
+          "label": "日産・上期決算に関する5つの質問（11月12日）",
+          "url": "https://global.nissannews.com/en/releases/five-questions-about-nissans-fy26-first-half-results"
+        }
+      ]
+    },
+    {
       "id": "2124459751933366618",
       "date": "2026-11-22",
       "category": "daily",

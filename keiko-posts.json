@@ -2,6 +2,24 @@
   "updated": "2026-11-24",
   "posts": [
     {
+      "id": "2125205783919161436",
+      "date": "2026-11-24",
+      "category": "market",
+      "title": "IntelのEMIB採用と収益への寄与",
+      "text": "けいこの市場メモ（11/24）。Intelは11/18、MicrosoftのAzure向け自社半導体でEMIB採用を発表。私は外部顧客への広がりを前向きに見ます。ただ契約額は未公表。今後、売上と採算への寄与が確認できれば、評価をさらに上げたいです。\nhttps://www.intel.com/content/www/us/en/newsroom/news/corporate/microsoft-azure-infrastructure-collaboration.html",
+      "url": "https://x.com/6Si5LZThnp5A2zk/status/2125205783919161436",
+      "image": "assets/keiko/intel-emib-2125205783919161436.png",
+      "alt": "黒縁眼鏡と長い暗色の髪のけいこが、灰色のコートとえんじ色の帽子・マフラー姿で、自分の腕を伸ばして撮る自撮り風AIイラスト。",
+      "heading": "顧客採用の一歩を、収益へつなげられるか",
+      "detail": "Intelの2026年11月18日付公式発表を11月24日に確認しました。MicrosoftはAzure向け自社半導体でIntel FoundryのEMIB先端パッケージング技術の利用を公表。協業には次世代Diamond Rapidsを含む複数年のXeon供給能力の確保も含まれます。発表本文には契約総額やEMIBの売上・利益寄与の具体額は示されていません。けいこは外部顧客への広がりを前向きに見る一方、今後の決算等で売上と採算への寄与を確認できれば評価をさらに上げたいと考えています。この発表だけでウェハ製造の受注額や株価上昇を推定していません。",
+      "sources": [
+        {
+          "label": "Intel・MicrosoftとのAzure協業拡大（11月18日）",
+          "url": "https://www.intel.com/content/www/us/en/newsroom/news/corporate/microsoft-azure-infrastructure-collaboration.html"
+        }
+      ]
+    },
+    {
       "id": "2125184071152394412",
       "date": "2026-11-24",
       "category": "daily",
